@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>顔のツボ</title>
+</head>
+<body>
+    <div>
+      <img src="68123.jpg" id="tsubo" style="width:100%; max-width:550px;"/>
+      <div id="desc" style="border:1px solid gray; background:#ffe; position:fixed; font-size:20px; top:0; right:0;padding:2px;">
+      </div>
+    </div>  
+    <script>
+      // DOMセレクタ
+const $id = (id) => document.getElementById(id);
+const $name = (name) => document.getElementsByName(name);
+const $c = (c) => document.getElementsByClassName(c);
+const $q = (query) => document.querySelectorAll(query);
+      const run_camera = () => {
+        const video = document.getElementById("video")
+        navigator.mediaDevices.getUserMedia({
+            video: true,
+            audio: false,
+        }).then(stream => {
+            video.srcObject = stream;
+            video.play()
+        }).catch(e => {
+          console.log(e)
+        })
+      };
+
+      const tsubos = "頭維 本神 曲差 陽白 絲竹空 魚腰 攅竹 太陽 瞳子髎 睛明 四白 客主人 頰車 大迎 迎香 巨髎 顴髎 下関 承漿 地倉".split(" ")
+            .filter(v=>v).map((v,i) => {
+                let p = {};
+                p.name = v;
+                let pos = [
+                    [58,70],[83,63],[104,62],[94,102],[64,129],[94,129],[120,142],[218,146],[65,158],[120,170],[93,181],[217,191],
+                    [63,218],[78,237],[167,214],
+                    [181,224],[197,222],[216,215],[144,270],[180,244],    
+                ].slice(i).shift();
+                p.x = pos[0] / 267;
+                p.y = pos[1] / 267;
+                p.read = "ずい ほんじん きょくさ ようはく しちくくう ぎょよう さんちく たいよう どうしりょう せいめい しはく きゃくしゅじん きょうしゃ だいげい げいこう こりょう けんりょう げかん しょうしょう ちそう".split(" ").filter(v => v).slice(i).shift();
+                p.desc = "わからん/しらん/ぐぐれ/何かに効く/ここに説明/kwsk/上のリンクから検索できます/ほげふが/いいことあるぞ/何かが起きる"
+                    .split("/")
+                    .slice(parseInt(10 * Math.random())).shift();
+                return p;
+            });
+      $id("desc").innerText = "(画面内の赤丸をクリックしてください)";
+      $id("tsubo").onclick = (e) => {
+          $id("desc").innerText = "(画面内の赤丸をクリックしてください)";
+          let c = {x:e.offsetX / $id("tsubo").width, y:e.offsetY / $id("tsubo").width};
+          let res = tsubos.filter(p => (p.x - c.x)**2 + (p.y - c.y)**2 < 100/267/267);
+          console.log(c);
+          console.log(res);
+          if (res.length == 0) return;
+          let p = res.shift();
+          let name = p.name;
+          $id("desc").innerHTML = `<a href="https://www.google.com/search?q=${encodeURIComponent(name+" ツボ")}" target="_blank">${name}</a>`
+              + "(" + p.read + ")<br/>効き目:" + p.desc;
+      };
+      
+      
+
+    </script>  
+</body>
+</html>
