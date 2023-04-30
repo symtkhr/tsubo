@@ -2,84 +2,194 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #screen {
+      margin: 0;
+      padding: 0;
+      width: 400px;
+      height: 300px;
+      position:relative;
+    }
+    video {
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    canvas {
+        position: absolute;
+        border:solid green 1px;
+        top:0;
+        left:0;
+    }
+    #ui label {
+        border:solid gray 1px;
+        display: inline-block;
+        border-radius: 20px;
+        margin:2px;
+        padding:2px;
+        font-size:15px;
+    }
+    #ui label span {
+        font-size:10px;
+    }
+  </style>
   <title>Face Detect Sample</title>
 </head>
 
 <body onload="init()">
-  <video id="video" autoplay onloadedmetadata="onPlay()"></video>
-  <p id="message" style="font-size:30px;"></p>
-  <div id="box" style="width:100px; height:100px; border:1px solid red; background-color:#fff; opacity:.3; position:absolute; top:0; left:0;"></div>
+  <div id="ui"></div>
+  <div id="screen">
+    <video id="video" width="400" height="300" autoplay muted playsinline="true"></video>
+    <canvas id="profile"></canvas>
+  </div>
+  <div id="param" style="font-family:monospace;"></div>
 
   <script src="js/face-api.min.js"></script>
   <script>
-    const $id = (id) => document.getElementById(id);
-    const $name = (name) => document.getElementsByName(name);
-    const $c = (c) => document.getElementsByClassName(c);
-    const $q = (query) => document.querySelectorAll(query);
+const $id = (id) => document.getElementById(id);
+const $name = (name) => document.getElementsByName(name);
+const $c = (c) => document.getElementsByClassName(c);
+const $q = (query) => document.querySelectorAll(query);
+const video = $id("video");
 
-    const video = $id("video");
-    const init = async () => {
+const init = async () => {
 
-      // Webカメラ初期化
-      const stream = await navigator.mediaDevices.getUserMedia({
+    // Webカメラ初期化
+    const stream = await navigator.mediaDevices.getUserMedia({
         audio: false,
         video: {
-          width: 400,
-          height: 400
+            width: 400,
+            height: 400
         }
-      });
+    });
 
-      try {
+    try {
         video.srcObject = stream;
-      } catch (err) {
+    } catch (err) {
         video.src = window.URL.createObjectURL(stream);
-      }
-        // (1)モデル読み込み　※フォルダを指定
-      await faceapi.nets.tinyFaceDetector.load("models/");
     }
- const MODEL_URL = "./weights";
-    async function loadModels(){
-	console.log("loadModels");
-	Promise.all([
-		faceapi.loadSsdMobilenetv1Model(MODEL_URL),
-		faceapi.loadFaceLandmarkModel(MODEL_URL),
-		faceapi.loadFaceRecognitionModel(MODEL_URL)
-	]).then(()=>{});
-}
 
-    const onPlay = () => {
-      const message = $id('message')
-      const inputSize = 512; // 認識対象のサイズ
-      const scoreThreshold = 0.3; // 数値が高いほど精度が高くなる（〜0.9）
-      // (2)オプション設定
-      const options = new faceapi.TinyFaceDetectorOptions({
-        inputSize,
-        scoreThreshold
-      })
-        const detectInterval = setInterval(async () => {
-            console.log("run");
-        // (3)顔認識処理
-        const result = await faceapi.detectSingleFace(
+    Promise.all([
+        faceapi.nets.tinyFaceDetector.loadFromUri('./models'),
+        faceapi.nets.faceLandmark68TinyNet.loadFromUri('./models'),
+    ]).then(startVideo)
+};
 
-            video,
-            options
+const TSUBO =
+[{"name":"頭維/ずい",    ls:[], id:"zui",}, // Head
+ {"name":"本神/ほんじん",ls:[], id:"hon",},
+ {"name":"曲差/きょくさ",ls:[], id:"kyoku",},
+ {"name":"陽白/ようはく",ls:[38,19,20], id:"yoha",}, 
+ {"name":"絲竹空/しちくくう",ls:[17], id:"shichi",}, // Eyebrow
+ {"name":"魚腰/ぎょよう",ls:[19], id:"gyoyo",},
+ {"name":"攅竹/さんちく",ls:[21], id:"sanc",},
+ {"name":"太陽/たいよう",ls:[45,15,5], id:"taiyo",},  // Eye & Profile
+ {"name":"瞳子髎/どうしりょう",ls:[37,36,20], id:"doshi",}, // Eye
+ {"name":"睛明/せいめい",      ls:[39], id:"seme",},
+ {"name":"四白/しはく",        ls:[38,41,20], id:"shiha",},
+ {"name":"客主人/きゃくしゅじん",ls:[31,16,8], id:"kyaku",},
+ {"name":"頰車/きょうしゃ",  ls:[3], id:"kyosha",}, // Profile
+ {"name":"大迎/だいげい",    ls:[4], id:"daigei",},
+ {"name":"承漿/しょうしょう",ls:[8], id:"shosho",},
+ {"name":"迎香/げいこう",ls:[35], id:"geko",}, // nose
+ {"name":"巨髎/こりょう",ls:[35,14,3], id:"koryo",}, // cheek
+ {"name":"顴髎/けんりょう",ls:[35,14,6], id:"kenryo",}, 
+ {"name":"下関/げかん",ls:[35,14,9], id:"gekan",},
+ {"name":"地倉/ちそう",ls:[54], id:"chiso",}, // Mouth
+];
+
+
+function startVideo() {
+
+    if (navigator.userAgent.match(/iPhone|iPad|Android/)) { ///iPhone|Android.+Mobile/
+        console.log("Mobile");
+        video.width = 400; //1080;
+
+        navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+            .then(localMediaStream => {
+                if ('srcObject' in video) {
+                    video.srcObject = localMediaStream;
+                } else {
+                    video.src = window.URL.createObjectURL(localMediaStream);
+                }
+                video.play();
+            })
+            .catch(err => {
+                console.error(`Not available!!!!`, err);
+            });
+    }
+    else {
+        console.log("PC");
+        navigator.getUserMedia(
+            { video: {} },
+            stream => video.srcObject = stream,
+            err => console.error(err)
         );
-
-        if (result) {
-            //result.withFaceLandmarks();
-            message.textContent = "OK!"
-            $id("box").style.display = "block";
-            console.log(result);
-            $id("box").style.top = result.box.y + "px";
-            $id("box").style.left = result.box.x + "px";
-            $id("box").style.width = result.box.width + "px";
-            $id("box").style.height = result.box.height + "px";
-        } else {
-            $id("box").style.display = "none";
-            message.textContent = "nothing";
-        }
-      }, 500);
     }
+    console.log("video:"+[video.width, video.height]);
+
+    let chx = TSUBO.map(v => {
+        if (v.ls.length == 0) return "";
+        let q = v.name.split("/");
+        return `<label><input type=checkbox id="${v.id}"/>` + q[0] + ` <span>` + q[1] + `</span></label>`
+    }).join("");
+    $id("ui").innerHTML = chx;
+    run();
+};
+
+let run = () => {
+    video.addEventListener('play', () => {
+
+        var canvas_bg = $id("profile");
+        canvas_bg.width = video.width;
+        canvas_bg.height = video.height;
+        var ctx_bg = canvas_bg.getContext('2d');
+        const displaySize = { width: video.width, height: video.height }
+
+        setInterval(async () => {
+            const detections = await faceapi.detectSingleFace(video, new faceapi.TinyFaceDetectorOptions())
+                  .withFaceLandmarks(true);
+            if (!detections) return;
+            const resizedDetections = faceapi.resizeResults(detections, displaySize);
+            const landmarks = resizedDetections.landmarks;
+            const landmarkPositions = landmarks.positions;
+            let ps = landmarks.positions.map(v => [parseInt(v.x*100)/100,parseInt(100*v.y)/100]);
+            if (0)
+                $id("param").innerText =
+                "\nあご:\n" + JSON.stringify(ps.slice(0,18)) +
+                "\nまゆ:\n" + JSON.stringify(ps.slice(18,28)) +
+                "\nはな:\n" + JSON.stringify(ps.slice(28,37)) +
+                "\nめ:\n"   + JSON.stringify(ps.slice(37,49)) +
+                "\nくち:\n" + JSON.stringify(ps.slice(49,68));
+
+            let context = ctx_bg;
+            context.clearRect(0, 0, video.width, video.height);
+            const dots = (x,y) => {
+                context.beginPath() ;
+                context.arc(x, y, 5, 0, 360 * Math.PI / 180, false);// 100, 100, 5);
+                context.fillStyle = "rgba(255,0,0,0.8)" ;
+                context.fill() ;
+            };
+
+            TSUBO.map(v => {
+                if (!$id(v.id)) return;
+                if (!$id(v.id).checked) return;
+                if (!v.ls.length) return;
+                let pos = ps[v.ls[0]];
+                if (v.ls.length == 1) {
+                    return dots(pos[0],pos[1]);
+                }
+                let posf = ps[v.ls[1]];
+                if (v.ls.length == 2) v.ls[2] = 5;
+                dots(pos[0] + (posf[0] - pos[0]) * v.ls[2] / 10,
+                     pos[1] + (posf[1] - pos[1]) * v.ls[2] / 10);
+            });
+
+        }, 500);
+    });
+};
   </script>
 </body>
 

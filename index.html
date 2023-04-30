@@ -47,6 +47,17 @@ const $q = (query) => document.querySelectorAll(query);
                     .slice(parseInt(10 * Math.random())).shift();
                 return p;
             });
+      /*
+      console.log(JSON.stringify(tsubos.map(v => {
+          v.name += "/" + v.read;
+          v.x = parseInt(v.x * 1000);
+          v.y = parseInt(v.y * 1000);
+
+          delete(v.desc);
+          delete(v.read);
+          return v;
+      })));
+*/
       $id("desc").innerText = "(画面内の赤丸をクリックしてください)";
       $id("tsubo").onclick = (e) => {
           $id("desc").innerText = "(画面内の赤丸をクリックしてください)";
