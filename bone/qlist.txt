@@ -1,0 +1,552 @@
+images/Squamous-part-of-frontal-bone.png	前頭鱗	ぜんとうりん	Squamous part of frontal bone	前頭鱗は前頭骨の上部を占める部分で、曲率の大きな曲面で頭蓋の上部へと広がる。
+images/Supra-orbital-foramen.png	眼窩上孔（眼窩上切痕）	がんかじょうこう（がんかじょうせっこん）	Supra-orbital foramen	眼窩上孔は眼窩の上で中央よりもわずかに内側よりの所に開口した孔で、眼窩上神経の通路である。眼窩上孔はその下縁が眼窩に開いている場合があり、その場合は眼窩上切痕と呼ばれる。顔面骨の前面に開いた神経の出口である眼窩上孔、眼窩下孔、オトガイ孔はほぼ同一矢状面上にある。
+images/Zygomatic-process-of-frontal-bone.png	頬骨突起（前頭骨）	きょうこつとっき（ぜんとうこつ）	Zygomatic process of frontal bone	頬骨突起は眼窩部の両外側端に位置する突起で、頬骨との連結部であることからこの名が付けられている。
+images/Frontal-notch.png	前頭切痕	ぜんとうせっこん	Frontal notch	前頭切痕は眼窩上縁の切れ込みで、眼窩上孔よりも内側に位置し、眼窩上神経の内側枝が通る。
+images/Frontal-tuber.png	前頭結節	ぜんとうけっせつ	Frontal tuber	前頭結節は前頭鱗の左右に位置する大きいが不明瞭な隆起で、女性と子どもの特徴となっている。
+images/Superciliary-arch.png	眉弓	びきゅう	Superciliary arch	眉弓は眼窩上縁の少し上にある帯状の隆起で、その名のとおり眉毛の生えている位置とほぼ一致する。
+images/Glabella.png	眉間	みけん	Glabella	眉間は左右の眉弓の間に位置する平坦な部分である。
+images/Nasal-border.png	鼻骨縁	びこつえん	Nasal border	鼻骨縁は左右の眼窩上縁の間で下方に突出し鼻骨と連結する部分である。
+images/Nasal-spine.png	鼻棘	びきょく	Nasal spine	鼻棘は鼻骨縁の中央にあって鋭く下方に突出した部分である。
+images/Groove-for-superior-sagittal-sinus.png	上矢状洞溝	じょうしじょうどうこう	Groove for superior sagittal sinus	上矢状洞溝は前頭鱗の内面の正中矢状面上を走る幅広で浅い溝で、ここには上矢状静脈洞が走行する。前頭骨上の上矢状洞溝は前方で不明瞭となり前頭稜へと移行する。
+images/Frontal-crest.png	前頭稜	ぜんとうりょう	Frontal crest	前頭稜は前頭鱗の内面前方で鋭く隆起した稜で、その稜線は大脳鎌が着く。
+images/Foramen-cecum.png	盲孔	もうこう	Foramen cecum	盲孔は前頭稜の下端に位置する小さな孔である。
+images/Opening-of-frontal-sinus.png	前頭洞口	ぜんとうどうこう	Opening of frontal sinus	前頭洞口とは鼻骨縁下縁に開く小さな孔で、前頭洞に通じている。
+images/Fossa-for-lacrimal-gland.png	涙腺窩	るいせんか	Fossa for lacrimal gland	涙腺窩は眼窩上壁の外側部に位置する浅い窪みで、ここに涙腺がはまり込む。
+images/Ethmoid-notch.png	篩骨切痕	しこつせっこん	Ethmoid notch	篩骨切痕は眼窩部の中央に位置する大きな切痕で、ここには篩骨の篩板がはまり込む。
+images/Orbital-part.png	眼窩部	がんかぶ	Orbital part	眼窩部は前頭骨の前下部を占める部分である。
+images/Superior-temporal-line.png	上側頭線	じょうそくとうせん	Superior temporal line	上側頭線は側頭筋の筋膜が付くところで、側頭部外面を弓状に走る線状の隆起である。上側頭線の走行は長く、前頭骨から頭頂骨を通り、側頭骨に及ぶが、その大部分は頭頂骨にある。
+images/Inferior-temporal-line.png	下側頭線	かそくとうせん	Inferior temporal line	下側頭線は側頭筋が付くところで、側頭部外面を弓状に走る線状の隆起である。下側頭線の走行は長く、前頭骨から頭頂骨を通り、側頭骨に及ぶが、その大部分は頭頂骨にある。
+images/Groove-for-sigmoid-sinus.png	Ｓ状洞溝	えすじょうどうこう	Groove for sigmoid sinus	Ｓ状洞溝は内頭蓋底を走るＳ状静脈洞が通る溝で、頭頂骨ではその後部がわずかに一部を構成するにすぎない。
+images/Parietal-tuber.png	頭頂結節	とうちょうけっせつ	Parietal tuber	頭頂結節は頭頂骨のほぼ中央に位置する大きいが不明瞭な隆起である。
+images/Parietal-foramen.png	頭頂孔	とうちょうこう	Parietal foramen	頭頂孔は頭頂骨外面の内側付近に開いた一群の小さな孔で、導出静脈の通路である。
+images/Groove-for-middle-meningeal-artery.png	中硬膜動脈溝	ちゅうこうまくどうみゃくこう	Groove for middle meningeal artery	中硬膜動脈溝は頭頂骨の内面に走る枝分かれした溝である。中硬膜動脈溝はその名のとおり中硬膜動脈の圧痕である。
+images/Groove-for-superior-sagittal-sinus_2.png	上矢状洞溝	じょうしじょうどうこう	Groove for superior sagittal sinus	上矢状洞溝は頭蓋冠内面を正中矢状面に沿って走る幅広で浅い溝で、ここには上矢状静脈洞が走行する。
+images/Granular-foveolae.png	クモ膜顆粒小窩	くもまくかりゅうしょうか	Granular foveolae	クモ膜顆粒小窩は頭頂骨内面の上矢状洞溝に沿って見られる浅い窪みである。ここにはクモ膜顆粒が位置する。
+images/Foramen-magnum.png	大後頭孔	だいこうとうこう	Foramen magnum	大後頭孔は後頭骨の底部に位置するひときわ大きな穴である。ここを延髄下部が通りすぐに脊髄へと移行する。
+images/Occipital-condyle.png	後頭顆	こうとうか	Occipital condyle	後頭顆は大後頭孔の左右に位置する関節面で、関節する相手は第１頚椎（環椎）の上関節窩である。
+images/Superior-nuchal-line.png	上項線	じょうこうせん	Superior nuchal line	上項線は外後頭隆起から左右に延びた稜線で、僧帽筋の付着部になっている。
+images/External-occipital-protuberance.png	外後頭隆起	がいこうとうりゅうき	External occipital protuberance	外後頭隆起は後頭部のほぼ正中にあり後下方に大きく突出した隆起で、左右の上項線に挟まれている。
+images/Jugular-foramen.png	頚静脈孔	けいじょうみゃくこう	Jugular foramen	頚静脈孔は大後頭孔の前外側にある孔で後頭骨の頚静脈切痕と側頭骨の同名の切痕に挟まれてできる孔で、内頚静脈の他に舌咽神経、迷走神経、副神経などが通る。
+images/Hypoglossal-canal.png	舌下神経管	ぜっかしんけいかん	Hypoglossal canal	舌下神経管は後頭顆を後内側から前外側へ貫く管で、ここには舌下神経が通る。
+images/Groove-for-transverse-sinus.png	横洞溝	おうどうこう	Groove for transverse sinus	横洞溝は後頭鱗内面の内後頭隆起から左右に走る浅く広い溝で、ここには横静脈洞が走る。
+images/Internal-occipital-protuberance.png	内後頭隆起	ないこうとうりゅうき	Internal occipital protuberance	内後頭隆起は内頭蓋底で左右の横洞溝に挟まれてほぼ正中に存在する骨の高まりで、外頭蓋底の外後頭隆起の位置に対応する。
+images/Squamous-part-of-occipital-bone.png	後頭鱗	こうとうりん	Squamous part of occipital bone	後頭鱗は大後頭孔よりも後方に広がった部分で、後頭骨の２分の１以上を占める大きな領域である。
+images/Condylar-canal.png	顆管	かかん	Condylar canal	顆管は後頭顆のすぐ後方に位置する孔で、導出静脈の通路になっている。
+images/Inferior-nuchal-line.png	下項線	かこうせん	Inferior nuchal line	下項線は上項線のやや下方に位置する稜線で、頭半棘筋の付着部になっている。
+images/Clivus.png	斜台	しゃだい	Clivus	斜台は鞍背から大後頭孔に至る骨の滑り台のような構造で、その上部は蝶形骨、下部は後頭骨に含まれる。
+images/Jugular-notch.png	頚静脈切痕	けいじょうみゃくせっこん	Jugular notch	頚静脈切痕は側頭骨にある同名の切痕と合わせて頚静脈孔になる構造である。したがってここには内頚静脈の他に舌咽神経、迷走神経、副神経などが通る。
+images/Sulcus-for-sigmoid-sinus.png	Ｓ状洞溝	えすじょうどうこう	Sulcus for sigmoid sinus	Ｓ状洞溝は内頭蓋底を走るＳ状静脈洞が通る溝で、後頭骨の横洞溝の外側から移行し頭頂骨をかすめて側頭骨へ向かう。
+images/Groove-for-superior-sagittal-sinus_1.png	上矢状洞溝	じょうしじょうどうこう	Groove for superior sagittal sinus	上矢状洞溝は頭蓋冠内面を正中矢状面に沿って走る幅広で浅い溝で、ここには上矢状静脈洞が走行する。
+images/Articular-tubercle.png	関節結節	かんせつけっせつ	Articular tubercle	関節結節は頬骨突起の基部にあり、下方に突出した突起である。
+images/Zygomatic-process-of-temporal-bone.png	頬骨突起（側頭骨）	きょうこつとっき（そくとうこつ）	Zygomatic process of temporal bone	頬骨突起は鱗部の外側面から前方に伸び出した突起で、頬骨の側頭突起と連結して頬骨弓を形成する。
+images/Mandibular-fossa.png	下顎窩	かがくか	Mandibular fossa	下顎窩は頬骨突起の基部に下方を向いて存在する関節面で、関節する相手は下顎骨の下顎頭である。
+images/Styloid-process-of-temporal-bone.png	茎状突起（側頭骨）	けいじょうとっき（そくとうこつ）	Styloid process of temporal bone	側頭骨の茎状突起は乳様突起の前内側に位置する細長い突起で、茎突舌骨筋・茎突咽頭筋の付着部となっている。茎状突起の長さは個人差が非常に大きい。
+images/Mastoid-process.png	乳様突起	にゅうようとっき	Mastoid process	乳様突起は岩様部にある大きな突起で、胸鎖乳突筋の付着部となっている。乳様突起の性差が比較的明確で、男性では大きく、女性では小さいので性判別の指標の一つとされている。
+images/Internal-acoustic-opening.png	内耳孔	ないじこう	Internal acoustic opening	内耳孔は岩様部錐体の内側部にある孔で、顔面神経、内耳神経などの通路になっている。
+images/Petrous-part-(Pyramid).png	岩様部（錐体）	がんようぶ（すいたい）	Petrous part (Pyramid)	岩様部は側頭骨の中心部と後下部をつくる部分で、乳突部と錐体からなるが、岩様部を指して錐体と呼ぶこともある。
+images/Carotid-canal.png	頚動脈管	けいどうみゃくかん	Carotid canal	頚動脈管は茎状突起基部の内側前方に位置する管で、内頚動脈の通路になっている。
+images/Squamous-part-of-temporal-bone.png	鱗部	りんぶ	Squamous part of temporal bone	鱗部は側頭骨の上部を占める大きな部分で、主に脳を格納する役割りの一部を果たしている。
+images/Tympanic-part.png	鼓室部	こしつぶ	Tympanic part	鼓室部は外耳道の壁の一部を形成する比較的小さな部分で、その前縁は岩様部との境で錐体鼓室裂をつくる。
+images/Petrotympanic-fissure-(Glaserian-fissure).png	錐体鼓室裂	すいたいこしつれつ	Petrotympanic fissure (Glaserian fissure)	錐体鼓室裂は鼓室部と岩様部錐体との境をなす裂で、鼓索神経の通路となっている。
+images/Mastoid-foramen.png	乳突孔	にゅうとつこう	Mastoid foramen	乳突孔は乳様突起の後方に位置する小さな孔で、導出静脈の通路になっている。
+images/External-opening-of-vestibular-aqueduct.png	前庭水管外口	ぜんていすいかんがいこう	External opening of vestibular aqueduct	前庭水管外口は錐体後面に位置する小さな孔で内耳内リンパを通す前庭水管の開口部である。
+images/Stylomastoid-foramen.png	茎乳突孔	けいにゅうとつこう	Stylomastoid foramen	茎乳突孔は茎状突起と乳様突起の間に位置する孔で、顔面神経の通路である。
+images/Semicanal-for-auditory-tube.png	耳管半管	じかんはんかん	Semicanal for auditory tube	耳管半管は筋耳管管の下段を構成する管で、耳管の通路になっている。
+images/Semicanal-for-tensor-tympani-muscle.png	鼓膜張筋半管	こまくちょうきんはんかん	Semicanal for tensor tympani muscle	鼓膜張筋半管は筋耳管管の上段を構成する管で、鼓膜張筋の通路になっている。
+images/Musculotubal-canal.png	筋耳管管	きんじかんかん	Musculotubal canal	筋耳管管は耳管と鼓膜張筋の通路になっている上下２段の管で、錐体前部に開口する。筋耳管管は上段が鼓膜張筋半管、下段が耳管半管となっている。
+images/External-acoustic-(auditory)-meatus.png	外耳道	がいじどう	External acoustic (auditory) meatus	外耳道は外耳孔から鼓室に至る大きな管で、下顎窩の前方に位置する。
+images/Groove-for-middle-temporal-artery.png	中側頭動脈溝	ちゅうそくとうどうみゃくこう	Groove for middle temporal artery	中側頭動脈溝は鱗部を下から上に走る浅い溝で、中側頭動脈が通るところである。
+images/Stylomastoid-foramen.png	茎乳突孔	けいにゅうとつこう	Stylomastoid foramen	茎乳突孔は茎状突起と乳様突起の間に位置する孔で、顔面神経の通路である。
+images/Groove-for-sigmoid-sinus_1.png	Ｓ状洞溝	えすじょうどうこう	Groove for sigmoid sinus	Ｓ状洞溝は内頭蓋底を走るＳ状静脈洞が通る溝で、後頭骨の横洞溝の外側から移行し頭頂骨をかすめて側頭骨へ向かう。
+images/Frontal-process-of-zygomatic-bone.png	前頭突起（頬骨）	ぜんとうとっき（きょうこつ）	Frontal process of zygomatic bone	頬骨の前頭突起は前頭骨の頬骨突起と連結する部分である。
+images/Temporal-process.png	側頭突起	そくとうとっき	Temporal process	側頭突起は側頭骨の頬骨突起と連結する部分で、頬骨弓の前半部分を形成する。
+images/Infraorbital-foramen.png	眼窩下孔	がんかかこう	Infraorbital foramen	眼窩下孔は眼窩の下で中央よりもわずかに内側よりの所に開口した孔で、眼窩下神経と眼窩下動・静脈の通路である。顔面骨の前面に開いた神経の出口である眼窩上孔、眼窩下孔、オトガイ孔はほぼ同一矢状面上にある。
+images/Nasal-notch.png	鼻切痕	びせっこん	Nasal notch	鼻切痕は内側にある大きな切れ込みで、反対側の鼻切痕及び鼻骨と組み合って梨状孔ができる。
+images/Zygomatic-process-of-maxilla.png	頬骨突起（上顎骨）	きょうこつとっき（じょうがくこつ）	Zygomatic process of maxilla	上顎骨の頬骨突起は外側に突き出て頬骨と連結する部分である。
+images/Body-of-maxilla.png	上顎体	じょうがくたい	Body of maxilla	上顎体は上顎骨を構成する骨部のうち、頬骨突起、歯槽突起、口蓋突起そして前頭突起を除いた部分である。
+images/Infraorbital-groove.png	眼窩下溝	がんかかこう	Infraorbital groove	眼窩下溝は眼窩面を前後に走る溝で、眼窩下神経と眼窩下動・静脈の通路になっている。眼窩下溝は前方で眼窩下管に移行する。
+images/Infraorbital-canal.png	眼窩下管	がんかかかん	Infraorbital canal	眼窩下管は眼窩面を前後に走る溝である眼窩下溝が前方で移行したもので、眼窩下神経と眼窩下動・静脈の通路になっている。
+images/Alveolar-process.png	歯槽突起	しそうとっき	Alveolar process	歯槽突起は下方に突出した部分で、上顎歯がはまり込んでいる。
+images/Palatine-process.png	口蓋突起	こうがいとっき	Palatine process	口蓋突起は内側に向かって棚のように突出する突起で、反対側の口蓋突起と連結して骨口蓋の前３分の２を形成する。
+images/Maxillary-hiatus.png	上顎洞裂孔	じょうがくどうれっこう	Maxillary hiatus	上顎洞裂孔は上顎洞の鼻腔に開いた開口部である。
+images/Dental-alveolus-of-maxilla.png	歯槽（上顎骨）	しそう（じょうがくこつ）	Dental alveolus of maxilla	歯槽は歯がはまる部分で、各歯に対応している。
+images/Alveolar-yoke-of-maxilla.png	歯槽隆起（上顎骨）	しそうりゅうき（じょうがくこつ）	Alveolar yoke of maxilla	歯槽隆起は歯槽表面に見える歯根の形状の膨らみである。
+images/Median-palatine-suture.png	正中口蓋縫合	せいちゅうこうがいほうごう	Median palatine suture	正中口蓋縫合は左右の口蓋突起が正中で連結する線維結合である。
+images/Greater-palatine-foramen-of-maxilla.png	大口蓋孔（上顎骨）	だいこうがいこう（じょうがくこつ）	Greater palatine foramen of maxilla	大口蓋孔は歯槽弓の後端内側にある小さな孔で、大口蓋神経と大口蓋動脈の通路になっている。
+images/Alveolar-arch-of-maxilla.png	歯槽弓（上顎骨）	しそうきゅう（じょうがくこつ）	Alveolar arch of maxilla	歯槽弓は歯が埋まっている部分で、歯頚を取り囲んだところの全体である。
+images/Orbital-surface.png	眼窩面	がんかめん	Orbital surface	眼窩面は上顎骨の上部で眼窩の一部を構成する面である。
+images/Incisive-foramen.png	切歯窩	せっしか	Incisive foramen	切歯窩は正中口蓋縫合の前端近くにある小さなくぼみである。
+images/Nasal-surface-of-maxilla.png	鼻腔面（上顎骨）	びくうめん（じょうがくこつ）	Nasal surface of maxilla	鼻腔面はその名のとおり鼻腔に面した大きな曲面である。
+images/Frontal-process-of-maxilla.png	前頭突起（上顎骨）	ぜんとうとっき（じょうがくこつ）	Frontal process of maxilla	前頭突起は上方に突き出した突起で、鼻骨と涙骨の間で前頭骨と連結する。
+images/Ramus-of-mandible.png	下顎枝	かがくし	Ramus of mandible	下顎枝は下顎骨の後部の垂直部分である。
+images/Body-of-mandible.png	下顎体	かがくたい	Body of mandible	下顎体は下顎骨の中央部と前部の水平の部分である。
+images/Condylar-process.png	関節突起	かんせつとっき	Condylar process	関節突起は下顎枝の後部の突起で、下顎頭と下顎頚からなる。
+images/Head-of-mandible.png	下顎頭	かがくとう	Head of mandible	下顎頭は関節突起の上端にある関節部で、関節する相手は側頭骨の下顎窩である。
+images/Neck-of-mandible.png	下顎頚	かがくけい	Neck of mandible	下顎頚は関節突起の下部で、上端は下顎頭に移行する。
+images/Coronoid-process.png	筋突起	きんとっき	Coronoid process	筋突起は下顎枝の前部の突起で、側頭筋の付着部となっている。
+images/Mandibular-notch.png	下顎切痕	かがくせっこん	Mandibular notch	下顎切痕は下顎枝上部にあり筋突起と関節突起の間にある切れ込みである。
+images/Angle-of-mandible.png	下顎角	かがくかく	Angle of mandible	下顎角は下顎体の後縁と下顎枝の下縁との境界部分をなす骨の角である。
+images/Mental-foramen.png	オトガイ孔	おとがいこう	Mental foramen	オトガイ孔は下顎体の小臼歯部分に位置する孔で、オトガイ神経、オトガイ動・静脈の通路である。顔面骨の前面に開いた神経と動・静脈の通路である眼窩上孔、眼窩下孔、オトガイ孔はほぼ同一矢状面上にある。
+images/Mental-protuberance.png	オトガイ隆起	おとがいりゅうき	Mental protuberance	オトガイ隆起は下顎骨の正中前面下部にある三角形をした隆起である。
+images/Mandibular-foramen.png	下顎孔	かがくこう	Mandibular foramen	下顎孔は下顎骨の内面にある孔で、下歯槽神経と下歯槽動・静脈の通路になっている。
+images/Base-of-mandible.png	下顎底	かがくてい	Base of mandible	下顎底は下顎体の下部で、下顎骨を単独で置いたときに床面に接する部分である。
+images/Alveolar-part.png	歯槽部	しそうぶ	Alveolar part	歯槽部は下顎骨において歯が付いている部分全体を指す。
+images/Mental-tubercle.png	オトガイ結節	おとがいけっせつ	Mental tubercle	オトガイ結節はオトガイ隆起の外側２cmのところにある骨の緩やかな突出部である。
+images/Mylohyoid-groove.png	顎舌骨筋神経溝	がくぜつこつきんしんけいこう	Mylohyoid groove	顎舌骨筋神経溝は下顎枝内面にある下顎孔の前縁から前方に向かって走る浅い溝である。ここは顎舌骨筋神経と顎舌骨筋動・静脈の通路になっている。
+images/Digastric-fossa.png	二腹筋窩	にふくきんか	Digastric fossa	二腹筋窩は下顎骨内面の正中近くでオトガイ棘の下外側にある浅いくぼみである。二腹筋窩には顎二腹筋前腹が付着する。
+images/Masseteric-tuberosity.png	咬筋粗面	こうきんそめん	Masseteric tuberosity	咬筋粗面は咬筋が下顎骨に停止する部分で、下顎角周囲の広い部分である。
+images/Mental-spine.png	オトガイ棘	おとがいきょく	Mental spine	オトガイ棘は下顎体内面の正中付近に後方に向かって突出したやや鋭い突起である。オトガイ棘はオトガイ舌筋とオトガイ舌骨筋が付着するところである。
+images/Pterygoid-tuberosity.png	歯槽弓（下顎骨）	しそうきゅう（かがくこつ）	Alveolar arch of mandible	歯槽弓は歯が埋まっている部分で、歯頚を取り囲んだところの全体である。
+images/Dental-alveolus-of-mandible.png	歯槽（下顎骨）	しそう（かがくこつ）	Dental alveolus of mandible	歯槽は歯がはまる部分で、各歯に対応している。
+images/Alveolar-yoke-of-mandible.png	歯槽隆起（下顎骨）	しそうりゅうき（かがくこつ）	Alveolar yoke of mandible	歯槽隆起は歯槽表面に見える歯根の形状の膨らみである。
+images/Choana.png	後鼻孔	こうびこう	Choana	後鼻孔は鼻腔の後方への開口部で、上縁と外側縁は口蓋骨と蝶形骨で、下縁は口蓋骨、内側縁は鋤骨で形成される。
+images/Lesser-palatine-canal.png	小口蓋管	しょうこうがいかん	Lesser palatine canal	小口蓋管は垂直板の下部を走る１～２本の管で、水平板の下面に開口する。ここには小口蓋神経と小口蓋動脈が通る。
+images/Sphenoidal-process.png	蝶形骨突起	ちょうけいこつとっき	Sphenoidal process	蝶形骨突起は垂直板の上縁後方にある突起で蝶形骨体と連結する。
+images/Pyramidal-process.png	錐体突起	すいたいとっき	Pyramidal process	錐体突起は垂直板の後下部に位置し、蝶形骨翼状突起と上顎骨の後縁の間にある突起である。
+images/Orbital-process.png	眼窩突起	がんかとっき	Orbital process	眼窩突起は垂直板の上縁前方にある突起で、その上端は眼窩の一部を形成する。
+images/Perpendicular-plate-of-palatine-bone.png	垂直板（口蓋骨）	すいちょくばん（こうがいこつ）	Perpendicular plate of palatine bone	垂直板は口蓋骨の外側をなす部分で、その下部で水平板に移行する。
+images/Horizontal-plate.png	水平板	すいへいばん	Horizontal plate	水平板は口蓋骨の下部をなす部分で、その外側で垂直板に移行する。
+images/Nasal-crest.png	鼻稜	びりょう	Nasal crest	鼻稜は口蓋骨水平板の内側縁が上に向かって隆起したもので、ここに鋤骨が連結する。
+images/Nasal-surface-of-palatine-bone.png	鼻腔面（口蓋骨）	びくうめん（こうがいこつ）	Nasal surface of palatine bone	鼻腔面はその名のとおり鼻腔に面した部分で、垂直板の内側面と水平板の上面からなる。
+images/Greater-palatine-groove-of-palatine-bone.png	大口蓋溝（口蓋骨）	だいこうがいこう（こうがいこつ）	Greater palatine groove of palatine bone	大口蓋溝は口蓋骨と上顎骨にある溝で両骨が連結すると大口蓋管となる。大口蓋溝は大口蓋神経と大口蓋動脈の通路になっている。
+images/Greater-palatine-canal.png	大口蓋管	だいこうがいかん	Greater palatine canal	大口蓋管は口蓋骨と上顎骨にある大口蓋溝が両骨が連結することによってできた管である。大口蓋管は大口蓋神経と大口蓋動脈の通路になっている。
+images/Greater-palatine-foramen-of-palatine-bone.png	大口蓋孔（口蓋骨）	だいこうがいこう（こうがいこつ）	Greater palatine foramen of palatine bone	大口蓋孔は口蓋骨と上顎骨によってできる大口蓋管の出口で、大口蓋神経と大口蓋動脈の通路になっている。
+images/Fossa-for-lacrimal-sac.png	涙嚢窩	るいのうか	Fossa for lacrimal sac	涙嚢窩は涙骨の眼窩に面した部分の前半部に位置する浅いくぼみである。ここに涙嚢がはまり込む。
+images/Lesser-wing.png	小翼	しょうよく	Lesser wing	小翼は蝶形骨体の前部から左右に突き出た翼状の突起で、前頭骨そして篩骨と連結する。
+images/Greater-wing.png	大翼	だいよく	Greater wing	大翼は蝶形骨体の後部から左右に突き出た大きな翼状の構造で、前頭骨、頭頂骨そして側頭骨と連結する。
+images/Body-of-sphenoid.png	蝶形骨体	ちょうけいこつたい	Body of sphenoid	蝶形骨体は蝶形骨の中心になる部分で、その後端部は後頭骨と骨結合している。
+images/Pterygoid-process.png	翼状突起	よくじょうとっき	Pterygoid process	翼状突起は蝶形骨体と大翼の下面から下方に突き出た突起である。翼状突起は内側板と外側板で構成され、内側板は前方で口蓋骨の垂直板と連結する。
+images/Foramen-rotundum.png	正円孔	せいえんこう	Foramen rotundum	正円孔は大翼基部にある３つの孔（正円孔、卵円孔、棘孔）のうち最も内側前方に位置する。正円孔は上顎神経の通路である。
+images/Foramen-ovale.png	卵円孔	らんえんこう	Foramen ovale	卵円孔は大翼基部にある３つの孔（正円孔、卵円孔、棘孔）のうち中間に位置する比較的大きな孔。卵円孔は下顎神経の通路である。
+images/Foramen-spinosum.png	棘孔	きょくこう	Foramen spinosum	棘孔は大翼基部にある３つの孔（正円孔、卵円孔、棘孔）のうち最も外側後方に位置するひときわ小さな孔。棘孔は中硬膜動脈の通路である。
+images/Opening-of-sphenoidal-sinus.png	蝶形骨洞口	ちょうけいこつどうこう	Opening of sphenoidal sinus	蝶形骨洞口は副鼻腔の一つである蝶形骨洞の鼻腔への開口部である。
+images/Sphenoidal-rostrum.png	蝶形骨吻	ちょうけいこつふん	Sphenoidal rostrum	蝶形骨吻は蝶形骨体の前下端に位置する突起で、ここに鋤骨が連結する。
+images/Spine-of-sphenoid-bone.png	蝶形骨棘	ちょうけいこつきょく	Spine of sphenoid bone	蝶形骨棘は大翼の下端で靭帯の付く部位になっている。
+images/Sella-turcica.png	トルコ鞍	とるこぐら	Sella turcica	トルコ鞍は蝶形骨体上部にある前後が隆起し中央が窪んだ馬に付ける鞍のような構造。
+images/Anterior-clinoid-process.png	前床突起	ぜんしょうとっき	Anterior clinoid process	前床突起はトルコ鞍の前方左右に位置する突起で、視神経管を被うような構造になっている。
+images/Hypophysial-fossa.png	下垂体窩	かすいたいか	Hypophysial fossa	下垂体窩はトルコ鞍の中央にあるくぼみで、下垂体の入れ物になっている。
+images/Posterior-clinoid-process.png	後床突起	こうしょうとっき	Posterior clinoid process	後床突起はトルコ鞍の後部にある鞍背の左右を形成する突起である。
+images/Pterygoid-canal.png	翼突管	よくとつかん	Pterygoid canal	翼突管は翼状突起の基部を前後に貫く管で、翼突管神経と翼突管動・静脈の通路となっている。
+images/Pterygoid-fossa.png	翼突窩	よくとつか	Pterygoid fossa	翼突窩は翼状突起の後面で外側板と内側板に挟まれたくぼみである。翼突窩は内側翼突筋の付くところである。
+images/Scaphoid-fossa.png	舟状窩	しゅうじょうか	Scaphoid fossa	舟状窩は翼状突起内側板の後面に見られる浅いくぼみで、口蓋帆張筋の付くところになっている。
+images/Optic-canal.png	視神経管	ししんけいかん	Optic canal	視神経管はトルコ鞍の前方にある鞍結節の左右に位置し、前方に向かって眼窩に通じている。視神経管には視神経が通る。
+images/Dorsum-sellae.png	鞍背	あんぱい	Dorsum sellae	鞍背はトルコ鞍の後方で大きく隆起した部分で、馬の鞍に例えれば背当てに相当する部分である。
+images/Clivus-Sb.png	斜台	しゃだい	Clivus	斜台は鞍背から大後頭孔に至る骨の滑り台のような構造で、その上部は蝶形骨、下部は後頭骨に含まれる。
+images/Foramen-lacerum.png	破裂孔	はれつこう	Foramen lacerum	破裂孔はトルコ鞍後外側にあり蝶形骨と側頭骨の連結部分にできた孔である。破裂孔は不規則な形をした孔で、神経あるいは血管が通るわけではなく、生体では軟骨でふさがっている。
+images/Carotid-groove.png	頚動脈溝	けいどうみゃくこう	Carotid groove	頚動脈溝はトルコ鞍の側面にある浅い溝で、後方の頚動脈管から続いている。頚動脈溝にはない頚動脈が通る。
+images/Lateral-pterygoid-plate.png	外側板	がいそくばん	Lateral pterygoid plate	外側板は翼状突起を構成する構造のうち外側に位置するもので、内側板よりも大きい。
+images/Medial-pterygoid-plate.png	内側板	ないそくばん	Medial pterygoid plate	内側板は翼状突起を構成する構造のうち内側に位置するもので、外側板よりも小さい。
+images/Pterygoid-hamulus.png	翼突鈎	よくとつこう	Pterygoid hamulus	翼突鈎は内側板の下端にある少し曲がった突起である。
+images/Superior-orbital-fissure.png	上眼窩裂	じょうがんかれつ	Superior orbital fissure	上眼窩裂は大翼と小翼に挟まれてできた裂孔で、内側は蝶形骨体、外側は前頭骨で形作られている。上眼窩裂には動眼神経、滑車神経、眼神経そして外転神経が通る。
+images/Foramen-lacerum.png	下眼窩裂	かがんかれつ	Inferior orbital fissure	下眼窩裂は蝶形骨と上顎骨に挟まれてできた眼窩の下面にある裂孔で、内側前方は上顎骨の眼下面、外側後方は蝶形骨の大翼で形作られている。下眼窩裂には頬骨神経、眼窩下神経、眼窩下動・静脈が通る。
+images/Tuberculum-sellae.png	鞍結節	あんけっせつ	Tuberculum sellae	鞍結節はトルコ鞍前部にある骨の隆起である。
+images/Cribriform-plate.png	篩板	しばん	Cribriform plate	篩板は篩骨の天井をなす部分で、内頭蓋底と鼻腔の境界となっている。篩板は前頭骨の篩骨切痕にはまり込んでいる。
+images/Perpendicular-plate-of-ethmoid.png	垂直板（篩骨）	すいちょくばん（しこつ）	Perpendicular plate of ethmoid	垂直板は鼻腔を左右に分ける鼻中隔の上前部をつくっている平板状の部分である。
+images/Ethmoidal-labyrinth.png	篩骨迷路	しこつめいろ	Ethmoidal labyrinth	篩骨迷路は篩骨の外側部を構成する部分で、この中は篩骨蜂巣と呼ばれる蜂の巣状の骨でできている。
+images/Ethmoidal-cells.png	篩骨蜂巣	しこつほうそう	Ethmoidal cells	篩骨蜂巣は篩骨迷路の中の蜂の巣構造のことである。
+images/Crista-galli.png	鶏冠	けいかん	Crista galli	鶏冠は篩骨上前部に突出した板状の突起で、脳硬膜の一部である大脳鎌が着くところになっている。
+images/Superior-nasal-concha.png	上鼻甲介	じょうびこうかい	Superior nasal concha	上鼻甲介は篩骨迷路の内側面から内側下方向かって伸び出した板状の部分で、鼻腔の上部にある。
+images/Middle-nasal-concha.png	中鼻甲介	ちゅうびこうかい	Middle nasal concha	中鼻甲介は篩骨迷路の内側面から内側下方に向って伸び出した板状の部分で、鼻腔の中ほどの高さにある。
+images/Hiatus-semilunaris.png	半月裂孔	はんげつれっこう	Hiatus semilunaris	半月裂孔は鈎状突起と篩骨法によって形成される骨の間隙である。
+images/Uncinate-process.png	鈎状突起（篩骨）	こうじょうとっき（しこつ）	Uncinate process	鈎状突起は篩骨迷路の内側面から下後方に伸びた突起である。
+images/Ethmoidal-bulla.png	篩骨胞	しこつほう	Ethmoidal bulla	篩骨胞は中鼻甲介の外側にある篩骨迷路の内側への緩やかな隆起である。
+images/Greater-horn.png	大角	だいかく	Greater horn	大角は後方に突き出した左右の角のような構造で、茎突舌骨筋が付く。
+images/Lesser-horn.png	小角	しょうかく	Lesser horn	小角は舌骨体の上面に小さく突き出た突起で、茎突舌骨靭帯が付く。
+images/Body-of-hyoid.png	舌骨体	ぜっこつたい	Body of hyoid	舌骨体は舌骨の前部を占め、大角と小角を除いた部分である。
+images/Vertebral-column_1.png	頚椎	けいつい	Cervical vertebrae	頚椎は脊柱を構成する椎骨のうち最上位の７個の椎骨である。あるいはこれら７個の椎骨で構成される骨格を頚椎と呼ぶこともある。上位２個の頚椎、すなわち第１頚椎と第２頚椎は特殊な形をしているが、残りの第３～第７頚椎は基本構造はよく似ている。頚椎の特徴としてまず挙げられるのは、サイズが小さいこと、そして上下に扁平であることである。頚椎は突起にも特徴がある。横突起には上下に貫く横突孔という孔が開いている。頚椎の横突起の前側の部分は本来は肋骨になるべきところで、この部分と本来の横突起によって囲まれて横突孔が出来上がっている。頚椎の棘突起は先端（後端）が水平方向に２分している。ただし、最下位の第７頚椎の棘突起では２分していないことが多い。
+images/Vertebral-column_1.png	胸椎	きょうつい	Thoracic vertebrae	胸椎は脊柱を構成する椎骨のうち、頚椎につづく１２個の椎骨である。あるいはこれら１２個の椎骨で構成される骨格を胸椎と呼ぶこともある。胸椎の最大の特徴は肋骨と関節するための関節面をもつことである。左右で１２対ある肋骨は各胸椎に対応しているが、胸椎の椎体表面にあって肋骨との関節面である肋骨窩の位置はそのまま対応しているわけではない。すなわち、肋骨が上下２つの椎骨に跨って関節していることが多い。また、第１胸椎から第１０胸椎までの横突起には肋骨と関節する横突肋骨窩が存在する。肋骨と関節することにより、１２個の胸椎は胸郭を構成する骨格の一部になっている。
+images/Vertebral-column_1.png	腰椎	ようつい	Lumbar vertebrae	腰椎は脊柱を構成する椎骨のうち、胸椎につづく５個の椎骨である。あるいはこれら５個の椎骨で構成される骨格を腰椎と呼ぶこともある。腰椎の最大の特徴はその大きさにある。とくに椎体は他の椎骨と比べると強大で、体重を支持する働きが大きいことがわかる。横突起に見える突起は本来の横突起ではなく、肋骨に相当する構造なので肋骨突起と呼ばれる。本来の横突起は副突起と乳頭突起という名前で痕跡のように残っている。
+images/Vertebral-column_1.png	仙骨（仙椎）	せんこつ（せんつい）	Sacrum (Sacral vertebrae)	仙骨は５個の仙椎が癒合してできた骨である。仙椎は脊柱を構成する椎骨のうち、腰椎につづく５個の椎骨である。仙骨の最大の特徴は脊柱の一部でありながら、成人では１つの骨に癒合してしまっているので、仙骨自体は全く動かないこと、すなわち可動性を欠くという点にある。また、尾骨、寛骨とともに骨盤を構成する骨となっている。
+images/Vertebral-column_1.png	尾骨（尾椎）	びこつ（びつい）	Coccyx (Coccygeal vertebrae)	尾骨はふつう３～５個の尾椎が癒合・変形してできた２～５個の骨である。尾椎は脊柱を構成する椎骨のうち、脊柱の最下部分を構成し仙椎につづく椎骨である。尾骨の最大の特徴は、その数が一定しないことである。成人では癒合が起こる可能性が高く、一部癒合して３～５個になる。尾骨のうち仙骨に近いものほど椎骨の形をとどめている。
+images/Vertebral-canal.png	脊柱管	せきちゅうかん	Vertebral canal	脊柱管は椎骨の椎孔が上下に連なってできる管状の腔所で、中には脊髄が格納される。脊柱管は後頭骨の大後頭孔から仙骨にある仙骨裂孔までであるが、実際に脊髄が存在するのは第２腰椎の高さまでで、そこから下は馬尾と呼ばれる神経となる。
+images/Cervical-lordosis.png	頚椎前弯	けいついぜんわん	Cervical lordosis	頚椎前弯は頚椎が前弯（前方に凸の弯曲）を示すことで、脊柱の第２次弯曲の一つである。頚椎前弯は生後３か月前後の乳児期、すなわちくびがすわる時期に形成される。
+images/Thoracic-kyphosis.png	胸椎後弯	きょうついこうわん	Thoracic kyphosis	胸椎後弯は胸椎が後弯（後方に凸の弯曲）を示すことで、脊柱の第１次弯曲の一つである。
+images/Lumbar-lordosis.png	腰椎前弯	ようついぜんわん	Lumbar lordosis	腰椎前弯は腰椎が前弯（前方に凸の弯曲）を示すことで、脊柱の第２次弯曲の一つである。腰椎前弯は生後１年前後の歩行開始時に現れる。
+images/Sacral-kyphosis.png	仙骨後弯	せんこつこうわん	Sacral kyphosis	仙骨後弯は仙骨・尾骨が後弯（前方に凸の弯曲）を示すことで、脊柱の第１次弯曲の一つである。
+images/Intervertebral-foramen.png	椎間孔	ついかんこう	Intervertebral foramen	椎間孔は脊柱を構成する各椎骨の連結部分において、上の椎骨の下椎切痕と下の椎骨の上椎切痕が向き合って形成される孔である。椎間孔には脊髄神経が通る。
+images/Vertebral-body.png	椎体	ついたい	Vertebral body	椎体は椎骨の前面を占め、背の低い円柱状の構造である。上面と下面は椎間円板という軟骨が当るように平面状になっている。
+images/Vertebral-foramen.png	椎孔	ついこう	Vertebral foramen	椎孔は椎体とその後方に位置する椎弓によって形成される大きな孔で、これが縦に連なって脊柱管ができている。
+images/Vertebral-arch.png	椎弓	ついきゅう	Vertebral arch	椎弓は椎体から後方に向かって椎孔をぐるりと取り囲む輪状の構造で、上下の関節突起や横突起、棘突起などに場所を提供する。
+images/Transverse-process.png	横突起	おうとっき	Transverse process	横突起は椎弓から外側に向かって突出する１対の突起である。横突起は棘突起とともに多くの固有背筋群に付着点を提供する。
+images/Spinous-process.png	棘突起	きょくとっき	Spinous process	棘突起は椎弓から正中矢状面に沿って後下方に向かって突出する突起である。棘突起は横突起とともに多くの固有背筋群に付着点を提供する。
+images/Superior-articular-process-(of-vertebra).png	上関節突起（椎骨）	じょうかんせつとっき（ついこつ）	Superior articular process (of vertebra)	上関節突起は椎弓根から上方へ突出する突起で、すぐ上位の椎骨の下関節突起と関節する。
+images/Inferior-articular-process.png	下関節突起	かかんせつとっき	Inferior articular process	下関節突起は椎弓根から下方へ突出する突起で、すぐ下位の椎骨の上関節突起と関節する。
+images/Lamina-of-vertebral-arch.png	椎弓板	ついきゅうばん	Lamina of vertebral arch	椎弓板は椎弓の一部で横突起と棘突起の間にある板状の部分である。
+images/Pedicle-of-vertebral-arch.png	椎弓根	ついきゅうこん	Pedicle of vertebral arch	椎弓根は椎弓の一部で椎体と繋がっている部分である。
+images/Superior-vertebral-notch.png	上椎切痕	じょうついせっこん	Superior vertebral notch	上椎切痕は椎弓根の上部の切れ込みで、すぐ上位の椎骨の下椎切痕とともに椎間孔を形成する。
+images/Inferior-vertebral-notch.png	下椎切痕	かついせっこん	Inferior vertebral notch	下椎切痕は椎弓根の下部の切れ込みで、すぐ下位の椎骨の上椎切痕とともに椎間孔を形成する
+images/Foramen-transversarium.png	横突孔（椎骨動脈孔）	おうとつこう	Foramen transversarium	横突孔は横突起を上下に貫く孔で、頚椎の特徴の一つである。横突孔には椎骨動脈と椎骨静脈が通る。ただし椎骨動脈は第７頚椎の横突孔は通らない。
+images/Atlas_1.png	環椎（第１頚椎）	かんつい（だいいちけいつい）	Atlas	第１頚椎は頚椎の中で最上位に位置する椎骨で、環椎とも呼ばれる。椎体が存在しないことが最大の特徴で、全体として環状を示し、上関節窩と下関節窩を含む外側塊を前弓と後弓が結ぶという構成になっている。横突起は比較的大きいが、棘突起と呼べるほどのものは存在せず、後結節という小さな突起が存在する。また前弓の正中部には前結節というこれも小さな突起が存在する。他の頚椎であれば、椎体が存在するはずの空間には第２頚椎の歯突起という大きな突起が納まり、頚椎の可動性を確保している。前弓の後面、すなわち椎弓側には歯突起窩という関節面が存在する。他の頚椎の上関節突起に相当する上関節窩は後頭骨の後頭顆と関節する。
+images/Axis_1.png	軸椎（第２頚椎）	じくつい（だいにけいつい）	Axis	第２頚椎は頚椎の中で上から２番目に位置する椎骨で、軸椎とも呼ばれる。椎体から上方に歯突起と呼ばれる大きな突起をもつことが最大の特徴で、特異な形状を示す。歯突起は第１頚椎の椎体に相当する空間に位置し、歯突起を軸として第１頚椎が回旋するようになっている。この構造によって頚椎は回旋に関して大きな可動性を得ている。
+images/Vertebra-prominens.png	隆椎（第７頚椎）	りゅうつい（だいななけいつい）	Vertebra prominens	第７頚椎は頚椎の中で最下位に位置する椎骨で、隆椎とも呼ばれる。下方では第１胸椎と関節するので、その形状は胸椎と非常によく似ている。棘突起の先端が２分していないことが多いのも第７頚椎の特徴である。またその棘突起は生体で観察しやすい。頭部を前に倒したとき頚部の下後方にひときわ大きく突出する棘突起がたいていは第７頚椎の棘突起である。
+images/Groove-for-spinal-nerve.png	脊髄神経溝	せきずいしんけいこう	Groove for spinal nerve	脊髄神経溝は、典型的な頚椎（第３頚椎～第７頚椎）の横突起に見られる溝で、椎間孔から出た脊髄神経が通る。
+images/Carotid-tubercle.png	頚動脈結節（第６頚椎の）	けいどうみゃくけっせつ（だいろくけいついの）	Carotid tubercle	頚動脈結節は第６頚椎の前結節である。第６頚椎の前結節は比較的大きく、総頚動脈のすぐ後方に位置することから頚動脈結節と呼ばれる。
+images/Anterior-tubercle-(of-cervical-vertebrae).png	前結節（頚椎）	ぜんけっせつ（けいつい）	Anterior tubercle (of cervical vertebrae)	頚椎の前結節は横突起の先端前部に存在する突起である。第２頚椎～第７頚椎の横突起に見られる。頚椎の横突起の前側の部分は本来は肋骨になるべきところで、その先端がなごりとして突出したものが前結節である。
+images/Posterior-tubercle-(of-cervical-vertebrae).png	後結節（頚椎）	こうけっせつ（けいつい）	Posterior tubercle (of cervical vertebrae)	頚椎の後結節は横突起の先端後部に存在する突起である。第２頚椎～第７頚椎の横突起に見られる。頚椎の横突起の後側の部分は本来の横突起で、その先端がなごりとして突出したものが後結節である
+images/Anterior-arch-of-atlas.png	前弓	ぜんきゅう	Anterior arch of atlas	前弓は第１頚椎の前部を構成する部分で、一般の椎骨では椎体の前部に相当する。
+images/Facet-for-dens.png	歯突起窩	しとっきか	Facet for dens	歯突起窩は第１頚椎の前弓後面にある関節面で、第２頚椎の歯突起にある前関節面と関節する。
+images/Posterior-arch-of-atlas.png	後弓	こうきゅう	Posterior arch of atlas	後弓は第１頚椎の後部を構成する部分で、一般の椎骨では椎弓に相当する。
+images/Lateral-mass-of-atlas.png	外側塊	がいそくかい	Lateral mass of atlas	外側塊は第１頚椎の外側部を構成する部分である。一般の椎骨では椎弓根に相当するが、第１頚椎には椎体がないので、この部分が強大になっている。
+images/Superior-articular-surface-(of-atlas).png	上関節窩	じょうかんせつか	Superior articular surface (of atlas)	上関節窩は第１頚椎の外側窩の上面に位置し、後頭骨の後頭顆と関節する関節面で、一般の椎骨では上関節突起の関節面に相当する。
+images/Inferior-articular-surface-(of-atlas).png	下関節窩	かかんせつか	Inferior articular surface (of atlas)	下関節窩は第１頚椎の外側窩の下面に位置し、第２頚椎の上関節突起と関節する関節面で、一般の椎骨では下関節突起の関節面に相当する。
+images/Anterior-tubercle-(of-atlas).png	前結節（環椎）	ぜんけっせつ（かんつい）	Anterior tubercle (of atlas)	環椎の前結節は第１頚椎の前弓の前端正中部に見られる小さな突起である。
+images/Posterior-tubercle-(of-atlas).png	後結節（環椎）	こうけっせつ（かんつい）	Posterior tubercle (of atlas)	環椎の後結節は第１頚椎の後弓の後端正中部に見られる小さな突起で、一般の椎骨の棘突起に相当する。
+images/Groove-for-vertebral-artery.png	椎骨動脈溝	ついこつどうみゃくこう	Groove for vertebral artery	椎骨動脈溝は第１頚椎の後弓上面の外側塊に移行する部位にある溝で、椎骨動脈と後頭顆神経が通る。
+images/Dens.png	歯突起	しとっき	Dens	歯突起は第２頚椎の椎体の上に伸び出したヒトの頭のように形をした骨の突起である。歯突起の前面にある関節面と第１頚椎の歯突起窩と関節し、歯突起を軸として頭部の回旋運動の多くの部分を分担している。
+images/Anterior-articular-facet-(of-dens).png	前関節面	ぜんかんせつめん	Anterior articular facet (of dens)	前関節面は歯突起の前面にあり、第１頚椎の歯突起窩と関節する関節面である。
+images/Posterior-articular-facet.png	後関節面	こうかんせつめん	Posterior articular facet	後関節面は歯突起の後面にあり、環椎横靭帯と接する小さな面である。
+images/Apex-of-dens.png	歯突起尖	しとっきせん	Apex of dens	歯突起尖は歯突起の尖端（上端）で、歯尖靱帯が付着する。
+images/Transverse-costal-facet.png	横突肋骨窩	おうとつろっこつか	Transverse costal facet	横突肋骨窩は胸椎横突起の前外側面にある関節面で、肋骨結節関節面と肋横突関節を構成する。第１１胸椎と第１２胸椎では、肋横突関節はつくられず線維性の連結になっているために、横突肋骨窩は見られない。
+images/Superior-costal-facet.png	上肋骨窩	じょうろっこつか	Superior costal facet	上肋骨窩は胸椎の椎体外側上部に見られる半円形の関節面である。肋骨が胸骨椎体に関節する面は上下２つの椎体に跨ることが多いので、上肋骨窩と下肋骨窩が生じる。第１胸椎では上肋骨窩はほぼ円形をしていて第１肋骨が関節する。第１胸椎の下肋骨窩は第２肋骨が第２胸椎に跨って関節しているため、半円形となる。第２胸椎～第９胸椎は椎体の上部と下部にそれぞれ肋骨窩が存在する第１０胸椎では半円形の上肋骨窩は見られるが下肋骨窩は存在しない。第１１胸椎と第１２胸椎では椎体にほぼ円形の肋骨窩が存在する。
+images/Inferior-costal-facet.png	下肋骨窩	かろっこつか	Inferior costal facet	下肋骨窩は胸椎の椎体外側下部に見られる半円形の関節面である。肋骨が胸骨椎体に関節する面は上下２つの椎体に跨ることが多いので、上肋骨窩と下肋骨窩が生じる。第１胸椎では上肋骨窩はほぼ円形をしていて第１肋骨が関節する。第１胸椎の下肋骨窩は第２肋骨が第２胸椎に跨って関節しているため、半円形となる。第２胸椎～第９胸椎は椎体の上部と下部にそれぞれ肋骨窩が存在する第１０胸椎では半円形の上肋骨窩は見られるが下肋骨窩は存在しない。第１１胸椎と第１２胸椎では椎体にほぼ円形の肋骨窩が存在する。
+images/Costal-process.png	肋骨突起	ろっこつとっき	Costal process	肋骨突起は腰椎の椎弓から外側に伸びる突起で、一見すると一般的な椎骨の横突起に見えるが、本来は肋骨に相当する突起である。
+images/Accessory-process.png	副突起	ふくとっき	Accessory process	副突起は肋骨突起の根もとのすぐ後方にある小さな突起である。副突起は乳頭突起とともに本来は横突起に相当する突起である。
+images/Mammillary-process.png	乳頭突起	にゅうとうとっき	Mammillary process	乳頭突起は副突起と上関節突起の間にある小さな突起である。乳頭突起は副突起とともに本来は横突起に相当する突起である
+images/Promontory.png	岬角	こうかく	Promontory	岬角は仙骨底（仙骨上部）の前縁中央部のことで、前方に強く張り出している。
+images/Superior-articular-process-of-sacrum.png	上関節突起（仙骨）	じょうかんせつとっき（せんこつ）	Superior articular process of sacrum	仙骨の上関節突起は仙骨底（仙骨上部）の中央付近のやや後方、左右に見られる突起である。ここの関節面は第５腰椎の下関節突起の関節面と関節する。
+images/Pelvic-surface-of-sacrum.png	前面（仙骨）	ぜんめん（せんこつ）	Pelvic surface of sacrum	仙骨の前面は仙骨の骨盤腔に面している面のことである。全体として凹面を示している。
+images/Dorsal-surface-of-sacrum.png	後面（仙骨）	こうめん（せんこつ）	Dorsal surface of sacrum	仙骨の後面は仙骨の後方に向いている面である。全体としては凸面を示すが、細かな凹凸が多い。仙骨を構成する各仙椎の突起が連なっていくつかの稜線が見られる。
+images/Auricular-surface-(of-sacrum).png	耳状面（仙骨）	じじょうめん（せんこつ）	Auricular surface (of sacrum)	仙骨の耳状面は外側部の上半に存在する関節面で、腸骨の耳状面と関節して仙腸関節を構成する。
+images/Lateral-part-of-sacrum.png	外側部（仙骨）	がいそくぶ（せんこつ）	Lateral part of sacrum	仙骨の外側部は前仙骨孔および後仙骨孔よりも外側に位置する部分である。外側部は横突起とその周辺の構造物に由来する。
+images/Anterior-sacral-foramina.png	前仙骨孔	ぜんせんこつこう	Anterior sacral foramina	前仙骨孔は仙骨前面に見られる４対の円い孔で仙骨神経の前枝が通る。
+images/Posterior-sacral-foramina.png	後仙骨孔	こうせんこつこう	Posterior sacral foramina	後仙骨孔は仙骨後面に見られる４対の円い孔で仙骨神経の後枝が通る。
+images/Sacral-canal.png	仙骨管	せんこつかん	Sacral canal	仙骨管は仙椎の椎孔が上下に連なってできた管状の腔所で、中には脊髄終枝および馬尾が格納される。仙骨管は脊柱管の最下部を構成している。
+images/Median-sacral-crest.png	正中仙骨稜	せいちゅうせんこつりょう	Median sacral crest	正中仙骨稜は仙骨後面の正中部に見られる凹凸のはげしい稜線で、仙椎の棘突起に由来する。仙骨後面には、上下方向に走る稜線が３種５本あるが、正中仙骨稜もその一つである。
+images/Sacral-hiatus.png	仙骨裂孔	せんこつれっこう	Sacral hiatus	仙骨裂孔は仙骨管の下方への開口部である。
+images/Ala-(Wing)-of-sacrum.png	仙骨翼	せんこつよく	Ala (Wing) of sacrum	仙骨翼は仙骨底の外側部で、第１仙椎の横突起とその周辺部に相当する。
+images/Base-of-sacrum.png	仙骨底	せんこつてい	Base of sacrum	仙骨底は仙骨の上部の領域で、第５腰椎と連結している。
+images/Transverse-ridges-(of-sacrum).png	横線	おうせん	Transverse ridges (of sacrum)	横線は仙骨前面に見られる４本の水平な隆起で、５個の仙椎が癒合した名残である。
+images/Apex-of-sacrum.png	仙骨尖	せんこつせん	Apex of sacrum	仙骨尖は仙骨の下端部分で、尾骨と連結している。
+images/Intermediate-sacral-crest.png	中間仙骨稜	ちゅうかんせんこつりょう	Intermediate sacral crest	中間仙骨稜は仙骨後面の正中仙骨稜の左右に見られるゆるやかな稜線で、各仙椎の上関節突起および下関節突起に由来する。仙骨後面には、上下方向に走る稜線が３種５本あるが、中間仙骨稜もその一つである。
+images/Lateral-sacral-crest.png	外側仙骨稜	がいそくせんこつりょう	Lateral sacral crest	外側仙骨稜は仙骨後面の後仙骨孔のさらに外側に見られる稜線で、仙椎の横突起に由来する。仙骨後面には、上下方向に走る稜線が３種５本あるが、外側仙骨稜もその一つである。
+images/Sacral-horn-(cornu).png	仙骨角	せんこつかく	Sacral horn (cornu)	仙骨角は中間仙骨稜の下端で、緩やかな突出部である。
+images/Intervertebral-foramen-(of-sacrum).png	椎間孔（仙骨）	ついかんこう（せんこつ）	Intervertebral foramen (of sacrum)	仙骨の椎間孔は仙骨の内部にあって仙骨管から脊髄神経が出る開口部となっている。
+images/Coccygeal-horn-(cornu).png	尾骨角	ぜんとうとっき（きょうこつ）	Coccygeal horn (cornu)	尾骨角は尾骨上端後部にあり、上方に向かう突起で、第１尾椎の上関節突起に相当する。尾骨角は仙骨の仙骨角と向かい合う。
+images/Thoracic-cavity.png	胸腔	きょうくう	Thoracic cavity	胸腔は胸郭によって取り囲まれる腔所で、ここには多くの構造物が格納される。
+images/Thorax_1.png	胸椎	きょうつい	Thoracic vertebrae	胸椎は脊柱を構成する椎骨のうち、頚椎につづく１２個の椎骨である。あるいはこれら１２個の椎骨で構成される骨格を胸椎と呼ぶこともある。胸椎の最大の特徴は肋骨と関節するための関節面をもつことである。左右で１２対ある肋骨は各胸椎に対応しているが、胸椎の椎体表面にあって肋骨との関節面である肋骨窩の位置はそのまま対応しているわけではない。すなわち、肋骨が上下２つの椎骨に跨って関節していることが多い。また、第１胸椎から第１０胸椎までの横突起には肋骨と関節する横突肋骨窩が存在する。
+images/Thorax_1.png	肋骨	ろっこつ	Rib	肋骨は胸郭の側壁を構成する１２対の骨で、扁平で弓状に変形した細長い骨である。胸椎体との関節面をもつ肋骨頭、胸椎の横突起との関節面をもつ肋骨結節、肋骨頭と肋骨頭と肋骨結節の間の部分である肋骨頚、肋骨結節のやや外側で弯曲が強くなっている部分である肋骨角、そして肋骨の大部分をなし弓状に弯曲した扁平な肋骨体などを見ることができる。
+images/Thorax_1.png	肋軟骨	ろくなんこつ	Costal cartilage	肋軟骨は第１肋骨から第１０肋骨までを胸骨に連結させている軟骨である。組織学的には硝子軟骨に属する。
+images/True-ribs.png	真肋	しんろく	True ribs	真肋は第１肋骨から第７肋骨をまでを指す。それぞれの骨が独立した軟骨によって胸骨に連結するところからこの名がある。
+images/False-ribs.png	仮肋	かろく	False ribs	仮肋は第８肋骨から第１２肋骨までを指す。第８肋骨と第９肋骨は共通の軟骨を介して胸骨と連結し、第１１肋骨と第１２肋骨は自由端に終わり、胸骨まで到達しないことからこの名がある。
+images/Floating-ribs.png	浮遊肋	ふゆうろく	Floating ribs	浮遊肋は第１１肋骨および第１２肋骨を指す。これらの肋骨は自由端に終わり、胸骨まで到達しないことからこの名がある。
+images/Thorax_1.png	胸骨	きょうこつ	Sternum	胸骨は胸郭の前面正中に位置するネクタイのような形をした扁平な骨である。胸骨の上部でネクタイの結び目に相当するところが胸骨柄、ネクタイの本体に相当するところが胸骨体、ネクタイの下端に当たるところが剣状突起とそれぞれ呼ばれる。胸骨柄と胸骨体の境界の部分が胸骨角である。
+images/Costal-arch.png	肋骨弓	ろっこつきゅう	Costal arch	肋骨弓は第７肋骨～第１０肋骨を胸骨に連結させる肋軟骨の下縁が描く弓状の線である。
+images/Intercostal-space.png	肋間隙	ろくかんげき	Intercostal space	肋間隙は肋骨と肋骨の間の間隙である。第１肋骨と第２肋骨の間である第１肋間隙にはじまり、第１１肋骨と第１２肋骨の間の第１１肋間隙におわる。
+images/Infrasternal-angle.png	胸骨下角	きょうこつかかく	Infrasternal angle	胸骨下角は左右の肋骨弓が剣状突起を頂点としてつくる角度である。成人では７０°～８０°とされる。
+images/Thoracic-inlet.png	胸郭上口	きょうかくじょうこう	Thoracic inlet	胸郭上口は胸郭の上方への開口部で、第１胸椎・第１肋骨・胸骨柄上縁で形成される。
+images/Thoracic-outlet.png	胸郭下口	きょうかくかこう	Thoracic outlet	胸郭下口は胸郭の下方への開口部で、第１２胸椎・第１１肋骨全端部・第１２肋骨・肋骨弓・胸骨剣状突起下端で形成される。
+images/Pulmonary-groove.png	肺溝	はいこう	Pulmonary groove	肺溝は胸郭の内面の後壁で左右に一対走る溝である。これは肋骨角が上下方向に連なったものである。
+images/Jugular-notch_1.png	頚切痕	けいせっこん	Jugular notch	頚切痕は胸骨柄上端の緩やかな切れ込みである。
+images/Manubrium-of-sternum.png	胸骨柄	きょうこつへい	Manubrium of sternum	胸骨柄は胸骨の上部を占める部分で、胸骨をネクタイに例えればネクタイの結び目に相当する部分である。下辺では胸骨体と骨結合し、下部の左右では肋骨切痕で第１肋骨と関節し、上部の左右では鎖骨切痕で鎖骨と関節する。
+images/Sternal-angle.png	胸骨角	きょうこつかく	Sternal angle	胸骨角は胸骨柄と胸骨体が癒合することによって前方に突出した部分で、生体でも容易に触知できる。フランスの外科医の名をとってルイ角とも呼ばれる。胸骨角の左右端には第２肋骨の肋骨軟骨が関節する。肋骨番号はこの第２肋骨から数え始めるので、胸骨角は臨床上重要である。
+images/Body-of-sternum.png	胸骨体	きょうこつたい	Body of sternum	胸骨体は胸骨柄の下に位置する部分で、胸骨の最も大きな部位である。胸骨をネクタイに例えると下に垂れ下がっているネクタイの本体部分である。胸骨体の下端は剣状突起に移行する。
+images/Xiphoid-process.png	剣状突起	けんじょうとっき	Xiphoid process	剣状突起は胸骨の下端部分を占め、胸骨体の下端に連結する。剣状突起の骨化は遅く、完全に骨化するのは老人になってからとされている。
+images/Clavicular-notch.png	鎖骨切痕	さこつせっこん	Clavicular notch	鎖骨切痕は胸骨柄の上外側部分にある大きな切れ込みで、鎖骨胸骨端と関節する関節面がある。
+images/Costal-notch.png	肋骨切痕	ろっこつせっこん	Costal notch	肋骨切痕は胸骨の外側縁にある７個の切れ込みで、肋軟骨が関節する。胸骨柄には第１肋骨の肋軟骨が関節する肋骨切痕があり、胸骨柄と胸骨体の境界部分である胸骨角には第２肋骨の肋軟骨が関節する肋骨切痕があり、胸骨体には第３肋骨～第７肋骨の肋軟骨が関節する肋骨切痕がある。
+images/Costal-groove.png	肋骨溝	ろっこつこう	Costal groove	肋骨溝は肋骨体の内面を下縁に沿って走行する細長く浅い溝である。肋間神経、肋間動・静脈はこの肋骨溝を走る。
+images/Head-of-rib.png	肋骨頭	ろっこつとう	Head of rib	肋骨頭は肋骨後端のことで、ここには胸骨体と関節する関節面がある。
+images/Angle-of-rib.png	肋骨角	ろっこつかく	Angle of rib	肋骨角は肋骨体にあって肋骨結節のやや外側で弯曲が強くなっている部分である。
+images/Body-(Shaft)-of-rib.png	肋骨体	ろっこつたい	Body (Shaft) of rib	肋骨体は肋骨の大部分をなし弓状に弯曲した扁平な部分である。
+images/Tubercle-of-rib.png	肋骨結節	ろっこつけっせつ	Tubercle of rib	肋骨結節は肋骨頚と肋骨体の境界にあって胸椎の横突起との関節面をもつ。
+images/Articular-facet-of-head-of-rib.png	肋骨頭関節面	ろっこつとうかんせつめん	Articular facet of head of rib	肋骨頭関節面は肋骨頭にあって胸椎体と関節し肋骨頭関節を形成する。
+images/Crest-of-head-of-rib.png	肋骨頭稜	ろっこつとうりょう	Crest of head of rib	肋骨頭稜は第２肋骨～第１０肋骨の肋骨頭関節面に水平に走る稜線である。
+images/Neck-of-rib.png	肋骨頚	ろっこつけい	Neck of rib	肋骨頚は肋骨頭と肋骨結節の間の部分である。
+images/Crest-of-neck-of-rib.png	肋骨頚稜	ろっこつけいりょう	Crest of neck of rib	肋骨頚稜は肋骨頚の上縁にある稜で、胸椎横突起との間の靭帯が付く。
+images/Articular-facet-of-costal-tubercle.png	肋骨結節関節面	ろっこつけっせつかんせつめん	Articular facet of costal tubercle	肋骨結節関節面は肋骨結節にあって胸椎横突起に関節し肋横突関節を形成する。
+images/Scalene-tubercle.png	前斜角筋結節	ぜんしゃかくきんけっせつ	Scalene tubercle	前斜角筋結節は第１肋骨肋骨体上面の中央内縁近くにある小さな突起である。ここに前斜角筋が付く。
+images/Groove-for-subclavian-artery.png	鎖骨下動脈溝	さこつかどうみゃくこう	Groove for subclavian artery	鎖骨下動脈溝は第１肋骨肋骨体上面の中央内縁近くで前斜角筋結節のすぐ後方にある浅い溝で、ここに鎖骨下動脈が通る。
+images/Groove-for-subclavian-vein.png	鎖骨下静脈溝	さこつかじょうみゃくこう	Groove for subclavian vein	鎖骨下静脈溝は第１肋骨肋骨体上面の前斜角筋結節のすぐ前方にある浅い溝で、ここに鎖骨下静脈が通る。
+images/Tuberosity-for-serratus-anterior.png	前鋸筋粗面	ぜんきょきんそめん	Tuberosity for serratus anterior	前鋸筋粗面は第２肋骨の肋骨体外面にある粗面で、ここに前鋸筋が付く。
+images/Sternal-end-(of-clavicle).png	胸骨端	きょうこつたん	Sternal end (of clavicle)	胸骨端は鎖骨の内側端のことで、ここで胸骨と関節することからこの名がある。胸骨端付近で鎖骨は緩やかな三角柱へと膨らむ。
+images/Acromial-end.png	肩峰端	けんぽうたん	Acromial end	肩峰端は鎖骨の外側端のことでここで肩甲骨の肩峰と関節することからこの名がある。肩峰端に向かって鎖骨は扁平になる。
+images/Body-(Shaft)-of-clavicle.png	鎖骨体	さこつたい	Body (Shaft) of clavicle	鎖骨体は両端を除いた鎖骨の本体部分である。鎖骨体では鎖骨は前後に弯曲した円柱状である。
+images/Sternal-facet-(of-clavicle).png	胸骨関節面	きょうこつかんせつめん	Sternal facet (of clavicle)	胸骨関節面は鎖骨胸骨端にある円形あるいは緩やかな四角形の関節面で、関節する相手は胸骨の鎖骨切痕である。
+images/Acromial-facet-(of-clavicle).png	肩峰関節面（鎖骨）	けんぽうかんせつめん（さこつ）	Acromial facet (of clavicle)	肩峰関節面は鎖骨肩峰端にある楕円形の関節面で、関節する相手は肩甲骨の肩峰である。
+images/Conoid-tubercle.png	円錐靱帯結節	えんすいじんたいけっせつ	Conoid tubercle	円錐靭帯結節は鎖骨体の肩峰端近くの後縁下面にある突起である。ここには鎖骨と肩甲骨烏口突起を結ぶ靭帯の一つである円錐靭帯が付着する。
+images/Trapezoid-line.png	菱形靱帯線	りょうけいじんたいせん	Trapezoid line	菱形靭帯線は鎖骨肩峰端の鎖骨体近くの下面にある粗面である。ここには鎖骨と肩甲骨烏口突起を結ぶ靭帯の一つである菱形靭帯が付着する。
+images/Subclavian-groove.png	鎖骨下筋溝	さこつかきんこう	Subclavian groove	鎖骨下筋溝は鎖骨体下面に細長く見られる溝で鎖骨下筋が付着する。
+images/Impression-for-costoclavicular-ligament.png	肋鎖靱帯圧痕	ろくさじんたいあっこん	Impression for costoclavicular ligament	肋鎖靭帯圧痕は鎖骨体の胸骨端近くの下面にある溝あるいは粗面である。ここには鎖骨と第１肋骨結ぶ靭帯である肋鎖靭帯が付着する。
+images/Spine-of-scapula.png	肩甲棘	けんこうきょく	Spine of scapula	肩甲棘は肩甲骨背側面にある大きな棚状の構造物で、全体として肩甲骨の上４分の１ほどの所を内側下から外側上に向かって走る。肩甲棘は肩甲骨背面を上下に隔てる構造になっており、三角筋や僧帽筋のなどの大きな筋が付着する場所となっている。肩甲棘の大きく拡がった外側端が肩峰である。
+images/Acromion.png	肩峰	けんぽう	Acromion	肩峰は肩甲棘の外側端で、関節窩よりもさらに外側に突き出た部分である。肩峰には鎖骨と関節する関節面があり、鎖骨肩峰端とともに肩鎖関節を形成する。
+images/Coracoid-process.png	烏口突起	うこうとっき	Coracoid process	烏口突起は関節窩の上方内側から前外側方に突き出した大きな突起である。その前端は上腕二頭筋短頭、烏口腕筋、そして小胸筋が付く場所となっている。
+images/Glenoid-cavity-of-scapula.png	関節窩	かんせつか	Glenoid cavity of scapula	関節窩は肩甲骨の外側角にあって関節面をつくる構造で、上腕骨頭とともに肩関節を形成する。関節窩は上下に長く上半が細い洋ナシの輪郭を示す、浅い関節面をつくっている。
+images/Superior-angle-of-scapula.png	上角	じょうかく	Superior angle of scapula	上角は肩甲骨を三角形に見立てると上内側の角に相当する部分である。
+images/Inferior-angle-of-scapula.png	下角	かかく	Inferior angle of scapula	上角は肩甲骨を三角形に見立てると下側の角に相当する部分である。
+images/Supraspinous-fossa.png	棘上窩	きょくじょうか	Supraspinous fossa	棘上窩は肩甲骨背面が肩甲棘によって仕切られて肩甲棘よりも上側にできる大きなくぼみのことで、棘上筋が起こる場所になっている。
+images/Infraspinous-fossa.png	棘下窩	きょくかか	Infraspinous fossa	棘下窩は肩甲骨背面が肩甲棘によって仕切られて肩甲棘よりも下側にできる棘上窩よりもさらに大きなくぼみのことで、棘下筋が起こる場所になっている
+images/Acromial-angle.png	肩峰角	けんぽうかく	Acromial angle	肩峰角は肩峰の外側縁と後縁がつくる角である。肩峰角は生体でよく触れるが、一般的な生体計測における計測点としての肩峰点とは異なる。
+images/Costal-surface-of-scapula.png	肋骨面	ろっこつめん	Costal surface of scapula	肋骨面は肩甲骨の前面のことで、全面にわたって凹面になっており、肋骨群がつくる曲面上を滑り動きやすくなっている。
+images/Dorsal-surface-of-scapula.png	背側面	はいそくめん	Dorsal surface of scapula	背側面は肩甲骨の後面のことで、前面にわたって凸面になっており、上４分の１ほどの所を斜めに肩甲棘が仕切る。
+images/Neck-of-scapula.png	肩甲頚	けんこうけい	Neck of scapula	肩甲頚は外側角において関節窩よりもやや内側でやや細くくびれている部分である。
+images/Subscapular-fossa.png	肩甲下窩	けんこうかか	Subscapular fossa	肩甲下窩は肩甲骨肋骨面が凹面状に浅く窪んでいるところで、肩甲下筋が付く場所である。
+images/Suprascapular-notch.png	肩甲切痕	けんこうせっこん	Suprascapular notch	肩甲切痕は肩甲骨上縁の烏口突起が起こるところのすぐ内側にある切痕である。肩甲切痕は肩甲上神経の通路となっており、ふつうここはその名のとおり切り込みで上辺を上肩甲横靭帯で塞がれているが、骨によって閉じられ、孔になっていることもある。
+images/Supraglenoid-tubercle.png	関節上結節	かんせつじょうけっせつ	Supraglenoid tubercle	関節上結節は関節窩のすぐ上方にある小さな隆起で、ここには上腕二頭筋長頭が付く。
+images/Infraglenoid-tubercle.png	関節下結節	かんせつかけっせつ	Infraglenoid tubercle	関節下結節は関節窩のすぐ下方にある小さな隆起で、ここには上腕三頭筋長頭が付く。
+images/Superior-border-of-scapula.png	上縁（肩甲骨）	じょうえん（けんこうこつ）	Superior border of scapula	上縁は肩甲骨を三角形に見立てると上辺に相当する部分であり、内側上方から外側下方に向かって斜めに走る。
+images/Medial-border-of-scapula.png	内側縁（肩甲骨）	ないそくえん（けんこうこつ）	Medial border of scapula	内側縁は肩甲骨を三角形に見立てると内側の辺に相当する部分である。内側縁は肩甲挙筋、小菱形筋、大菱形筋、前鋸筋などが付く場所になっている。
+images/Lateral-border-of-scapula.png	外側縁（肩甲骨）	がいそくえん（けんこうこつ）	Lateral border of scapula	外側縁は肩甲骨を三角形に見立てると外側の辺に相当する部分である。外側縁は小円筋、大円筋が付く場所になっている。
+images/Acromial-articular-surface.png	肩峰関節面（肩甲骨）	けんぽうかんせつめん（けんこうこつ）	Acromial articular surface	肩峰関節面は肩峰の前内側縁にある小さな関節面である。肩甲骨の肩峰関節面は鎖骨の肩峰関節面とともに肩鎖関節を形成する。
+images/Lateral-angle-of-scapula.png	外側角	がいそくかく	Lateral angle of scapula	外側角は肩甲骨を三角形に見立てると外側の角に相当する部分である。外側角は関節窩が占めているので、他の２角と異なり、角という構造を示していない。
+images/Head-of-humerus.png	上腕骨頭	じょうわんこっとう	Head of humerus	上腕骨頭は上腕骨近位の関節面をなす部分である。上腕骨頭関節面は肩甲骨の関節窩とともに肩関節を形成する。
+images/Greater-tubercle.png	大結節	だいけっせつ	Greater tubercle	大結節は上腕骨頭の外側に見られる２つの隆起のうちの大きくて後外側にある方である。大結節は棘上筋、棘下筋、小円筋が付くところである。
+images/Lesser-tubercle.png	小結節	しょうけっせつ	Lesser tubercle	小結節は上腕骨頭の外側に見られる２つの隆起のうちの小さくて前内側にある方である。小結節は肩甲下筋が付くところである。
+images/Anatomical-neck.png	解剖頚	かいぼうけい	Anatomical neck	解剖頚は上腕骨頭の周囲の僅かにくびれている部分である。
+images/Surgical-neck.png	外科頚	げかけい	Surgical neck	外科頚は大結節と小結節の下縁と付近で上腕骨の近位端が円柱状の骨体へと移行する部分である。外科頚はほぼ水平面上にあり、その内側部分は解剖頚と接する。
+images/Trochlea-of-humerus.png	上腕骨滑車	じょうわんこつかっしゃ	Trochlea of humerus	上腕骨滑車は上腕骨遠位端で尺骨と関節する部分である。上腕骨滑車は尺骨の滑車切痕とともに腕尺関節を形成する。
+images/Capitulum-of-humerus.png	上腕骨小頭	じょうわんこつしょうとう	Capitulum of humerus	上腕骨小頭は上腕骨遠位端で橈骨と関節する部分である。上腕骨小頭は橈骨の橈骨頭とともに腕橈関節を形成する。
+images/Body-of-humerus.png	上腕骨体	じょうわんこったい	Body of humerus	上腕骨体は両端を除いた上腕骨の本体部分である。上腕骨体の近位から中央付近は円筒状で遠位に向かうと左右方向に広がり前後方向に扁平となる。
+images/Posterior-surface-of-humerus.png	後面（上腕骨）	こうめん（じょうわんこつ）	Posterior surface of humerus	上腕骨の後面は近位と中央付近は円筒面状で、遠位は左右に拡がって平面状になっている。
+images/Deltoid-tuberosity.png	三角筋粗面	さんかくきんそめん	Deltoid tuberosity	三角筋粗面は上腕骨外側面にある三角筋の付く粗面である。三角筋粗面は大結節稜の下端付近から中骨体央あたりまで伸びて後方で再び上方に伸びるＶ字型を示す粗面である。
+images/Crest-of-greater-tubercle.png	大結節稜	だいけっせつりょう	Crest of greater tubercle	大結節稜は大結節から下方へつづく稜線で、大胸筋が付く。
+images/Crest-of-lesser-tubercle.png	小結節稜	しょうけっせつりょう	Crest of lesser tubercle	小結節稜は小結節から下方へつづく稜線で、広背筋と大円筋が付く。
+images/Intertubercular-sulcus.png	結節間溝	けっせつかんこう	Intertubercular sulcus	結節間溝は大結節と小結節の間、およびそれにつづく大結節稜と小結節稜の間にある溝で、ここには上腕二頭筋長頭の腱が通る。
+images/Groove-for-radial-nerve.png	橈骨神経溝	とうこつしんけいこう	Groove for radial nerve	橈骨神経溝は上腕骨体後面を上内側から下外側に斜めに走る浅い溝である。ここに橈骨神経が通るが、橈骨神経の圧痕というよりは上腕三頭筋外側頭の付着面と上腕三頭筋内側頭の付着面の境界であるとされている。
+images/Groove-for-ulnar-nerve.png	尺骨神経溝	しゃくこつしんけいこう	Groove for ulnar nerve	尺骨神経溝は内側上顆の後面を上下に走る溝で、ここに尺骨神経が通る。
+images/Olecranon-fossa.png	肘頭窩	ちゅうとうか	Olecranon fossa	肘頭窩は上腕骨遠位端の後面において滑車のすぐ上にある大きなくぼみである。肘関節伸展時にこの肘頭窩に尺骨の肘頭がはまり込む。
+images/Coronoid-fossa.png	鈎突窩	こうとつか	Coronoid fossa	鈎突窩は上腕骨遠位端の前面において滑車のすぐ上にあるやや浅いくぼみである。肘関節屈曲時にこの鈎突窩に尺骨の鈎状突起がはまり込む。
+images/Radial-fossa.png	橈骨窩	とうこつか	Radial fossa	橈骨窩は上腕骨遠位端の前面において上腕骨小頭のすぐ上にある浅いくぼみである。肘関節を強く屈曲するとこの橈骨窩に橈骨頭の前面がはまり込む。
+images/Condyle-of-humerus.png	上腕骨顆	じょうわんこつか	Condyle of humerus	上腕骨顆は上腕骨遠位端の外側上顆と内側上顆に挟まれた部分全体を指す。
+images/Anteromedial-surface-of-humerus.png	内側前面（上腕骨）	ないそくぜんめん（じょうわんこつ）	Anteromedial surface of humerus	上腕骨の内側前面は前縁と内側縁に挟まれた部分である。上腕骨体には前縁、内側縁、外側縁と呼ばれる縁が上下方向に走っている。これらの縁は骨体下半では明瞭であるが、骨体上半では不明瞭となる。３つの縁によって区切られる平面がそれぞれ内側前面、外側前面そして後面である。
+images/Anterolateral-surface-of-humerus.png	外側前面（上腕骨）	がいそくぜんめん（じょうわんこつ）	Anterolateral surface of humerus	上腕骨の外側前面は前縁と外側縁に挟まれた部分である。上腕骨体には前縁、内側縁、外側縁と呼ばれる縁が上下方向に走っている。これらの縁は骨体下半では明瞭であるが、骨体上半では不明瞭となる。３つの縁によって区切られる平面がそれぞれ内側前面、外側前面そして後面である。
+images/Medial-epicondyle-of-humerus.png	内側上顆（上腕骨）	ないそくじょうか（じょうわんこつ）	Medial epicondyle of humerus	内側上顆は上腕骨下端部の内側方に突出した部分である。
+images/Lateral-epicondyle-of-humerus.png	外側上顆（上腕骨）	がいそくじょうか（じょうわんこつ）	Lateral epicondyle of humerus	外側上顆は上腕骨下端部の外側方に隆起した部分で、内側上顆ほど鋭い突出ではない。
+images/Medial-supracondylar-ridge.png	内側顆上稜	ないそくかじょうりょう	Medial supracondylar ridge	内側顆上稜は内側上顆が骨体内側部に収束する部分で内側に向かってやや鋭い稜線になっている。
+images/Lateral-supracondylar-ridge.png	外側顆上稜	がいそくかじょうりょう	Lateral supracondylar ridge	外側顆上稜は内側上顆が骨体外側部に収束する部分で外側に向かってやや鈍い稜線になっている。
+images/Medial-border-of-humerus.png	内側縁（上腕骨）	ないそくえん（じょうわんこつ）	Medial border of humerus	内側縁は骨体内側を上下方向に走るやや鋭い稜線である。
+images/Lateral-border-of-humerus.png	外側縁（上腕骨）	がいそくえん（じょうわんこつ）	Lateral border of humerus	外側縁は骨体外側を上下方向に走るやや鈍い稜線である。
+images/Head-of-radius.png	橈骨頭	とうこつとう	Head of radius	橈骨頭は橈骨の近位端で、野球で使うバットのグリップ・エンドのような背の低い円筒形をしている。円筒形の頂辺には浅い窪みが見られ、ここに上腕骨小頭が関節する。ともに前腕を構成する骨でありながら、橈骨頭が近位端であるのに対し、尺骨頭が遠位端であることは注意を要する。
+images/Articular-circumference-of-radius.png	関節環状面（橈骨）	かんせつかんじょうめん（とうこつ）	Articular circumference of radius	橈骨の関節環状面は橈骨頭の側面によって形成されている関節面で、尺骨の橈骨切痕と関節する。
+images/Styloid-process-of-radius.png	茎状突起（橈骨）	けいじょうとっき（とうこつ）	Styloid process of radius	橈骨の茎状突起は遠位端の外側で下方に突出した部分である。
+images/Body-of-radius.png	橈骨体	とうこつたい	Body of radius	橈骨体は両端を除いた橈骨の本体部分である。橈骨体は前縁、後縁、骨間縁の３縁に区切られ、その断面は三角形を示す。橈骨体の遠位では前面が凹面を示すゆるい弯曲（後弯）が見られる。
+images/Neck-of-radius.png	橈骨頚	とうこつけい	Neck of radius	橈骨頚は橈骨頭のすぐ遠位でくびれているところを示す。
+images/Radial-tuberosity.png	橈骨粗面	とうこつそめん	Radial tuberosity	橈骨粗面は橈骨体上部の前面に見られる縦長の骨の隆起で、上腕二頭筋の停止腱が付く所である。
+images/Ulnar-notch.png	尺骨切痕	しゃくこつせっこん	Ulnar notch	尺骨切痕は橈骨遠位端内側にある浅いくぼみで、尺骨頭にある環状関節面と関節する。
+images/Carpal-articular-surface.png	手根関節面	しゅこんかんせつめん	Carpal articular surface	手根関節面は尺骨遠位端の下面にある関節面で、舟状骨と月状骨に関節する。
+images/Dorsal-tubercle-of-radius.png	背側結節	はいそくけっせつ	Dorsal tubercle of radius	背側結節は橈骨体遠位背側にある骨の隆起で、隆起と隆起の間には伸筋群の腱が通る。
+images/Anterior-surface-of-radius.png	前面（橈骨）	ぜんめん（とうこつ）	Anterior surface of radius	橈骨の前面は前縁と骨間縁に挟まれた、上は橈骨頭から下は橈骨遠位端に至る部分である。
+images/Posterior-surface-of-radius.png	後面（橈骨）	こうめん（とうこつ）	Posterior surface of radius	橈骨の後面は後縁と骨間縁に挟まれた、上は橈骨頭から下は橈骨遠位端に至る部分である。
+images/Lateral-surface-of-radius.png	外側面（橈骨）	がいそくめん（とうこつ）	Lateral surface of radius	橈骨の外側面は前縁と後縁に挟まれた、上は橈骨頭から下は橈骨遠位端に至る部分である。
+images/Anterior-border-of-radius.png	前縁（橈骨）	ぜんえん（とうこつ）	Anterior border of radius	橈骨の前縁は橈骨体の前外側を上下に走る鈍い縁である。
+images/Posterior-border-of-radius.png	後縁（橈骨）	こうえん（とうこつ）	Posterior border of radius	橈骨の後縁は橈骨体の後外側を上下に走る鈍い縁である。
+images/Interosseous-border-of-radius.png	骨間縁（橈骨）	こっかんえん（とうこつ）	Interosseous border of radius	橈骨の骨間縁は橈骨体の内側を上下に走る鋭い縁である。ここには骨間膜が付く。
+images/Olecranon.png	肘頭	ちゅうとう	Olecranon	肘頭は尺骨の近位端で大きく突出した部分で、肘関節屈曲時には生体でも触知できる。肘頭は上腕三頭筋が着くところである。
+images/Trochlear-notch.png	滑車切痕	かっしゃせっこん	Trochlear notch	滑車切痕は尺骨の近位端が肘頭と鈎状突起によって前方に向かって大きくくびれている部分である。滑車切痕の関節面は上腕骨の滑車と関節する。
+images/Radial-notch.png	橈骨切痕	とうこつせっこん	Radial notch	橈骨切痕は尺骨鈎状突起の外側にある浅いくぼみで、橈骨頭にある環状関節面と関節する。
+images/Coronoid-process-of-ulna.png	鈎状突起（尺骨）	こうじょうとっき（しゃくこつ）	Coronoid process of ulna	尺骨の鈎状突起は尺骨近位端近くが前方に突出した部分で、滑車切痕の下半を形成する。
+images/Body-of-ulna.png	尺骨体	しゃくこつたい	Body of ulna	尺骨体は両端を除いた尺骨の本体部分である。尺骨体はＳ字状の緩やかな弯曲を示し、前縁、後縁、骨間縁を見ることができる。また、これらの縁に区切られる前面、後面外側面がある。
+images/Tuberosity-of-ulna.png	尺骨粗面	しゃくこつそめん	Tuberosity of ulna	尺骨粗面は尺骨体前面の上端部、鈎状突起のすぐ下に見られる三角形の粗面である。尺骨粗面は上腕筋が付くところである。
+images/Head-of-ulna.png	尺骨頭	しゃっこつとう	Head of ulna	尺骨頭は尺骨の遠位端で、小さな関節面がぐるりと骨端を取り囲んでいる。ともに前腕を構成する骨でありながら、橈骨頭が近位端であるのに対し、尺骨頭が遠位端であることは注意を要する。
+images/Styloid-process-of-ulna.png	茎状突起（尺骨）	けいじょうとっき（しゃくこつ）	Styloid process of ulna	尺骨の茎状突起は遠位端の内側で下方に突出した部分である。
+images/Supinator-crest.png	回外筋稜	かいがいきんりょう	Supinator crest	回外筋稜は尺骨の橈骨切痕の下後縁から下方に走る稜でありその名のとおり回外筋が付く。
+images/Anterior-surface-of-ulna.png	前面（尺骨）	ぜんめん（しゃくこつ）	Anterior surface of ulna	尺骨の前面は前縁と骨間縁に挟まれ、上は鈎状突起から下は尺骨頭に至る部分である。
+images/Posterior-surface-of-ulna.png	後面（尺骨）	こうめん（しゃくこつ）	Posterior surface of ulna	尺骨の後面は後縁と骨間縁に挟まれ、上は肘頭から下は尺骨頭・茎状突起に至る部分である。
+images/Anterior-border-of-ulna.png	前縁（尺骨）	ぜんえん（しゃくこつ）	Anterior border of ulna	尺骨の前縁は尺骨体の前面内側を上下に走る鈍い縁である。
+images/Posterior-border-of-ulna.png	後縁（尺骨）	こうえん（しゃくこつ）	Posterior border of ulna	尺骨の後縁は尺骨体の後面内側を上下に走る鋭い縁である。
+images/Interosseous-border-of-ulna.png	骨間縁（尺骨）	こっかんえん（しゃくこつ）	Interosseous border of ulna	尺骨の骨間縁は尺骨体の外側を上下に走る非常に鋭い縁で、ここには骨間膜が付く。
+images/Articular-circumference-of-ulna.png	関節環状面（尺骨）	かんせつかんじょうめん（しゃくこつ）	Articular circumference of ulna	尺骨の関節環状面は尺骨頭の外側にある関節面で橈骨の尺骨切痕の関節面と関節する。
+images/Scaphoid.png	舟状骨（手の）	しゅうじょうこつ（ての）	Scaphoid	手の舟状骨は近位列で最も外側に位置する手根骨である。この骨は橈骨および月状骨、大菱形骨、小菱形骨、有頭骨と関節する。
+images/Lunate.png	月状骨	げつじょうこつ	Lunate	月状骨は近位列で外側から２番目に位置する手根骨である。橈骨と関節し、尺骨とは関節円板を介して関節する。さらに舟状骨、三角骨、有頭骨、有鈎骨とも関節する。
+images/Triquetrum.png	三角骨	さんかくこつ	Triquetrum	三角骨は近位列で外側から３番目に位置する手根骨である。尺骨とは関節円板を介して関節し、月状骨、有鈎骨、豆状骨とも関節する。
+images/Pisiform.png	豆状骨	とうじょうこつ	Pisiform	豆状骨は近位列で最も内側に位置する手根骨である。橈骨、尺骨どちらとも関節せず三角骨と関節する。豆状骨は尺側手根屈筋腱の種子骨であると考えられている。
+images/Trapezium.png	大菱形骨	だいりょうけいこつ	Trapezium	大菱形骨は遠位列で最も外側に位置する手根骨である。舟状骨、小菱形骨、第１中手骨、第２中手骨と関節する。
+images/Trapezoid.png	小菱形骨	しょうりょうけいこつ	Trapezoid	小菱形骨は遠位列で外側から２番目に位置する手根骨である。舟状骨、月状骨、有頭骨、大菱形骨、第２中手骨と関節する。
+images/Capitate.png	有頭骨	ゆうとうこつ	Capitate	有頭骨は遠位列で外側から３番目に位置する手根骨である。有頭骨のサイズは８個の手根骨のうち最大で、じっさい８個のちょうど中央に位置するように見える。舟状骨、月状骨、有鈎骨、小菱形骨および第２～４中手骨と関節する。
+images/Hamate.png	有鈎骨	ゆうこうこつ	Hamate	有鈎骨は遠位列で最も内側に位置する手根骨である。月状骨、三角骨、有頭骨および第４中手骨、第５中手骨と関節する。
+images/Carpal-groove.png	手根溝	しゅこんこう	Carpal groove	手根溝は８個の手根骨が形成するアーチ構造によってできる溝状の通路である。手根骨は平面上に並んでいるのではなく、手背を凸とする弯曲を示して並び、アーチ構造をつくる。このアーチの中を指を動かす筋の腱が通過する。アーチの両側に屈筋支帯という帯状の靭帯が付くことによって、アーチがトンネルとなる。
+images/Tubercle-of-trapezium.png	大菱形骨結節	だいりょうけいこつけっせつ	Tubercle of trapezium	大菱形骨結節は大菱形骨の前面内側に突出する結節である。ここには屈筋支帯が付く。
+images/Hamulus-of-hamate.png	有鈎骨鈎	ゆうこうこつこう	Hamulus of hamate	有鈎骨鈎は有鈎骨の前面内側に突出する隆起である。
+images/Scaphoid-tubercle.png	舟状骨結節	しゅうじょうこつけっせつ	Scaphoid tubercle	舟状骨結節は手の舟状骨の前面の外側遠位にある隆起である。
+images/Base-of-metacarpals.png	底（中手骨）	てい（ちゅうしゅこつ）	Base of metacarpals	中手骨の底は中手骨の近位端である。底には手根骨と関節する関節面、および隣の中手骨と関節するための関節面がある。
+images/Body-of-metacarpals.png	体（中手骨）	たい（ちゅうしゅこつ）	Body of metacarpals	中手骨の体は底と頭を除いた中手骨の本体部分で後面（手背側）が凸であるゆるい弯曲を示す。
+images/Head-of-metacarpals.png	頭（中手骨）	とう（ちゅうしゅこつ）	Head of metacarpals	中手骨の頭は中手骨の遠位端である。頭は半球形に近い関節面を示し、中手指節関節の大きな可動性を確保している。
+images/Proximal-phalanx-of-hand.png	基節骨（手の）	きせつこつ（ての）	Proximal phalanx of hand	手の基節骨は各指の近位の指節を構成する骨で、近位では中手骨と、遠位では中節骨と関節する。
+images/Middle-phalanx-of-hand.png	中節骨（手の）	ちゅうせつこつ(ての）	Middle phalanx of hand	手の中節骨は各指の中間の指節を構成する骨で、近位では基節骨と、遠位では末節骨と関節する。第１指すなわち母指では中節骨が欠落している。
+images/Distal-phalanx-of-hand.png	末節骨（手の）	まっせつこつ（ての）	Distal phalanx of hand	手の末節骨は各指の遠位の指節を構成する骨で、近位では中節骨と関節する。
+images/Base-of-phalanges-of-hand.png	底（手の指節骨）	てい（てのしせつこつ）	Base of phalanges of hand	指節骨の底は各指節骨の近位端である。
+images/Body-of-phalanges-of-hand.png	体（手の指節骨）	たい（てのしせつこつ）	Body of phalanges of hand	指節骨の体は近位端と遠位端の中間に位置する各指節骨の本体部分である
+images/Head-of-phalanges-of-hand.png	頭（手の指節骨）	とう（てのしせつこつ）	Head of phalanges of hand	指節骨の頭は各指節骨の遠位端である。
+images/Sesamoid-bone-of-hand.png	種子骨（手の）	しゅしこつ（ての）	Sesamoid bone of hand	手の種子骨は第１中手指節関節の掌側に２個見られることが多い。また、第２中手指節関節の掌外側に１個、まれに第５中手指節関節の掌内側に種子骨が見られることがある。
+images/Tuberosity-of-distal-phalanx-(of-hand).png	末節骨粗面（手の）	まっせつこつそめん（ての）	Tuberosity of distal phalanx (of hand)	末節骨粗面は手の末節骨遠位端の掌側に見られる粗面で、深指屈筋の腱が付着する。
+images/Acetabulum.png	寛骨臼	かんこつきゅう	Acetabulum	寛骨臼は寛骨の外側面のほぼ中央にある大きな窪みである。寛骨臼はちょうど腸骨、恥骨、坐骨が出会うところで、成人ではその痕跡はほとんどなく、滑らかな凹面になっている。ここに大腿骨頭がはまり込んで寛骨と大腿骨が連結する。
+images/Obturator-foramen.png	閉鎖孔	へいさこう	Obturator foramen	閉鎖孔は寛骨の下３分の１の部分に見られる大きな孔である。生体では閉鎖膜という結合組織の丈夫な膜によって大部分が閉鎖されている。閉鎖膜を貫いて閉鎖神経および閉鎖動・静脈が通る。
+images/Acetabular-margin.png	寛骨臼縁	かんこつきゅうえん	Acetabular margin	寛骨臼縁は寛骨臼の外周を縁取る骨の隆起である。
+images/Acetabular-fossa.png	寛骨臼窩	かんこつきゅうか	Acetabular fossa	寛骨臼窩は月状面にぐるりと取り囲まれた部分で、寛骨臼よりもさらに窪み、表面が粗な面である。
+images/Acetabular-notch.png	寛骨臼切痕	かんこつきゅうせっこん	Acetabular notch	寛骨臼切痕は寛骨臼の前下方で月状面が途切れた部分である。
+images/Lunate-surface-of-acetabulum.png	月状面	げつじょうめん	Lunate surface of acetabulum	月状面は寛骨臼にある関節面で、関節する相手は大腿骨頭である。
+images/Iliac-crest.png	腸骨稜	ちょうこつりょう	Iliac crest	腸骨稜は腸骨の上縁で後方の上後腸骨棘から前方の上前腸骨棘までつづく骨の高まりである。内腹斜筋、大腿筋膜張筋、腰方形筋そして広背筋の一部は腸骨稜を起始としている。また、腸脛靭帯に付着面を与えているのも腸骨稜である。
+images/Anterior-superior-iliac-spine.png	上前腸骨棘	じょうぜんちょうこつきょく	Anterior superior iliac spine	上前腸骨棘は腸骨稜の前端で、緩やかに突出した骨の突起である。前方から容易に触知でき、皮下脂肪が少ない場合には視認もできることから、基準点として扱われることが多い。また上前腸骨棘は縫工筋の起始となっている。
+images/Anterior-inferior-iliac-spine.png	下前腸骨棘	かぜんちょうこつきょく	Anterior inferior iliac spine	下前腸骨棘は上前腸骨棘の直下で上前腸骨棘よりもさらに緩やかな骨の突起である。下前腸骨棘は大腿直筋の起始となっている。
+images/Posterior-superior-iliac-spine.png	上後腸骨棘	じょうこうちょうこつきょく	Posterior superior iliac spine	上後腸骨棘は腸骨稜の後端に位置し、後方に向かう緩やかな突起である。上後腸骨棘と皮膚との間の結合組織が膠原線維に富むため、この部分に脂肪が付きにくい。その結果、ここは皮膚の窪みとなる。これがいわゆるヴィーナスのえくぼである。
+images/Posterior-inferior-iliac-spine.png	下後腸骨棘	かこうちょうこつきょく	Posterior inferior iliac spine	下後腸骨棘は上後腸骨棘の直下にある骨の突起である。下前腸骨棘は大腿直筋の起始となっている。
+images/Auricular-surface-(of-ilium).png	耳状面（腸骨）	じじょうめん（ちょうこつ）	Auricular surface (of ilium)	腸骨の耳状面は腸骨の後半に位置する関節面で、仙骨の耳状面と関節して仙腸関節を構成する。
+images/Arcuate-line-(of-ilium).png	弓状線	きゅうじょうせん	Arcuate line (of ilium)	弓状線は腸骨窩と仙骨盤面の境界をなす稜線で、前方では恥骨櫛に移行する。
+images/Ala-(Wing)-of-ilium.png	腸骨翼	ちょうこつよく	Ala (Wing) of ilium	腸骨翼は腸骨体から上方に広がった部分で、腸骨全体の３分の２ほどを占める。腸骨翼と腸骨体の境界は不明瞭である。
+images/Body-of-ilium.png	腸骨体	ちょうこつたい	Body of ilium	腸骨体は腸骨翼の下方を占める部分で、腸骨全体の３分の１ほどを占める。腸骨体と腸骨翼の境界は不明瞭である。
+images/External-lip-(Outer-lip)-of-iliac-crest.png	外唇	がいしん	External lip (Outer lip) of iliac crest	外唇は腸骨稜の腸骨翼外面と境界をなす縁である。外唇は外腹斜筋の一部の筋束の停止となっている。
+images/Internal-lip-(Inner-lip)-of-iliac-crest.png	内唇	ないしん	Internal lip (Inner lip) of iliac crest	内唇は腸骨稜の腸骨翼内面と境界をなす縁である。内唇は腹横筋の一部の筋束の起始となっている。
+images/Gluteal-surface-(of-ilium).png	殿筋面	でんきんめん	Gluteal surface (of ilium)	殿筋面は腸骨の外側面である。その名のとおり殿筋面は大殿筋、中殿筋、小殿筋に起始を与えている。
+images/Anterior-gluteal-line.png	前殿筋線	ぜんでんきんせん	Anterior gluteal line	前殿筋線は殿筋面において中殿筋と小殿筋の起始位置の境界をなす線である。
+images/Posterior-gluteal-line.png	後殿筋線	こうでんきんせん	Posterior gluteal line	後殿筋線は殿筋面において中殿筋と大殿筋の起始位置の境界をなす線である。
+images/Inferior-gluteal-line.png	下殿筋線	かでんきんせん	Inferior gluteal line	下殿筋線は殿筋面において大腿直筋の起始位置の上縁をなす線である。
+images/Intermediate-zone-(of-iliac-crest).png	中間線	ちゅうかんせん	Intermediate zone (of iliac crest)	中間線は腸骨稜の外唇と内唇の中間を走る隆線である。中間線は内腹斜筋の一部の筋束の起始となっている。
+images/Iliac-tuberosity.png	腸骨粗面	ちょうこつそめん	Iliac tuberosity	腸骨粗面は仙腸骨面において耳状面よりも後方に位置する粗面である。
+images/Iliac-fossa.png	腸骨窩	ちょうこつか	Iliac fossa	腸骨窩は腸骨翼の内面において前３分の２が浅く窪んだ所である。腸骨窩は腸骨筋の起始となっている。
+images/Supra-acetabular-groove.png	寛骨臼上溝	かんこつきゅうじょうこう	Supra-acetabular groove	寛骨臼上溝は殿筋面の下部で寛骨臼の上縁に沿って存在する溝である。
+images/Tuberculum-of-iliac-crest.png	腸骨結節	ちょうこつけっせつ	Tuberculum of iliac crest	腸骨結節は腸骨稜の前３分の１にある外唇の隆起で、前殿筋線の延長上にある。外側に突出しているので生体で触知できることが多い。
+images/Sacropelvic-surface-of-ilium.png	仙骨盤面	せんこつばんめん	Sacropelvic surface of ilium	仙骨盤面は腸骨を構成する３つの面の１つで、耳状面と腸骨粗面を含む。
+images/Greater-sciatic-notch.png	大坐骨切痕	だいざこつせっこん	Greater sciatic notch	大坐骨切痕は寛骨の後部に位置する大きな切れ込みである。この切れ込みがつくる角度は寛骨の性判別に用いられることが多い。すなわち、大坐骨切痕がつくる角度が直角に近ければ、女性の寛骨であると判別され、明らかな鋭角であれば男性の寛骨であると判別される。
+images/Ischial-tuberosity.png	坐骨結節	ざこつけっせつ	Ischial tuberosity	坐骨結節は坐骨体の下面で大きな楕円形の膨らみである。坐骨結節は、椅子に腰掛けたとき座面に当り体重を支える役割を果たす。
+images/Lesser-sciatic-notch.png	小坐骨切痕	しょうざこつせっこん	Lesser sciatic notch	小坐骨切痕は大坐骨切痕の下方に見られる浅い切れ込みである。
+images/Ischial-spine.png	坐骨棘	ざこつきょく	Ischial spine	坐骨棘は大坐骨切痕と小坐骨切痕の間に位置する突起で、上双子筋の起始である。
+images/Body-of-ischium.png	坐骨体	ざこつたい	Body of ischium	坐骨体は寛骨臼の下３分の１から閉鎖孔の後壁を構成するに至る部分で、坐骨の大部分を占める。
+images/Ramus-of-ischium.png	坐骨枝	ざこつし	Ramus of ischium	坐骨枝は坐骨体から伸びだし閉鎖孔の下壁をつくる部分で、恥骨下枝と連結する。坐骨枝は坐骨から坐骨体を除いた部分である。
+images/Pubic-symphysis.png	恥骨結合	ちこつけつごう	Pubic symphysis	恥骨結合は左右の恥骨が正中で連結をするところで介在する軟骨である。
+images/Pubic-tubercle.png	恥骨結節	ちこつけっせつ	Pubic tubercle	恥骨結節は恥骨前部で恥骨結合近くにおいて上方に向かって突出する小さな隆起である。恥骨結節は鼡径靭帯が付く場所である。
+images/Symphysial-surface.png	恥骨結合面	ちこつけつごうめん	Symphysial surface	恥骨結合面は恥骨の前内側端で軟骨である恥骨結合と接する面である。恥骨結合面の様相は年齢判定の基準になるので、法医学・自然人類学では重視される。
+images/Body-of-pubis.png	恥骨体	ちこつたい	Body of pubis	恥骨体は恥骨の前３分の１を占める部分で、閉鎖孔の前壁をつくっている。じつは、恥骨の区分を示す恥骨体・恥骨上枝・恥骨下枝には用語の混乱がある。ここでは最も一般的な区分を示す。
+images/Superior-pubic-ramus.png	恥骨上枝	ちこつじょうし	Superior pubic ramus	恥骨上枝は恥骨の上３分の１を占める部分で、寛骨臼の前３分の１を含む。じつは、恥骨の区分を示す恥骨体・恥骨上枝・恥骨下枝には用語の混乱がある。ここでは最も一般的な区分を示す。
+images/Inferior-pubic-ramus.png	恥骨下枝	ちこつかし	Inferior pubic ramus	恥骨下枝は恥骨の下３分の１を占める部分で、坐骨枝と連結する。じつは、恥骨の区分を示す恥骨体・恥骨上枝・恥骨下枝には用語の混乱がある。ここでは最も一般的な区分を示す。
+images/Pubic-crest.png	恥骨稜	ちこつりょう	Pubic crest	恥骨稜は恥骨結節と恥骨結合面の上縁を結ぶ短い稜線である。
+images/Pecten-pubis.png	恥骨櫛	ちこつしつ	Pecten pubis	恥骨櫛は腸骨の弓状線延長上にあり、恥骨結節に至る鋭い稜線である。
+images/Obturator-crest.png	閉鎖稜	へいさりょう	Obturator crest	閉鎖稜は閉鎖孔上縁の延長から恥骨結合の下方に至る稜線である。
+images/Obturator-groove.png	閉鎖溝	へいさこう	Obturator groove	閉鎖溝は閉鎖稜によってその下方にできる溝である。
+images/Iliopubic-eminence.png	腸恥隆起	ちょうちりゅうき	Iliopubic eminence	腸恥隆起は恥骨上枝の前上端付近で腸骨と接する部分の近くにある隆起である。
+images/Anterior-obturator-tubercle.png	前閉鎖結節	ぜんへいさけっせつ	Anterior obturator tubercle	前閉鎖結節は閉鎖孔の前縁における恥骨体と恥骨上枝の移行部分に位置する小さな隆起である。
+images/Pelvic-inclination.png	骨盤傾斜	こつばんけいしゃ	Pelvic inclination	骨盤傾斜は恥骨結合の上縁と岬角を結ぶ直線が水平面となす角度である。日本人では約５５度で、人種差・個人差ともに大きい。
+images/Subpubic-angle.png	恥骨下角	ちこつかかく	Subpubic angle	恥骨下角は左右の恥骨弓が恥骨結合で連結することによってできる角である。
+images/Pelvic-inlet.png	骨盤上口	こつばんじょうこう	Pelvic inlet	骨盤上口は小骨盤の入口、すなわち分界線によって縁取られた小骨盤の上方への開口部である。骨盤上口の形状には性差が大きい。一般に男性の場合は左右に狭いハート型をしており、女性では左右に広い楕円形をしている。
+images/Pelvic-outlet.png	骨盤下口	こつばんかこう	Pelvic outlet	骨盤下口は小骨盤の下後方への出口である。骨盤上口の外縁がほぼ同一平面上にあるのに対し、骨盤下口の外縁は、大きく上下する。すなわち骨盤下口の外縁は、恥骨結合の下縁から恥骨下枝と坐骨枝それぞれ下縁、そして坐骨結節と坐骨棘を通り、仙骨と尾骨の下縁に至る。
+images/True-conjugate.png	真結合線	しんけつごうせん	True conjugate	真結合線は岬角と恥骨結合の後面との直線距離である。骨盤の内腔は骨格としての産道であるから、骨盤の内径に関わる計測項目は少なくない。中でもこの真結合線は骨盤の径のうち最も重要とされている。というのは真結合線が矢状方向の径のうちで最も小さい値を示すからである。
+images/Greater-pelvis-(False-pelvis).png	大骨盤	だいこつばん	Greater pelvis (False pelvis)	大骨盤は骨盤の分界線よりも上の部分である。
+images/Lesser-pelvis-(True-pelvis).png	小骨盤	しょうこつばん	Lesser pelvis (True pelvis)	小骨盤は骨盤の分界線よりも下の部分である。
+images/Pelvic-cavity.png	骨盤腔	こつばんくう	Pelvic cavity	骨盤腔は小骨盤の内腔のことである。骨盤腔内の内臓を骨盤内臓と呼ぶ。
+images/Linea-terminalis-(of-pelvis).png	分界線	ぶんかいせん	Linea terminalis (of pelvis)	分界線は骨盤を上下に分ける曲線で、恥骨結合の上縁に始まり、恥骨櫛を経て腸骨の弓状線を通り、岬角に至る。
+images/Axis-of-pelvis.png	骨盤軸	こつばんじく	Axis of pelvis	骨盤軸は骨盤腔内の正中矢状面上を走るすべての結合線の中点を通過する曲線である。骨盤軸自体は後弯を示す。出生時、胎児は骨盤軸に沿って産道を通過する。
+images/Pubic-arch.png	恥骨弓	ちこつきゅう	Pubic arch	恥骨弓は左右の恥骨の下縁が描く線である。
+images/Transverse-diameter-(of-pelvis).png	横径	おうけい	Transverse diameter (of pelvis)	横径は分界線の左右方向における最大径である。
+images/Oblique-diameter-(of-pelvis).png	斜径	しゃけい	Oblique diameter (of pelvis)	斜径は分界線上の仙腸関節の部分から対側の腸恥隆起に至る直線距離である。
+images/Promontory_1.png	岬角	こうかく	Promontory	岬角は仙骨底の前縁のことである。
+images/Superior-border-of-the-pubic-symphysis.png	恥骨結合上縁	ちこつけつごうじょうえん	Superior border of the pubic symphysis	恥骨結合上縁は文字どおり恥骨結合という軟骨性の構造の上縁である。恥骨結合上縁は様々な計測項目や径の基準となる。
+images/Head-of-femur.png	大腿骨頭	だいたいこっとう	Head of femur	大腿骨頭は大腿骨の近位端で、大腿骨頚への移行部と大腿骨頭窩以外はほぼ球面を示す。
+images/Neck-of-femur.png	大腿骨頚	だいたいこつけい	Neck of femur	大腿骨頚は大腿骨体と大腿骨頭をつなぐ部分で、大腿骨体とは１２０度～１３０度の角度をなす。
+images/Geater-trochanter.png	大転子	だいてんし	Geater trochanter	大転子は大腿骨近位で外側に大きく突き出た隆起で、中殿筋と小殿筋の停止位置となっている。
+images/Lesser-trochanter.png	小転子	しょうてんし	Lesser trochanter	小転子は大腿骨体内側の大腿骨頚の下方にある隆起で、腸腰筋の停止位置である。
+images/Body-of-femur.png	大腿骨体	だいたいこったい	Body of femur	大腿骨体は長管状骨である大腿骨の本体で、全体としてやや前腕を示す。
+images/Linea-aspera.png	粗線	そせん	Linea aspera	粗線は大腿骨体の後面に見られる２連の稜線である。明瞭な粗線の有無が二足歩行の手がかりとなるため、粗線は古人類学では重視される。
+images/Gluteal-tuberosity.png	殿筋粗面	でんきんそめん	Gluteal tuberosity	殿筋粗面は粗線の外側唇の近位方向への延長上に見られる粗面で、大殿筋の停止となっている。
+images/Medial-condyle-of-femur.png	内側顆（大腿骨）	ないそくか(だいたいこつ）	Medial condyle of femur	大腿骨の内側顆は大腿骨の大きく肥厚した遠位端のうち内側の部分である。
+images/Lateral-condyle-of-femur.png	外側顆（大腿骨）	がいそくか(だいたいこつ）	Lateral condyle of femur	大腿骨の外側窩は大腿骨の大きく肥厚した遠位端のうち外側の部分である。
+images/Adductor-tubercle.png	内転筋結節	ないてんきんけっせつ	Adductor tubercle	内転筋結節は内側上顆の上方に見られる小さく鋭い突起である。内転筋結節は大内転筋の停止腱が付くのでこの名がある。
+images/Fovea-for-ligament-of-head.png	大腿骨頭窩	だいたいこっとうか	Fovea for ligament of head	大腿骨頭窩は大腿骨頭の内側中心よりもやや後方に位置したところにある小さな窪みである。ここには大腿骨頭靭帯が付く。
+images/Intertrochanteric-line.png	転子間線	てんしかんせん	Intertrochanteric line	転子間線は大腿骨前面において大腿骨体と大腿骨頚との境界部分を大転子から小転子に向かって走る粗線である。転子間線は腸骨大腿靭帯が付くところである。
+images/Trochanteric-fossa.png	転子窩	てんしか	Trochanteric fossa	転子窩は大腿骨近位の後面において大転子が突出しているために大腿骨頚との間にできているくぼみである。ここは内閉鎖筋、外閉鎖筋、上双子筋、下双子筋の停止となっている。
+images/Intertrochanteric-crest.png	転子間稜	てんしかんりょう	Intertrochanteric crest	転子間稜は大転子と小転子を結ぶ大きな稜で、大腿方形筋の停止になっている。
+images/Pectineal-line.png	恥骨筋線	ちこつきんせん	Pectineal line	恥骨筋線は小転子の遠位から下方に向かって走る粗線で、その名のとおり恥骨筋が付着する。
+images/Medial-lip.png	内側唇	ないそくしん	Medial lip	内側唇は粗線のうち内側の隆起を指す。内側唇は内転筋群の停止、内側広筋の起始となっている。
+images/Lateral-lip.png	外側唇	がいそくしん	Lateral lip	外側唇は粗線のうち外側の隆起を指す。外側唇は外側広筋と大腿二頭筋の起始になっている。
+images/Medial-supracondylar-line.png	内側顆上線	ないそくかじょうせん	Medial supracondylar line	内側顆上線は内側唇の延長上にあって内側顆の方向に向かう稜線である。
+images/Lateral-supracondylar-line.png	外側顆上線	がいそくかじょうせん	Lateral supracondylar line	外側顆上線は外側唇の延長上にあって外側顆の方向に向かう稜線である。
+images/Intercondylar-line.png	顆間線	かかんせん	Intercondylar line	顆間線は顆間窩の上縁に見られる稜線で、果敢かと膝下面の境界になっている。
+images/Intercondylar-fossa.png	顆間窩	かかんか	Intercondylar fossa	顆間窩は下端部において内側顆と外側顆の間にある大きな窪みである。
+images/Medial-epicondyle-of-femur.png	内側上顆（大腿骨）	ないそくじょうか（だいたいこつ）	Medial epicondyle of femur	大腿骨の内側上顆は内側顆の内側にある緩やかな膨らみである。内側上顆は腓腹筋の起始になっている。
+images/Lateral-epicondyle-of-femur.png	外側上顆（大腿骨）	がいそくじょうか（だいたいこつ）	Lateral epicondyle of femur	大腿骨の外側上顆は外側顆の外側にある緩やかな膨らみである。外側上顆は腓腹筋と膝窩筋の起始になっている。
+images/Groove-for-popliteus.png	膝窩溝	しつかこう	Groove for popliteus	膝窩溝は外側顆と外側上顆の間にある溝である。
+images/Popliteal-surface.png	膝窩面	しつかめん	Popliteal surface	膝窩面は粗線の外側唇と内側唇が下方で広がることによってできた三角形の平面上の部分である。
+images/Patellar-surface.png	膝蓋面	しつがいめん	Patellar surface	膝蓋面は内側顆と外側顆の関節面が前面で合して関節面をつくるところで、関節する相手は膝蓋骨である。
+images/Articular-surface-of-patella.png	関節面（膝蓋骨）	かんせつめん（しつがいこつ）	Articular surface of patella	膝蓋骨の関節面は後面にあり、中央よりもやや内側よりを上下に走る緩やかな高まりがある。膝蓋骨の関節面が関節する相手は大腿骨の膝蓋面である。
+images/Anterior-surface-of-patella.png	前面（膝蓋骨）	ぜんめん（しつがいこつ）	Anterior surface of patella	膝蓋骨の前面は緩やかな凸面で表面は粗い。
+images/Base-of-patella.png	膝蓋骨底	しつがいこつてい	Base of patella	膝蓋骨底は膝蓋骨の上端である。正面から見ると扁平に近い曲線を描く。
+images/Apex-of-patella.png	膝蓋骨尖	しつがいこつせん	Apex of patella	膝蓋骨尖は膝蓋骨の下端である。正面から見ると下方に向かってやや尖っているのでこの名がある。
+images/Medial-condyle-of-tibia.png	内側顆（脛骨）	ないそくか（けいこつ）	Medial condyle of tibia	脛骨の内側顆は大きな近位端の内側部分である。
+images/Lateral-condyle-of-tibia.png	外側顆（脛骨）	がいそくか（けいこつ）	Lateral condyle of tibia	脛骨の外側顆は大きな近位端の外側部分である。
+images/Superior-articular-surface-(of-tibia).png	上関節面（脛骨）	じょうかんせつめん（けいこつ）	Superior articular surface (of tibia)	脛骨の上関節面は内側顆と外側顆両方に存在する大きな浅い関節面である。上関節面が関節する相手は大腿骨の内側顆の関節面と外側顆の関節面である。
+images/Inferior-articular-surface-(of-tibia).png	下関節面（脛骨）	かかんせつめん（けいこつ）	Inferior articular surface (of tibia)	脛骨の下関節面は下端に存在し下方を向いた関節面である。下関節面が関節する相手は距骨である。
+images/Articular-facet-for-fibula.png	腓骨関節面	ひこつかんせつめん	Articular facet for fibula	腓骨関節面は外側顆の下後外側に存在する円形に近い楕円形の関節面である。腓骨関節面の関節する相手はその名のとおり腓骨である。脛骨と腓骨の骨体部分の間には丈夫な骨間膜が張っているために、両骨間にほとんど可動性は無いに等しいが、この脛骨と腓骨の近位における連結は滑膜性の連結、すなわち関節になっている。
+images/Tibial-tuberosity.png	脛骨粗面	けいこつそめん	Tibial tuberosity	脛骨粗面は脛骨の前面上部にあり前方に突き出た部分である。脛骨粗面には大腿四頭筋の停止腱が付着する。
+images/Body-of-tibia.png	脛骨体	けいこつたい	Body of tibia	脛骨体は脛骨の本体部分で、全体として三角柱を示す。断面三角形の頂点に当たるのが前縁、内側縁、骨間縁であり、断面三角形の辺に当たるのが内側面、外側面、後面である。
+images/Anterior-border-of-tibia.png	前縁（脛骨）	ぜんえん（けいこつ）	Anterior border of tibia	脛骨の前縁は脛骨粗面の直下から脛骨体下部まで前面をはしる稜線である。脛骨前縁はほぼ全長にわたって皮下組織の直下が骨膜なので、強く打った場合には激しい痛みが生じる。それゆえ脛骨の前面は「弁慶の泣き所」と呼ばれる。
+images/Interosseous-border-of-tibia.png	骨間縁（脛骨）	こっかんえん（けいこつ）	Interosseous border of tibia	脛骨の骨間縁は脛骨体の外側面ををはしる稜線である。骨間縁は下腿骨間膜が付くところになっている。骨間膜は脛骨と腓骨を結びつけている。
+images/Medial-border-of-tibia.png	内側縁（脛骨）	ないそくえん（けいこつ）	Medial border of tibia	脛骨の内側縁は内側に位置する稜線である。内側縁は、鋭い稜線である前縁・骨間縁に比べて鈍い稜線である。
+images/Medial-malleolus.png	内果	ないか	Medial malleolus	内果は脛骨下端の内側部分である。内果は生体で容易に触知でき、「うちくるぶし」と呼ばれている。
+images/Soleal-line.png	ヒラメ筋線	ひらめきんせん	Soleal line	ヒラメ筋線は頚骨後面の上部で上外側から下内側に斜めにはしる線である。ヒラメ筋線はその名のとおりヒラメ筋の起始となっている。
+images/Medial-surface-of-tibia.png	内側面（脛骨）	ないそくめん（けいこつ）	Medial surface of tibia	脛骨の内側面は前縁から後縁に至る面で、骨体部分では筋が被っていないことを特徴とする。
+images/Lateral-surface-of-tibia.png	外側面（脛骨）	がいそくめん（けいこつ）	Lateral surface of tibia	脛骨の外側面は前縁から骨間縁に至る面で、骨体の上半分は緩やかな凹面になっている。この凹面には前脛骨筋の筋腹がはまり込む。
+images/Posterior-surface-of-tibia.png	後面（脛骨）	こうめん（けいこつ）	Posterior surface of tibia	脛骨の後面は骨間縁から内側縁に至る面で、その上部にはひらめ筋線が外側上方から内側下方に走る。
+images/Articular-surface-of-medial-malleolus.png	内果関節面	ないかかんせつめん	Articular surface of medial malleolus	内果関節面は内果の外側にあり、距骨滑車の内果面と関節する。
+images/Malleolar-groove.png	内果溝	ないかこう	Malleolar groove	内果溝は内果の後方にある溝で、ここを後脛骨筋腱と長指屈筋腱が通る。
+images/Fibular-notch.png	腓骨切痕	ひこつせっこん	Fibular notch	腓骨切痕は脛骨外側下端にある浅い溝で、ここに腓骨がはまり線維結合で連結する。
+images/Intercondylar-eminence.png	顆間隆起	かかんりゅうき	Intercondylar eminence	顆間隆起は上関節面の内側部分と外側部分の中間に位置して上方に向かって突出した隆起である。
+images/Medial-intercondylar-tubercle.png	内側顆間結節	ないそくかかんけっせつ	Medial intercondylar tubercle	内側顆間結節は２つの結節からできている顆間隆起のうちの内側にある方の結節である。
+images/Lateral-intercondylar-tubercle.png	外側顆間結節	がいそくかかんけっせつ	Lateral intercondylar tubercle	外側顆間結節は２つの結節からできている顆間隆起のうちの外側にある方の結節である。
+images/Anterior-intercondylar-area.png	前顆間区	ぜんかかんく	Anterior intercondylar area	前顆間区は顆間隆起の前方で少し窪んだ所で、ここに前十字靭帯が付く。
+images/Posterior-intercondylar-area.png	後顆間区	こうかかんく	Posterior intercondylar area	後顆間区は顆間隆起の後方で少し窪んだ所で、ここに後十字靭帯が付く。
+images/Lateral-malleolus.png	外果	がいか	Lateral malleolus	外果は腓骨下端が肥厚した部分である。外果は生体で容易に触知でき、「そとくるぶし」と呼ばれている。
+images/Head-of-fibula.png	腓骨頭	ひこつとう	Head of fibula	腓骨頭は腓骨の近位端で脛骨と関節する関節面をもつ。
+images/Body-of-fibula.png	腓骨体	ひこつたい	Body of fibula	腓骨体は腓骨の本体部分で細長く、やや弯曲しねじレを示す。腓骨体は、骨間縁、前縁、後縁の３縁で、内側面、外側面、後面に区切られる。内側面にはさらに内側稜という稜線も見られる。腓骨のこれらの稜線には変異が大きくい点が脛骨の場合とは異なる。
+images/Anterior-border-of-fibula.png	前縁（腓骨）	ぜんえん（ひこつ）	Anterior border of fibula	腓骨の前縁は腓骨体前側近位の腓骨頭近くから始まり、遠位では二分する鋭い稜線である。
+images/Interosseous-border-of-fibula.png	骨間縁（腓骨）	こっかんえん（ひこつ）	Interosseous border of fibula	腓骨の骨間縁は腓骨内側に存在するやや鋭い稜線で、骨間膜が付くところになっている。
+images/Medial-crest-of-fibula.png	内側稜（腓骨）	ないそくりょう（ひこつ）	Medial crest of fibula	腓骨の内側稜は骨間縁の下３分の１くらいのところから後方に枝分かれし、上行するやや鈍い稜線である。
+images/Posterior-border-of-fibula.png	後縁（腓骨）	こうえん（ひこつ）	Posterior border of fibula	腓骨の後縁は腓骨の後外側をはしるかなり緩やかな稜線である。
+images/Apex-of-head-of-fibula.png	腓骨頭尖	ひこつとうせん	Apex of head of fibula	腓骨頭尖は腓骨頭の外側近位端が上方に突出した部分である。
+images/Articular-facet-of-head-of-fibula.png	腓骨頭関節面	ひこつとうかんせつめん	Articular facet of head of fibula	腓骨頭関節面は腓骨の近位端である腓骨頭の上面にある関節面で、関節する相手は脛骨の腓骨関節面である。
+images/Neck-of-fibula.png	腓骨頚	ひこつけい	Neck of fibula	腓骨頚は腓骨頭が腓骨体に移行する部分である。
+images/Lateral-malleolar-fossa.png	外果窩	がいかか	Lateral malleolar fossa	外果窩は外果の内側面で外果関節面の後方にあるくぼみである。外果窩は腓骨と距骨をつなぐ靭帯の一つである後距腓靭帯が付くところである。
+images/Malleolar-groove_1.png	外果溝	がいかこう	Malleolar groove	外果溝は外果の後縁を上下に走る浅い溝で、ここには長腓骨筋と短腓骨筋がとおる。
+images/Articular-surface-of-lateral-malleolus.png	外果関節面	がいかかんせつめん	Articular surface of lateral malleolus	外果関節面は外果の内面にあり、頂点を下にする三角形の関節面である。外果関節面が関節する相手は距骨滑車の外側面である。
+images/Medial-surface-of-fibula.png	内側面（腓骨）	ないそくめん（ひこつ）	Medial surface of fibula	腓骨の内側面は前縁から骨間縁に至る範囲の脛骨の方向を向いた面である。しかしその範囲はきわめて曖昧で研究者によってかなり異なる。
+images/Lateral-surface-of-fibula.png	外側面（腓骨）	がいそくめん（ひこつ）	Lateral surface of fibula	腓骨の外側面は前縁から後縁に至る広い範囲の緩やかな曲面である。
+images/Posterior-surface-of-fibula.png	後面（腓骨）	こうめん（ひこつ）	Posterior surface of fibula	腓骨の後面は後縁から骨間縁に至る面で、内側稜を含む。
+images/Talus_1.png	距骨	きょこつ	Talus	距骨は足根骨のうちで最も近位にある骨である。距骨は足根骨のうちで唯一下腿の骨と関節する。距骨の上部は滑車と呼ばれ、その関節面は脛骨・腓骨と関節する。距骨の下面は大きく広がり３つの関節面をもち、踵骨と関節する。距骨の本体である距骨体から前方に突き出た距骨頭にも関節面があり、舟状骨と関節する。
+images/Calcaneus_1.png	踵骨	しょうこつ	Calcaneus	踵骨は人体における踵を形作っている骨で、足根骨の最後部にある。上面で距骨と３か所で関節し、前面では立方骨と関節する。
+images/Navicular_1.png	舟状骨（足の）	しゅうじょうこつ（あしの）	Navicular	足の舟状骨は距骨の前方に位置する足根骨で、距骨と関節するほか、内側楔状骨、中間楔状骨、外側楔状骨と関節する。
+images/Medial-cuneiform.png	内側楔状骨	ないそくけつじょうこつ	Medial cuneiform	内側楔状骨は舟状骨の前方に位置する３つの楔状骨の一つである。後方では舟状骨と関節し、前方では第１中足骨、第２中足骨と関節する。また、外側では中間楔状骨とも関節する。
+images/Intermediate-cuneiform.png	中間楔状骨	ちゅうかんけつじょうこつ	Intermediate cuneiform	中間楔状骨は舟状骨の前方に位置する３つの楔状骨の一つである。後方では舟状骨と関節し、前方では第２中足骨と関節する。また内側では内側楔状骨と関節し、外側では外側楔状骨とも関節する。
+images/Lateral-cuneiform.png	外側楔状骨	がいそくけつじょうこつ	Lateral cuneiform	外側楔状骨は舟状骨の前方に位置する３つの楔状骨の一つである。後方では舟状骨と関節し、前方では第２中足骨、第３中足骨そして第４中足骨と関節する。また、内側では中間楔状骨と関節し、外側では立方骨とも関節する。
+images/Cuboid_1.png	立方骨	りっぽうこつ	Cuboid	立方骨は足根骨遠位列の中で最も外側に位置する骨である。立方骨は後方では踵骨と関節し、前方では第４中足骨、第５中足骨と関節する。また、内側では外側楔状骨と舟状骨そして距骨とも関節する。
+images/Trochlea-of-talus.png	距骨滑車	きょこつかっしゃ	Trochlea of talus	距骨滑車は距骨の上部を構成する大きな関節面である。距骨滑車は上面、内果面、外果面に分かれ、それぞれ滑らかな関節面をなしている。
+images/Navicular-articular-surface.png	舟状骨関節面	しゅうじょうこつかんせつめん	Navicular articular surface	舟状骨関節面は距骨頭の前面の大部分を占める大きな関節面である。関節する相手が舟状骨であることによりこの名がある。
+images/Anterior-facet-for-calcaneus.png	前踵骨関節面	ぜんしょうこつかんせつめん	Anterior facet for calcaneus	前踵骨関節面は距骨体の下面にあり踵骨と関節する３つの関節面のうち、最前部にある小さな関節面である。
+images/Middle-facet-for-calcaneus.png	中踵骨関節面	ちゅうしょうこつかんせつめん	Middle facet for calcaneus	中踵骨関節面は距骨体の下面にあり踵骨と関節する３つの関節面のうち、前踵骨関節面の後内側にある関節面である。
+images/Posterior-facet-for-calcaneus.png	後踵骨関節面	こうしょうこつかんせつめん	Posterior facet for calcaneus	後踵骨関節面は距骨体の下面にあり踵骨と関節する３つの関節面のうち、最後部にある大きな関節面である。
+images/Sulcus-tali.png	距骨溝	きょこつこう	Sulcus tali	距骨溝とは距骨体下面にある中踵骨関節面と後踵骨関節面の間を斜めに走る溝である。
+images/Superior-surface-of-talus.png	上面（距骨）	じょうめん（きょこつ）	Superior surface of talus	距骨の上面は距骨滑車の関節面のうち、くびれた円筒状の関節面を指す。上面が関節する相手は脛骨の下関節面である。
+images/Medial-malleolar-surface.png	内果面	ないかめん	Medial malleolar surface	内果面は距骨滑車の関節面のうち、内側に位置する面を指す。内果面が関節する相手は脛骨の内果関節面である。
+images/Lateral-malleolar-surface.png	外果面	がいかめん	Lateral malleolar surface	外果面は距骨滑車の関節面のうち、外側に位置する面を指す。外果面が関節する相手は腓骨の外果関節面である。
+images/Body-of-talus.png	距骨体	きょこつたい	Body of talus	距骨体は距骨の中央部と後部を含む部分である。距骨は距骨頭、距骨頚そして距骨体に分けられる。
+images/Head-of-talus.png	距骨頭	きょこつとう	Head of talus	距骨頭は距骨体から前方に突き出した部分の先端部である。距骨は距骨頭、距骨頚そして距骨体に分けられる。
+images/Neck-of-talus.png	距骨頚	きょこつけい	Neck of talus	距骨頚は距骨体から前方に突き出した部分のうち、距骨頭を除いた部分である。距骨は距骨頭、距骨頚そして距骨体に分けられる。
+images/Lateral-process-of-talus.png	距骨外側突起	きょこつがいそくとっき	Lateral process of talus	距骨外側突起は距骨体から外側に向かって出ている大きな突起である。
+images/Posterior-process-of-talus.png	距骨後突起	きょこつこうとっき	Posterior process of talus	距骨後突起は距骨体から後方に出ている先端が２分した突起である。
+images/Groove-for-tendon-of-flexor-hallucis-longus.png	長母指屈筋腱溝（距骨）	ちょうぼしくっきんけんこう（きょこつ）	Groove for tendon of flexor hallucis longus	長母指屈筋腱溝は距骨後突起の２分した先端の間の溝である。この溝を長母指屈筋腱が走る。
+images/Medial-tubercle-of-posterior-process-of-talus.png	内側結節	ないそくけっせつ	Medial tubercle of posterior process of talus	内側結節は距骨後突起の２分した先端のうち、内側にある突出部である。内側結節と外側結節の間を長母指屈筋腱が走る。
+images/Lateral-tubercle-of-posterior-process-of-talus.png	外側結節	がいそくけっせつ	Lateral tubercle of posterior process of talus	外側結節は距骨後突起の２分した先端のうち、外側にある突出部である。内側結節と外側結節の間を長母指屈筋腱が走る。
+images/Anterior-talar-articular-surface-(of-calcaneum).png	前距骨関節面	ぜんきょこつかんせつめん	Anterior talar articular surface (of calcaneum)	前距骨関節面は踵骨の上面にあり距骨と関節する３つの関節面のうち、最前部にある小さな関節面である。
+images/Middle-talar-articular-surface-(of-calcaneum).png	中距骨関節面	ちゅうきょこつかんせつめん	Middle talar articular surface (of calcaneum)	中距骨関節面は踵骨の上面にあり距骨と関節する３つの関節面のうち、前距骨関節面の後内側にある関節面である。
+images/Posterior-talar-articular-surface-(of-calcaneum).png	後距骨関節面	こうきょこつかんせつめん	Posterior talar articular surface (of calcaneum)	後距骨関節面は踵骨の上面にあり距骨と関節する３つの関節面のうち、最後部にある大きな関節面である。
+images/Articular-surface-for-cuboid-(of-calcaneum).png	立方骨関節面	りっぽうこつかんせつめん	Articular surface for cuboid (of calcaneum)	立方骨関節面は踵骨の前面にある関節面で、関節する相手は立方骨である。
+images/Sustentaculum-tali.png	載距突起	さいきょとっき	Sustentaculum tali	載距突起は踵骨上前部で内側方に突出した三角形の突起である。載距突起の上面には前距骨関節面と中距骨関節面があり距骨を支えている。
+images/Sulcus-tali.png	踵骨隆起	しょうこつりゅうき	Calcaneal tuberosity	踵骨隆起は踵骨の後部で大きく突出した部分である。踵骨隆起が踵を形作っている。
+images/Calcaneal-sulcus.png	踵骨溝	しょうこつこう	Calcaneal sulcus	踵骨溝は中距骨関節面と後距骨関節面の間を前外側から後内側に走る溝である。
+images/Tarsal-sinus.png	足根洞	そくこんどう	Tarsal sinus	足根洞は距骨の距骨溝と踵骨の踵骨洞が合してつくる空間である。
+images/Calcaneal-tubercle.png	踵骨結節	しょうこつけっせつ	Calcaneal tubercle	踵骨結節は踵骨下面で立方骨関節面のやや後方に位置する隆起である。
+images/Medial-process-of-calcaneal-tuberosity.png	踵骨隆起内側突起	しょうこつりゅうきないそくとっき	Medial process of calcaneal tuberosity	踵骨隆起内側突起は踵骨隆起下面の内側に位置する隆起である。
+images/Lateral-process-of-calcaneal-tuberosity.png	踵骨隆起外側突起	しょうこつりゅうきがいそくとっき	Lateral process of calcaneal tuberosity	踵骨隆起外側突起は踵骨隆起下面の外側に位置する隆起である。
+images/Groove-for-tendon-of-flexor-hallucis-longus_1.png	長母指屈筋腱溝（踵骨）	ちょうぼしくっきんけんこう（しょうこつ）	Groove for tendon of flexor hallucis longus	踵骨の長母指屈筋腱溝は踵骨内側面の載距突起の下を走る緩やかな溝である。
+images/Peroneal-pulley.png	腓骨筋滑車	ひこつきんかっしゃ	Peroneal pulley	腓骨筋滑車は踵骨外側部の中央付近にある緩やかな高まりのことで、この下を長腓骨筋腱がとおる。
+images/Tuberosity-of-navicular.png	舟状骨粗面	しゅうじょうこつそめん	Tuberosity of navicular	舟状骨粗面は内側に突出した部分で、体表から容易に触知できることで知られている。
+images/Groove-for-tendon-of-fibularis-longus.png	長腓骨筋腱溝	ちょうひこつきんけんこう	Groove for tendon of fibularis longus	長腓骨筋腱溝は立方骨の下面を外側から内側へと走る溝である。ここを長腓骨筋の腱がとおる。
+images/Tuberosity-of-cuboid-bone.png	立方骨粗面	りっぽうこつそめん	Tuberosity of cuboid bone	立方骨粗面は立方骨の下面外側部に見られる隆起である。
+images/Calcaneal-process.png	踵骨突起	しょうこつとっき	Calcaneal process	腫骨突起は立方骨の下面後方内側部に見られる隆起である。
+images/Base-of-metatarsals.png	底（中足骨）	てい（ちゅうそくこつ）	Base of metatarsals	中足骨底は近位端を指す。ここで中足骨は足根骨と関節するだけではなく、隣接する中足骨どうしも互いに関節を構成する。
+images/Body-of-metatarsals.png	体（中足骨）	たい（ちゅうそくこつ）	Body of metatarsals	中足骨体は中足骨の本体のことで、手の中手骨に比べると頑丈で長い。
+images/Head-of-metatarsals.png	頭（中足骨）	とう（ちゅうそくこつ）	Head of metatarsals	中足骨頭は中足骨の遠位端で、中手骨と同様に球面状の関節面をもつ。
+images/Tuberosity-of-fifth-metatarsal-bone.png	第５中足骨粗面	だいごちゅうそくこつそめん	Tuberosity of fifth metatarsal bone	第５中足骨粗面は第５中足骨底が外側に突出した部分である。第５中足骨粗面は短腓骨筋の停止腱が付くところである。
+images/Tuberosity-of-first-metatarsal-bone.png	第１中足骨粗面	だいいちちゅうそくこつそめん	Tuberosity of first metatarsal bone	第１中足骨粗面は第１中足骨底の下外側部が隆起したところである。第１中足骨粗面は前脛骨筋と長腓骨筋のそれぞれ停止腱が付くところである。
+images/Proximal-phalanx-of-foot.png	基節骨（足の）	きせつこつ（あしの）	Proximal phalanx of foot	足の基節骨は各指の近位の指節を構成する骨で、近位では中足骨と、遠位では中節骨と関節する。
+images/Middle-phalanx-of-foot.png	中節骨（足の）	ちゅうせつこつ（あしの）	Middle phalanx of foot	足の中節骨は各指の中間の指節を構成する骨で、近位では基節骨と、遠位では末節骨と関節する。第１指では中節骨が欠落している。
+images/Distal-phalanx-of-foot.png	末節骨（足の）	まっせつこつ（あしの）	Distal phalanx of foot	足の末節骨は各指の遠位の指節を構成する骨で、近位では中節骨と関節する。
+images/Sesamoid-bone-of-foot.png	種子骨（足の）	しゅしこつ（あしの）	Sesamoid bone of foot	種子骨は腱の内部に存在する骨で、足では第１中足骨頭の下面に２個見られることが多い。その他第１基節骨の下面、第５中足骨底に見られることもある。
+images/Base-of-phalanges-of-foot.png	底(足の指節骨）	てい（あしのしせつこつ）	Base of phalanges of foot	指節骨の底は各指節骨の近位端である。
+images/Body-of-phalanges-of-foot.png	体(足の指節骨）	たい（あしのしせつこつ）	Body of phalanges of foot	指節骨の体は各指節骨の底と頭の中間に位置する本体部分である。
+images/Head-of-phalanges-of-foot.png	頭(足の指節骨）	とう（あしのしせつこつ）	Head of phalanges of foot	指節骨の頭は各指節骨の遠位端である。
+images/Tuberosity-of-distal-phalanx-(of-foot).png	末節骨粗面（足の）	まっせつこつそめん（あしの）	Tuberosity of distal phalanx (of foot)	足の末節骨粗面は末節骨の遠位端に見られる粗面である。
