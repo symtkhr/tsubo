@@ -3,77 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>顔のツボ</title>
+  <title>十四経絡</title>
+  <style>
+#desc span{
+    display:inline-block;
+    border:1px solid gray;
+    border-radius: 20px;
+    background-color:#ffc;
+    padding:2px;
+    margin-right: 2px;
+}
+#desc, #searchbox {
+    border:1px solid gray; background:#ffe; position:fixed; font-size:20px; 
+    right:0;
+        padding:2px;
+    opacity: 80%;
+    max-width:550px;
+}
+#desc {
+    //pointer-events: none;
+    bottom:0;
+}
+#desc div, #searchbox div {
+    font-size: 80%;
+}
+#searchbox {
+    top:0;
+    bottom:auto;
+}
+#result {
+    font-family:monospace;
+    font-size: 80%;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+  }</style>
 </head>
 <body>
-    <div>
-      <img src="68123.jpg" id="tsubo" style="width:100%; max-width:550px;"/>
-      <div id="desc" style="border:1px solid gray; background:#ffe; position:fixed; font-size:20px; top:0; right:0;padding:2px;">
-      </div>
-    </div>  
-    <script>
-      // DOMセレクタ
+  <div style="position:relative;">
+    <div id="pos" style="position:absolute; display:none; box-sizing:border-box; border:3px solid #080; background-color:#0f0; border-radius:50%;"></div>
+    <img src="68123.jpg" id="tsubo" style="width:100%; max-width:550px;"/>
+    <div id="desc"></div>
+    <div id="searchbox"><select id="pulldown" style="width:130px;"></select>検索:<input id="search" style="width:100px;"/>
+    <div id="result"></div>
+</div>
+  </div>
+<script>
+// DOMセレクタ
 const $id = (id) => document.getElementById(id);
 const $name = (name) => document.getElementsByName(name);
 const $c = (c) => document.getElementsByClassName(c);
 const $q = (query) => document.querySelectorAll(query);
-      const run_camera = () => {
-        const video = document.getElementById("video")
-        navigator.mediaDevices.getUserMedia({
-            video: true,
-            audio: false,
-        }).then(stream => {
-            video.srcObject = stream;
-            video.play()
-        }).catch(e => {
-          console.log(e)
-        })
-      };
+const loadfile = (path,cb) => {
+    const req = new XMLHttpRequest();
+    req.open("GET", path);
+    req.addEventListener("load", (xml) => { cb(xml.srcElement.response); });
+    req.send();
+};
+const tsubos = [
+    {"name":"頭維","x":56,"y":70,"read":"ずい"},
+    {"name":"本神","x":80,"y":63,"read":"ほんじん"},
+    {"name":"曲差","x":104,"y":62,"read":"きょくさ"},
+    {"name":"陽白","x":94,"y":100,"read":"ようはく"},
+    {"name":"絲竹空","x":64,"y":135,"read":"しちくくう"},
+    {"name":"魚腰","x":94,"y":129,"read":"ぎょよう"},
+    {"name":"攅竹","x":120,"y":142,"read":"さんちく","id":"bl-2"},
+    {"name":"太陽","x":218,"y":146,"read":"たいよう"},
+    {"name":"瞳子髎","x":63,"y":158,"read":"どうしりょう"},
+    {"name":"睛明","x":120,"y":167,"read":"せいめい"},
+    {"name":"四白","x":93,"y":181,"read":"しはく"},
+    {"name":"客主人","x":214,"y":195,"read":"きゃくしゅじん"},
+    {"name":"頰車","x":65,"y":220,"read":"きょうしゃ","id":"st-6"},
+    {"name":"大迎","x":78,"y":237,"read":"だいげい"},
+    {"name":"迎香","x":167,"y":214,"read":"げいこう"},
+    {"name":"巨髎","x":181,"y":224,"read":"こりょう"},
+    {"name":"顴髎","x":197,"y":222,"read":"けんりょう"},
+    {"name":"下関","x":213,"y":215,"read":"げかん"},
+    {"name":"承漿","x":142,"y":270,"read":"しょうしょう"},
+    {"name":"地倉","x":180,"y":245,"read":"ちそう"}
+].map(v => {
+    v.x /= 267;
+    v.y /= 267;
+    return v;
+});
 
-      const tsubos = "頭維 本神 曲差 陽白 絲竹空 魚腰 攅竹 太陽 瞳子髎 睛明 四白 客主人 頰車 大迎 迎香 巨髎 顴髎 下関 承漿 地倉".split(" ")
-            .filter(v=>v).map((v,i) => {
-                let p = {};
-                p.name = v;
-                let pos = [
-                    [58,70],[83,63],[104,62],[94,102],[64,129],[94,129],[120,142],[218,146],[65,158],[120,170],[93,181],[217,191],
-                    [63,218],[78,237],[167,214],
-                    [181,224],[197,222],[216,215],[144,270],[180,244],    
-                ].slice(i).shift();
-                p.x = pos[0] / 267;
-                p.y = pos[1] / 267;
-                p.read = "ずい ほんじん きょくさ ようはく しちくくう ぎょよう さんちく たいよう どうしりょう せいめい しはく きゃくしゅじん きょうしゃ だいげい げいこう こりょう けんりょう げかん しょうしょう ちそう".split(" ").filter(v => v).slice(i).shift();
-                p.desc = "わからん/しらん/ぐぐれ/何かに効く/ここに説明/kwsk/上のリンクから検索できます/ほげふが/いいことあるぞ/何かが起きる"
-                    .split("/")
-                    .slice(parseInt(10 * Math.random())).shift();
-                return p;
-            });
-      /*
-      console.log(JSON.stringify(tsubos.map(v => {
-          v.name += "/" + v.read;
-          v.x = parseInt(v.x * 1000);
-          v.y = parseInt(v.y * 1000);
+let meridian = [];
+loadfile("meridian.json", (table) => {
+    let js = table.split("<json>").map(v => JSON.parse(v));
+    let names = js[2].map(v => { v[0] = v[0].split("-0").join("-"); return v; });
+    let descs = js[0];
+    meridian = descs.map(v => {
+        let id = v.id;
+        let name = names.find(v => v[0] == id);
+        if (name) v.name = name[1];
+        if (!name) console.log(v);
+        return v;
+    })
+    tsubos.map(v=>{
+        let key = v.name;
+        let t = meridian.find(n => n.name.map(n => n.split("_").shift()).indexOf(key) != -1);
+        if (t && !v.id) v.id = t.id;
+        if (!t) console.log(v);
+        return v;
+    });
+    $id("pulldown").innerHTML = meridian.map(v => `<option value='${v.id}'>` + v.id.toUpperCase() + ": "
+                                             + v.name.map(v => v.split("_").shift()).join("/") + "</option>").join("");
 
-          delete(v.desc);
-          delete(v.read);
-          return v;
-      })));
-*/
-      $id("desc").innerText = "(画面内の赤丸をクリックしてください)";
-      $id("tsubo").onclick = (e) => {
-          $id("desc").innerText = "(画面内の赤丸をクリックしてください)";
-          let c = {x:e.offsetX / $id("tsubo").width, y:e.offsetY / $id("tsubo").width};
-          let res = tsubos.filter(p => (p.x - c.x)**2 + (p.y - c.y)**2 < 100/267/267);
-          console.log(c);
-          console.log(res);
-          if (res.length == 0) return;
-          let p = res.shift();
-          let name = p.name;
-          $id("desc").innerHTML = `<a href="https://www.google.com/search?q=${encodeURIComponent(name+" ツボ")}" target="_blank">${name}</a>`
-              + "(" + p.read + ")<br/>効き目:" + p.desc;
-      };
-      
-      
+    $id("pulldown").onchange = (e) => {
+        location.hash = $id("pulldown").value;
+    };
+    $id("search").onkeydown = (e) => {
+        if (e.key != "Enter") return;
+        $id("result").innerText = "";
+        let key = $id("search").value.toLowerCase();
+        if (!key) return;
+        let ret = meridian.filter(v => v.id == key || v.name.some(n => n.indexOf(key) != -1) || v.read.indexOf(key) != -1);
+        console.log(ret.map(v => v.name).join("\n"));
+        if (ret.length == 1) return location.hash = ret[0].id;
+        $id("result").innerHTML = ret.map(v => `${v.id.toUpperCase()}: <a href="#${v.id}">` + v.name.join(", ") + "</a>").join("<br>");
+    };
 
-    </script>  
+    onhashchange = (e) => {
+        let key = decodeURI(location.hash.slice(1));
+        if (!key) return;
+        let res = meridian.find(v => v.id == key || v.name.some(n => n.indexOf(key) != -1) || v.read.indexOf(key) != -1);
+        if (!res) return;
+        let p = res;
+        let id = p.id;
+        let name = p.name[0].split("_").shift();
+        let desc = p.desc.split("：").pop().replace(/\[\[.+?\]\]/g, (m) => `<a href=#${m.slice(2,-2)}>${m.slice(2,-2)}</a>`);
+        let pos = p.pos.split("：").pop().replace(/\[\[.+?\]\]/g, (m) => `<a href=#${m.slice(2,-2)}>${m.slice(2,-2)}</a>`);
+        let method = p.method.split("：").pop().replace(/\[\[.+?\]\]/g, (m) => `<a href=#${m.slice(2,-2)}>${m.slice(2,-2)}</a>`);
+        $id("pos").style.display = "none";
+        $id("pulldown").value = id;
+        $id("desc").innerHTML = id.toUpperCase()
+            + `: <b>${name}</b>`
+            + "(" + p.read + ")"
+            + "<div>"
+            + "<span>部位</span> " + pos + "<br/>"
+            + "<span>取穴法</span> " + method + "<br/>"
+            + "<span>効能</span> " + desc + "<br/>"
+            + '</div>';
+        let img = tsubos.find(p => p.id == id);
+        if (!img) return;
+        let w = $id("tsubo").width;
+        p = img;
+        $id("pos").style.display = `block`;
+        $id("pos").style.left = `${p.x*w - w/40}px`;
+        $id("pos").style.top = `${p.y*w - w/40}px`;
+        $id("pos").style.width = `${w/20}px`;
+        $id("pos").style.height = `${w/20}px`;
+    };
+    onhashchange();
+
+});
+
+$id("desc").innerText = "(画面内の赤丸をクリックor右上プルダウンを選択)";
+$id("desc").style.maxWidth = "550px";
+$id("tsubo").onclick = (e) => {
+    $id("desc").innerText = "(画面内の赤丸をクリックor右上プルダウンを選択)";
+    $id("pos").style.display = `none`;
+    let w = $id("tsubo").width;
+    let c = {x:e.offsetX/w, y:e.offsetY/w};
+    let res = tsubos.filter(p => (p.x - c.x)**2 + (p.y - c.y)**2 < 100/267/267);
+    location.hash = res.length ? res[0].id : "";
+};
+</script>
 </body>
 </html>
