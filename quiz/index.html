@@ -78,10 +78,11 @@ h1 {
     height: 200px;
 }
 #photo {
-    height:300px;
     width: 100%;
-    display:none;
-    text-align:center;
+}
+#pos {
+    position:absolute; box-sizing:border-box; border:3px solid #080; background-color:#0f0;
+    border-radius:50%; width:15px; height:15px;
 }
 #quiz {
     height:150px;
@@ -199,10 +200,10 @@ h1 {
     <button id="dumpresult">Result</button>
     <button id="giveup" style="float:right;">GiveUp</button>
   <h1>14 Meridians</h1>
-  <div id="photo"></div>
   <div id="ui" style="height:420px;">
     <fieldset style="height:180px; overflow-y:scroll; margin-bottom:5px;">
     <legend><span id="mid">_</span><span id="correct">_</span></legend>
+    <div id="photo"></div>
     <span id="desc"></span>
 </fieldset>
     <div id="answerbox" style="font-size:30px; padding: 0 5px; border:solid gray 1px; height:40px; width: 130px; display:inline-block;">
@@ -242,7 +243,7 @@ h1 {
         <label><input type=radio name="order" value="sort" />番号順</label><br/>
         <label><input type=radio name="order" value="random" checked />ランダム</label>
         <input id="qlen" value="10" style="width:3.5ex;" />問<br/>
-        <label><input type=checkbox name="fig" value="14" disabled />絵のみ</label><br/>
+        <label><input type=checkbox name="fig" />絵のみ</label><br/>
       </fieldset>
       
 
@@ -294,6 +295,37 @@ $id("rangeall").onclick = () => {
     $name("range").map($v => $v.checked = all);
 };
 
+const img = {
+"gv":{"src":"https://www.lieske.com/images/set0/governing2-clear.gif",
+   "loc":[[394,811],[395,773],[393,678],[393,635],[394,610],[390,571],[394,545],[391,524],[392,470],[395,452],[394,428],[392,374],[394,321],[394,293],[389,227],[394,209],[392,173],[394,143],[392,114],[391,79],[390,52],[772,65],[771,83],[773,99],[775,209],[773,225],[773,235],[590,184]]},
+"cv":{"src":"https://www.lieske.com/images/set0/conception2-clear.gif",
+   "loc":[[726,793],[359,837],[360,820],[360,796],[360,772],[360,759],[361,740],[360,709],[360,684],[357,662],[357,633],[357,608],[358,581],[355,556],[356,528],[357,486],[357,448],[355,486],[358,446],[351,416],[356,388],[353,357],[357,329],[356,303],[354,276],[355,246]]},
+"lu":{"src":"https://lieske.com/images/set0/lung-clear.gif",
+   "loc":[[607,348],[607,329],[665,428],[667,450],[676,602],[706,697],[738,777],[723,787],[724,811],[746,834],[778,896]]},
+"li":{"src":"https://i0.wp.com/mendacupuncture.com/wp-content/uploads/2020/11/large-intestine-ani-1-251x300.gif",
+   "loc":[[36,267],[53,255],[58,252],[68,248],[80,242],[92,235],[104,227],[124,215],[130,210],[139,206],[149,200],[160,199],[148,179],[144,156],[134,112],[227,106],[75,94],[78,83],[55,53],[52,46]]},
+"st":{"src":"https://lieske.com/images/set0/stomach-clear.gif",
+   "loc":[[546,162],[546,173],[545,184],[546,216],[496,227],[483,204],[484,175],[506,71],[245,202],[239,222],[233,237],[202,231],[194,251],[192,267],[183,286],[181,305],[180,321],[180,343],[209,390],[209,407],[206,417],[207,431],[207,446],[207,456],[207,471],[207,484],[206,497],[207,508],[206,520],[208,540],[160,591],[158,676],[163,710],[167,752],[162,814],[160,848],[163,871],[165,897],[165,917],[151,897],[174,994],[170,1022],[165,1043],[159,1056],[153,1067]]},
+"sp":{"src":"https://lieske.com/images/set0/spleen-clear.gif",
+   "loc":[[520,1034],[511,1027],[510,1016],[504,1007],[499,979],[479,934],[452,895],[440,850],[441,819],[408,738],[375,636],[366,551],[366,534],[376,489],[378,458],[394,414],[443,333],[452,309],[455,286],[451,265],[457,367]]},
+"ht":{"src":"https://lieske.com/images/set0/heart-clear.gif",
+   "loc":[[322,475],[313,610],[296,669],[192,836],[180,849],[170,860],[160,875],[131,938],[137,982]]},
+"si":{"src":"https://lieske.com/images/set0/smintestine-clear.gif",
+   "loc":[[303,1030],[287,985],[284,959],[276,914],[276,901],[276,872],[236,798],[189,698],[189,460],[195,405],[158,429],[158,353],[131,374],[109,358],[100,338],[662,283],[664,255],[731,206],[656,182]]},
+"bl":{"src":"https://lieske.com/images/set0/bladder-clear.gif",
+   "loc":[[687,137],[685,121],[685,79],[696,81],[692,62],[692,47],[280,38],[256,63],[258,129],[253,162],[259,244],[258,263],[257,280],[260,299],[261,316],[260,329],[261,347],[260,390],[258,413],[258,431],[258,445],[258,464],[258,478],[256,497],[257,515],[253,534],[256,550],[255,566],[255,582],[252,599],[270,550],[269,565],[268,579],[269,597],[268,614],[232,634],[229,721],[211,802],[209,816],[227,817],[239,261],[239,282],[239,297],[236,316],[236,330],[236,355],[233,392],[237,413],[238,431],[238,444],[235,460],[233,482],[238,564],[238,598],[228,856],[228,897],[228,938],[205,954],[211,1017],[209,1053],[210,1075],[192,1061],[177,1070],[165,1080],[152,1078],[138,1084],[121,1092]]},
+"ki":{"src":"https://lieske.com/images/set0/kidney-clear.gif",
+   "loc":[[94,965],[225,1027],[257,1005],[266,1012],[256,1028],[245,1024],[252,974],[236,962],[244,937],[224,788],[208,526],[209,512],[211,497],[216,482],[216,466],[219,454],[222,416],[223,405],[226,389],[225,374],[226,363],[211,313],[211,292],[211,268],[212,251],[208,231],[215,218]]},
+"pc":{"src":"https://lieske.com/images/set0/pericardium-clear.gif",
+   "loc":[[311,423],[247,439],[221,590],[174,723],[160,757],[149,779],[135,801],[98,877],[77,977]]},
+"te":{"src":"https://i.pinimg.com/474x/98/1a/87/981a87b8630dc2ad16dc66d02d8e2f2d.jpg",
+   "loc":[[345,947],[331,883],[323,866],[314,813],[307,766],[303,746],[290,745],[296,723],[285,671],[245,526],[245,503],[238,442],[236,348],[235,295],[135,247],[153,184],[158,149],[144,126],[143,98],[164,84],[184,112],[197,102],[239,96]]},
+"gb":{"src":"https://lieske.com/images/set0/gallbladder-clear.gif",
+   "loc":[[631,151],[584,186],[586,162],[596,102],[596,113],[592,125],[589,135],[570,120],[552,119],[544,139],[539,156],[543,176],[610,83],[647,103],[626,70],[588,62],[551,70],[526,90],[522,165],[534,194],[344,200],[374,317],[392,316],[430,375],[334,428],[353,440],[415,489],[419,503],[391,520],[339,547],[361,668],[356,694],[357,748],[350,806],[331,915],[355,916],[343,951],[355,964],[343,974],[356,1034],[399,1052],[413,1060],[429,1065],[445,1069]]},
+"lr":{"src":"https://lieske.com/images/set0/liver-clear.gif",
+   "loc":[[75,1020],[88,1018],[105,1013],[138,985],[151,923],[147,906],[160,801],[163,774],[152,709],[146,615],[140,598],[157,584],[128,468],[157,404]]}
+};
+  
 const loadconfig = () => {
     let config = location.hash.split("_");
     let range = $name("range").map($v=> $v.parentNode.innerText.toLowerCase());
@@ -308,6 +340,7 @@ const loadconfig = () => {
     } else {
         $name("order")[0].checked = true;
     }
+    $name("fig")[0].checked = config.indexOf("f") != -1;
 };
 loadconfig();
   
@@ -317,6 +350,7 @@ const Quiz = function() {
     let table = [];
     let miss = [];
     let klist = [];
+    let draw_fig = false;
     
     const config = () => {
         let table = this.table;
@@ -328,8 +362,9 @@ const Quiz = function() {
         if (sort != "sort")
             table = table.shuffle().slice(0,parseInt($id("qlen").value) || 400);
         if (table.length == 0) return false;
+        draw_fig = $name("fig")[0].checked;
         this.table = table;
-        location.hash = range.join("") + (sort != "sort" ? "_r" + $id("qlen").value : "");
+        location.hash = range.join("") + (sort != "sort" ? "_r" + $id("qlen").value : "") + (draw_fig ? "_f" : "");
         return true;
     };
 
@@ -384,6 +419,27 @@ const Quiz = function() {
             + "<span>部位</span> " + pos + "<br/>"
             + "<span>取穴法</span> " + method + "<br/>"
             + "<span>効能</span> " + desc + "<br/>";
+        
+        if (draw_fig) {
+            $id("desc").style.display = "none";
+            let img0 = img[id.split("-").shift()];
+            $id("photo").innerHTML = `<img src="${img0.src}"/><div id="pos"></div>`
+            $id("photo").style.position = "relative";
+            $id("photo").onclick = null;
+            let $img = $q("#photo img")[0];
+            $img.onload = () => {
+                let irate = $img.naturalWidth / 400;
+                if (irate < 1) irate = 1;
+                if (2 < irate) irate = 2;
+                $img.style.width = (100 * irate) + "%";
+                let loc = img0.loc[parseInt(id.split("-").pop(),10) - 1];
+                let rate = $img.width / $img.naturalWidth;
+                $q("fieldset")[0].scrollTop = loc[1] * rate - 75;
+                $q("fieldset")[0].scrollLeft = loc[0] * rate - 200;
+                $id("pos").style.top = (loc[1] * rate - 7) + "px";
+                $id("pos").style.left = (loc[0] * rate - 7) + "px";
+            };
+        }
         $id("read").innerHTML = options.slice(-22).sort()
             .map(c => `<span class="read ` + (names.join("").indexOf(c) < 0 ? "dummy":"correct")
                  +`"><span>${c}</span></span>`).join("")
@@ -420,6 +476,15 @@ const Quiz = function() {
 
         const check_answer_value = (input, kanji, read) => kanji.some(k => input == k);
 
+        const show_correct = () => {
+            $id("photo").onclick = () => {
+                $id("desc").style.display = "";
+                $q("fieldset")[0].scrollTop = $id("photo").clientHeight;
+                $id("photo").onclick = null;
+            }; 
+            $id("correct").style.display = "";
+        };
+
         const check_answer = () => {
             let key = $id("answer").innerText;
             if (!check_answer_value(key, names)) return;
@@ -427,10 +492,9 @@ const Quiz = function() {
             // clear event
             clearInterval(timer);
             sounds("clear");
-            $id("correct").style.display = "";
             $id("ui").classList = ["clear"];
-            $c("close").forEach($div => $div.classList.remove("close"));
             $id("timer").style.width = "auto";
+            show_correct();
             wait_next();
             return true;
         };
@@ -442,7 +506,7 @@ const Quiz = function() {
             if (check_answer()) return;
             sounds("chin");
             q.miss = turn + 1;
-            $id("correct").style.display = "";
+            show_correct();
             wait_next();
         };
 
