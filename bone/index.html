@@ -40,6 +40,17 @@ h1 {
     float:right;
     display:none;
 }
+#result {
+    position:absolute;
+    top: 35px;
+    border: solid green 1px; border-radius:15px; height:250px; width:100%; background-color:#fff; box-sizing: border-box; background-color: #efe; padding:5px;
+}
+#result.halfway {
+    top:20px;
+    right:0;
+    width:auto;
+    height:auto;
+}
 #result li span {
     font-size: 200%;
     color: red;
@@ -73,7 +84,7 @@ h1 {
     border-radius: 15px;
     vertical-align: middle;
     background-color: #99e;
-    width: 0;
+    width: auto;
     height: 30px;
     line-height:30px;
     margin: 2px;
@@ -133,8 +144,11 @@ h1 {
       表示される図の骨の部位を答えてください。<br/>
       下の入力欄に記入してEnterで解答します。<br/>
       20秒以内に何度でも解答可。かな解答可。
-      <div style="text-align:right;">(作成: 2023-08-26)</div>
+      <div style="text-align:right;">(更新: 2023-09-10)</div>
     </fieldset>
+    <fieldset><legend>設定</legend>最大</legend>
+<input id="qlen" value="" style="width:3.5ex;" maxlength=3 />問
+</fieldset>
   </div>
   <div id="ui">
     <span id="correct"></span><span id="timer"></span>
@@ -174,7 +188,7 @@ Array.prototype.shuffle = function() {
 };
 
 String.prototype.sanitize = function() {
-    const itaiji = "亜亞/悪惡/圧壓/囲圍/為爲/医醫/壱壹/逸逸/稲稻/隠隱/営營/栄榮/衛衞/駅驛/謁謁/円圓/縁緣/艶艷/塩鹽/奥奧/応應/横橫/欧歐/殴毆/黄黃/温溫/穏穩/仮假/価價/禍禍/画畫/会會/壊壞/悔悔/懐懷/海海/絵繪/慨慨/概槪/拡擴/殻殼/覚覺/学學/岳嶽/楽樂/喝喝/渇渴/褐褐/勧勸/巻卷/寛寬/歓歡/漢漢/缶罐/観觀/関關/陥陷/器器/既既/帰歸/気氣/祈祈/亀龜/偽僞/戯戲/犠犧/旧舊/拠據/挙擧/虚虛/峡峽/挟挾/狭狹/郷鄕/響響/暁曉/勤勤/謹謹/区區/駆驅/勲勳/薫薰/径徑/恵惠/掲揭/渓溪/経經/継繼/茎莖/蛍螢/軽輕/鶏鷄/芸藝/撃擊/欠缺/倹儉/剣劍/圏圈/検檢/権權/献獻/研硏/県縣/険險/顕顯/験驗/厳嚴/効效/広廣/恒恆/鉱鑛/号號/国國/穀穀/黒黑/済濟/砕碎/斎齋/剤劑/桜櫻/殺殺/雑雜/参參/惨慘/桟棧/蚕蠶/賛贊/残殘/祉祉/糸絲/視視/歯齒/児兒/辞辭/湿濕/実實/写寫/煮煮/社社/者者/釈釋/寿壽/収收/臭臭/従從/渋澁/獣獸/縦縱/祝祝/粛肅/処處/暑暑/緒緖/署署/諸諸/叙敍/奨奬/将將/渉涉/焼燒/祥祥/称稱/証證/乗乘/剰剩/壌壤/嬢孃/条條/浄淨/状狀/畳疊/譲讓/醸釀/嘱囑/触觸/寝寢/慎愼/真眞/神神/尽盡/図圖/粋粹/酔醉/随隨/髄髓/数數/枢樞/瀬瀨/声聲/静靜/斉齊/摂攝/窃竊/節節/専專/戦戰/浅淺/潜潛/繊纖/践踐/銭錢/禅禪/曽曾/祖祖/僧僧/双雙/壮壯/層層/捜搜/挿插/巣巢/争爭/痩瘦/総總/荘莊/装裝/騒騷/増增/憎憎/臓臟/蔵藏/贈贈/即卽/属屬/続續/堕墮/体體/対對/帯帶/滞滯/台臺/滝瀧/択擇/沢澤/単單/嘆嘆/担擔/胆膽/団團/弾彈/断斷/痴癡/遅遲/昼晝/虫蟲/鋳鑄/著著/庁廳/徴徵/懲懲/聴聽/勅敕/鎮鎭/塚塚/逓遞/鉄鐵/転轉/点點/伝傳/都都/党黨/盗盜/灯燈/当當/闘鬭/徳德/独獨/読讀/突突/届屆/縄繩/難難/弐貳/悩惱/脳腦/覇霸/廃廢/拝拜/梅梅/売賣/麦麥/発發/髪髮/抜拔/繁繁/晩晚/蛮蠻/卑卑/碑碑/秘祕/浜濱/賓賓/頻頻/敏敏/瓶甁/侮侮/福福/払拂/仏佛/併倂/塀塀/並竝/変變/辺邊/勉勉/弁辨/弁瓣/弁辯/歩步/穂穗/宝寶/褒襃/豊豐/墨墨/翻飜/毎每/万萬/満滿/免免/麺麵/黙默/餅餠/戻戾/弥彌/薬藥/訳譯/予豫/余餘/与與/誉譽/揺搖/様樣/謡謠/来來/頼賴/乱亂/欄欄/覧覽/隆隆/竜龍/虜虜/両兩/猟獵/緑綠/塁壘/涙淚/類類/励勵/礼禮/霊靈/齢齡/暦曆/歴歷/恋戀/練練/錬鍊/炉爐/労勞/廊廊/朗朗/楼樓/郎郞/録錄/湾灣/巌巖/穣穰/禄祿/亘亙/渚渚/猪猪/琢琢/祐祐/禎禎/尭堯/槙槇/遥遙/瑶瑤/晋晉/聡聰/皐皋/讃讚/熙煕/凜凛/晃晄/檜桧/萌萠/禱祷/禰祢/靖靖/島嶋/高髙/崎﨑/富冨/藪薮/浜濵/駆駈/峰峯".split("/").map(v => Array.from(v));
+    const itaiji = "亜亞/悪惡/圧壓/囲圍/為爲/医醫/壱壹/逸逸/稲稻/隠隱/営營/栄榮/衛衞/駅驛/謁謁/円圓/縁緣/艶艷/塩鹽/奥奧/応應/横橫/欧歐/殴毆/黄黃/温溫/穏穩/仮假/価價/禍禍/画畫/会會/壊壞/悔悔/懐懷/海海/絵繪/慨慨/概槪/拡擴/殻殼/覚覺/学學/岳嶽/楽樂/喝喝/渇渴/褐褐/勧勸/巻卷/寛寬/歓歡/漢漢/缶罐/観觀/関關/陥陷/器器/既既/帰歸/気氣/祈祈/亀龜/偽僞/戯戲/犠犧/旧舊/拠據/挙擧/虚虛/峡峽/挟挾/狭狹/郷鄕/響響/暁曉/勤勤/謹謹/区區/駆驅/勲勳/薫薰/径徑/恵惠/掲揭/渓溪/経經/継繼/茎莖/蛍螢/軽輕/鶏鷄/芸藝/撃擊/欠缺/倹儉/剣劍/圏圈/検檢/権權/献獻/研硏/県縣/険險/顕顯/験驗/厳嚴/効效/広廣/恒恆/鉱鑛/号號/国國/穀穀/黒黑/済濟/砕碎/斎齋/剤劑/桜櫻/殺殺/雑雜/参參/惨慘/桟棧/蚕蠶/賛贊/残殘/祉祉/糸絲/視視/歯齒/児兒/辞辭/湿濕/実實/写寫/煮煮/社社/者者/釈釋/寿壽/収收/臭臭/従從/渋澁/獣獸/縦縱/祝祝/粛肅/処處/暑暑/緒緖/署署/諸諸/叙敍/奨奬/将將/渉涉/焼燒/祥祥/称稱/証證/乗乘/剰剩/壌壤/嬢孃/条條/浄淨/状狀/畳疊/譲讓/醸釀/嘱囑/触觸/寝寢/慎愼/真眞/神神/尽盡/図圖/粋粹/酔醉/随隨/髄髓/数數/枢樞/瀬瀨/声聲/静靜/斉齊/摂攝/窃竊/節節/専專/戦戰/浅淺/潜潛/繊纖/践踐/銭錢/禅禪/曽曾/祖祖/僧僧/双雙/壮壯/層層/捜搜/挿插/巣巢/争爭/痩瘦/総總/荘莊/装裝/騒騷/増增/憎憎/臓臟/蔵藏/贈贈/即卽/属屬/続續/堕墮/体體/対對/帯帶/滞滯/台臺/滝瀧/択擇/沢澤/単單/嘆嘆/担擔/胆膽/団團/弾彈/断斷/痴癡/遅遲/昼晝/虫蟲/鋳鑄/著著/庁廳/徴徵/懲懲/聴聽/勅敕/鎮鎭/塚塚/逓遞/鉄鐵/転轉/点點/伝傳/都都/党黨/盗盜/灯燈/当當/闘鬭/徳德/独獨/読讀/突突/届屆/縄繩/難難/弐貳/悩惱/脳腦/覇霸/廃廢/拝拜/梅梅/売賣/麦麥/発發/髪髮/抜拔/繁繁/晩晚/蛮蠻/卑卑/碑碑/秘祕/浜濱/賓賓/頻頻/敏敏/瓶甁/侮侮/福福/払拂/仏佛/併倂/塀塀/並竝/変變/辺邊/勉勉/弁辨/弁瓣/弁辯/歩步/穂穗/宝寶/褒襃/豊豐/墨墨/翻飜/毎每/万萬/満滿/免免/麺麵/黙默/餅餠/戻戾/弥彌/薬藥/訳譯/予豫/余餘/与與/誉譽/揺搖/様樣/謡謠/来來/頼賴/乱亂/欄欄/覧覽/隆隆/竜龍/虜虜/両兩/猟獵/緑綠/塁壘/涙淚/類類/励勵/礼禮/霊靈/齢齡/暦曆/歴歷/恋戀/練練/錬鍊/炉爐/労勞/廊廊/朗朗/楼樓/郎郞/録錄/湾灣/巌巖/穣穰/禄祿/亘亙/渚渚/猪猪/琢琢/祐祐/禎禎/尭堯/槙槇/遥遙/瑶瑤/晋晉/聡聰/皐皋/讃讚/熙煕/凜凛/晃晄/檜桧/萌萠/禱祷/禰祢/靖靖/島嶋/高髙/崎﨑/富冨/藪薮/浜濵/駆駈/峰峯/靱靭/頸頚".split("/").map(v => Array.from(v));
     return Array.from(this).map(c => {
         if (c.match(/[ァ-ヶ]/)) return String.fromCodePoint(c.codePointAt(0) - 0x60);
         if (c.match(/[ぁ-ゞー]/)) return c;
@@ -184,21 +198,46 @@ String.prototype.sanitize = function() {
     }).join("");
 };
 
+const loadconfig = () => {
+    let config = location.hash;
+    let qlen = config.match(/r[0-9]+/);
+    if (qlen) $id("qlen").value = qlen[0].slice(1,4);
+};
+loadconfig();
+
 const Quiz = function() {
-    let qid = -1;
+    let turn = 0;
+    let qid = 0;
     let table = [];
     let miss = [];
 
+    const config = () => {
+        let table = this.table;
+        let qlen = parseInt($id("qlen").value) || 999;
+        table = table.shuffle().slice(0, qlen);
+        if (table.length == 0) return false;
+        location.hash = "r" + qlen;
+        this.table = table;
+        return true;
+    };
+
+    const next_turn = () => {
+        turn++;
+        qid = 0;
+        wait_next();
+    };
+
     const wait_next = () => {
-        qid++;
         $id("answer").onkeyup = (e) => {
             if (e.key != "Enter") return;
+            if (!qid && !turn && !config()) return;
             $id("answer").value = "";
+            qid++;
             make_quiz(qid);
         };
         $id("answer").placeholder = "Enterで開始";
         if (qid) {
-            $id("dumpresult").onclick = () => { dump_result(qid); };
+            $id("dumpresult").onclick = () => { dump_result(false); };
             $id("dumpresult").style.display = "inline";
         }
     };
@@ -211,19 +250,21 @@ const Quiz = function() {
     let make_quiz = (i) => {
 
         let rest = 20;
-        let q = this.table[i];
-        if (!q) return dump_result(i);
+        let q = this.table.filter(v => turn <= v.miss)[i - 1];
+        if (!q) return dump_result(true);
+        console.log("q=",i,turn,q.name.join());
 
         $id("dumpresult").style.display = "none";
         $id("result").style.display = "none";
         $id("photo").style.display = "block";
-        $id("answer").placeholder = "ここに人名を入力";
+        $id("answer").placeholder = "ここに部位名を入力";
         $id("answer").style.backgroundColor = "";
+        let style = (q.read[0].length <= 11)  ? "" : `style="font-size:18px; width:19px;"`;
         $id("read").innerHTML = Array.from(q.read[0]).filter(c => c != " ")
-            .map(c => `<span class="read close"><span>${c}</span></span>`).join("");
+            .map(c => `<span class="read close" ${style}><span>${c}</span></span>`).join("");
         $id("desc").innerHTML = q.name.reduce((sum,n) => sum.split(n).join("＿＿"), q.desc);
         $id("ui").classList = [];
-        $id("qid").innerHTML = 'Q' + (i + 1) + '<span style="font-size:70%;">/' + this.table.length + "</span>"
+        $id("qid").innerHTML = 'Q' + i + '<span style="font-size:70%;">/' + this.table.length + "</span>"
         $id("correct").innerText = "";
         $id("photo").innerHTML = `<img src="${q.photo}" style="width:100%;"/>`;
         $q("#photo img")[0].onload = () => {
@@ -259,6 +300,16 @@ const Quiz = function() {
             return true;
         };
 
+        const timeup = () => {
+            clearInterval(timer);
+            $id("timer").style.display = "none";
+            $id("ui").classList = ["miss"];
+            $id("correct").innerText = q.name;
+            if (check_answer()) return;
+            q.miss = turn + 1;
+            wait_next();
+        };
+        
         let timer = setInterval(() => {
             rest--;
             sounds("tick");
@@ -271,16 +322,10 @@ const Quiz = function() {
             if ((0 < rest) && len <= Math.ceil(rest / 16 * len0)) return;
             let i = parseInt(Math.random() * len);
             $c("close")[i].classList.remove("close");
-            if (0 < rest) return;
 
             // timeout
-            clearInterval(timer);
-            $id("timer").style.display = "none";
-            $id("ui").classList = ["miss"];
-            $id("correct").innerText = q.name;
-            if (check_answer()) return;
-            miss.push(q.name);
-            wait_next();
+            if (0 < rest) return;
+            timeup();
         }, 1000);
 
         $id("answer").onkeyup = (e) => {
@@ -291,27 +336,61 @@ const Quiz = function() {
         };
     };
 
-    let dump_result = (qid) => {
-        $id("photo").style.display = "none";
-        $id("result").innerHTML =
-            `<ul><li>正答率: <span>${parseInt(100 - 100 * miss.length / qid)}%</span> (${qid - miss.length}/${qid})`
-            + (miss.length == 0  ? `` : `<li>誤答(${miss.length}): <br/><textarea>${miss.join("\n")}</textarea>`)
-            + `</ul>`;
+    let dump_result = (is_done) => {
+        let ordername = (turn) => ((turn + 1) + (["st","nd","rd"][turn] || "th"));
+        let miss = this.table.filter(v => v.miss == turn + 1).map(v=>v.name.join("/"));
+        let misses = Array(turn + 2).fill(0).map((_, turn)=> this.table.filter(v => v.miss == turn).length);
+
+        if (!is_done) {
+            $id("result").style.display = "block";
+            $id("result").classList = ["halfway"];
+            $id("result").innerText = miss.length ? ("Miss: " +  miss.join(", ")) : "(No miss)";
+            $id("dumpresult").onclick = () => {
+                $id("result").style.display = "none";
+                $id("dumpresult").onclick = () => { dump_result(); };
+            };
+            return;
+        }
+
         $id("result").style.display = "block";
         $id("dumpresult").style.display = "none";
-        if (qid != this.table.length) return;
+        $id("result").classList = [];
+        $id("result").innerHTML = `<ul>` + misses.map((len,i) => {
+            let head = (turn < i) ? "Not cleared" : ordername(i) + " clear";
+            let $li = `<li>${head}:` + (turn == i ? ` <span>${len}</span>` : len);
+            if (i <= turn) return $li;
+            // not cleared
+            let $list = `<br/><textarea style="width:90%;height:${130 - turn * 24}px;">`;
+            if (0 < len) return $li + $list + miss.join(" ") + `</textarea>`;
+            // all clear
+            let list = this.table.filter(v => v.miss).map(v => v.name + ":" + "&star;".repeat(v.miss));
+            if (list.length == 0) return "";
+            return $list + list.join("\n") + `</textarea>`;
 
-        // experience all photos
+        }).join("") + `</ul>`;
+
+        if (miss.length != 0) {
+            sounds("done");
+            next_turn();
+            $id("ui").classList = ["miss"];
+            $id("correct").innerText = "Retry!";
+            $id("timer").innerText = "";
+            $id("desc").innerText = "";
+            $id("read").innerText = "";
+            $id("answer").placeholder = "Enterで再開";
+            return;
+        }
+
         $id("ui").innerText = "Thanks for playing!";
         $id("ui").classList = ["ending"];
         sounds("fin");
-        if (miss.length) return;
+        if (0 < turn) return;
 
         // perfect clear
         let timer = null;
         let dx = 1;
         $id("ui").innerHTML = "Perfect!<br/>Congratulations!!";
-        $id("ui").style.height = "300px";
+        $id("ui").style.height = "150px";
         $id("ui").style.fontSize = "30px";
         $id("ui").onclick = () => {
             if (timer) {
@@ -351,12 +430,13 @@ loadfile("qlist.txt", (table) => {
             name:r[1].split("）").join("").split("（"),
             read:r[2].split("）").join("").split("（"),
             photo:"https://www.roundflat.jp/yougo/"+r[0],
-            desc:r[4]
+            desc:r[4],
+            miss:0,
         };
     }).filter(v => v);
-    quiz.table.shuffle();
     quiz.wait_next();
     $id("answer").focus();
+    $id("timer").innerText = $q("body")[0].clientWidth + "x" + $q("body")[0].clientHeight;
 });
 
 const base64mp3 =  {

@@ -105,7 +105,7 @@ h1 {
     border-radius: 15px;
     vertical-align: middle;
     background-color: #99e;
-    width: 0;
+    width: auto;
     height: 30px;
     line-height:30px;
     margin: 2px;
@@ -236,14 +236,16 @@ h1 {
         <label><input type=checkbox name="range" value="11" checked />PC</label>
         <label><input type=checkbox name="range" value="12" checked />TE</label>
         <label><input type=checkbox name="range" value="13" checked />GB</label>
-        <label><input type=checkbox name="range" value="14" checked />LR</label>
+        <label><input type=checkbox name="range" value="14" checked />LR</label><br/>
+        <label><input type=checkbox name="rangex" value="15" disabled />Ex-HN/CA/B/UE/LE</label>
       </fieldset>
       <fieldset style="white-space:nowrap;">
         <legend>出題形式</legend>
         <label><input type=radio name="order" value="sort" />番号順</label><br/>
         <label><input type=radio name="order" value="random" checked />ランダム</label>
-        <input id="qlen" value="10" style="width:3.5ex;" />問<br/>
-        <label><input type=checkbox name="fig" />絵のみ</label><br/>
+        <input id="qlen" value="10" style="width:3.5ex;" maxlength=3 />問<br/>
+        <label><input type=checkbox name="fig" checked />絵のみ</label><br/>
+        <label><input type=checkbox name="hint" />ノーヒント</label><br/>
       </fieldset>
       
 
@@ -297,9 +299,9 @@ $id("rangeall").onclick = () => {
 
 const img = {
 "gv":{"src":"https://www.lieske.com/images/set0/governing2-clear.gif",
-   "loc":[[394,811],[395,773],[393,678],[393,635],[394,610],[390,571],[394,545],[391,524],[392,470],[395,452],[394,428],[392,374],[394,321],[394,293],[389,227],[394,209],[392,173],[394,143],[392,114],[391,79],[390,52],[772,65],[771,83],[773,99],[775,209],[773,225],[773,235],[590,184]]},
+   "loc":[[394,811],[394,773],[394,678],[394,635],[394,610],[394,571],[394,545],[394,524],[394,472],[394,452],[394,428],[394,374],[394,321],[394,293],[394,227],[394,209],[394,175],[394,143],[394,114],[394,79],[394,52],[772,65],[772,83],[772,99],[772,209],[772,225],[772,237],[590,184]]},
 "cv":{"src":"https://www.lieske.com/images/set0/conception2-clear.gif",
-   "loc":[[726,793],[359,837],[360,820],[360,796],[360,772],[360,759],[361,740],[360,709],[360,684],[357,662],[357,633],[357,608],[358,581],[355,556],[356,528],[357,486],[357,448],[355,486],[358,446],[351,416],[356,388],[353,357],[357,329],[356,303],[354,276],[355,246]]},
+   "loc":[[726,793],[360,837],[360,820],[360,796],[360,772],[360,759],[360,740],[360,711],[360,684],[356,662],[356,633],[356,608],[356,581],[356,556],[356,528],[356,486],[356,448],[356,416],[356,388],[356,357],[356,329],[356,303],[356,276],[356,246]]},
 "lu":{"src":"https://lieske.com/images/set0/lung-clear.gif",
    "loc":[[607,348],[607,329],[665,428],[667,450],[676,602],[706,697],[738,777],[723,787],[724,811],[746,834],[778,896]]},
 "li":{"src":"https://i0.wp.com/mendacupuncture.com/wp-content/uploads/2020/11/large-intestine-ani-1-251x300.gif",
@@ -334,13 +336,15 @@ const loadconfig = () => {
     $name("range").map($v => $v.checked = false);
     rangeconfig.map(i => $name("range")[i].checked = true);
     console.log(config);
-    let qlen = (config[1] || "").match(/^r[0-9]+$/);
+    let misc = config[1] || "";
+    let qlen = misc.match(/r[0-9]+/);
     if (qlen) {
-        $id("qlen").value = qlen[0].slice(1);
+        $id("qlen").value = qlen[0].slice(1,4);
     } else {
         $name("order")[0].checked = true;
     }
-    $name("fig")[0].checked = config.indexOf("f") != -1;
+    $name("fig")[0].checked = misc.indexOf("f") != -1;
+    $name("hint")[0].checked = misc.indexOf("h") != -1;
 };
 loadconfig();
   
@@ -350,7 +354,8 @@ const Quiz = function() {
     let table = [];
     let miss = [];
     let klist = [];
-    let draw_fig = false;
+    let draw_fig = true;
+    let hint = true;
     
     const config = () => {
         let table = this.table;
@@ -359,12 +364,14 @@ const Quiz = function() {
         let range = $name("range").filter($v=>$v.checked).map($v=> $v.parentNode.innerText.toLowerCase());
         table = table.filter(v=> range.indexOf(v.id.split("-").shift())!=-1);
         let sort = $name("order").find($v => $v.checked).value;
+        let qlen = parseInt($id("qlen").value) || 999;
         if (sort != "sort")
-            table = table.shuffle().slice(0,parseInt($id("qlen").value) || 400);
+            table = table.shuffle().slice(0, qlen);
         if (table.length == 0) return false;
         draw_fig = $name("fig")[0].checked;
+        hint = !$name("hint")[0].checked;
         this.table = table;
-        location.hash = range.join("") + (sort != "sort" ? "_r" + $id("qlen").value : "") + (draw_fig ? "_f" : "");
+        location.hash = range.join("") + "_" + [(draw_fig && "f"), (!hint && "h"), (sort != "sort" && "r" + qlen)].filter(v => v).join("");
         return true;
     };
 
@@ -438,6 +445,7 @@ const Quiz = function() {
                 $q("fieldset")[0].scrollLeft = loc[0] * rate - 200;
                 $id("pos").style.top = (loc[1] * rate - 7) + "px";
                 $id("pos").style.left = (loc[0] * rate - 7) + "px";
+                rest = 20;
             };
         }
         $id("read").innerHTML = options.slice(-22).sort()
@@ -517,10 +525,12 @@ const Quiz = function() {
             if (16 <= rest) return;
 
             // open hint
-            let len = $c("dummy").length;
-            let i = parseInt(Math.random() * len);
-            $c("dummy")[i].classList.remove("dummy");
-
+            if (hint) {
+                let len = $c("dummy").length;
+                let i = parseInt(Math.random() * len);
+                $c("dummy")[i].classList.remove("dummy");
+            }
+            
             // timeout
             if (0 < rest) return;
             timeup();
@@ -618,6 +628,7 @@ loadfile("../meridian.json", (table) => {
     });
     quiz.wait_next();
     $id("start").focus();
+    $id("timer").innerText = $q("body")[0].clientWidth + "x" + $q("body")[0].clientHeight;
 });
 
 const base64mp3 =  {
