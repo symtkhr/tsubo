@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="icon" type="image/x-icon" href="./whoisfavicon.ico">
+<link rel="icon" type="image/x-icon" href="./meridian.ico">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
@@ -12,9 +12,9 @@ body {
 }
 #main {
     background: #fff;
-    width: 400px;
+    width: 400px; /* 848=424*2*/
     position:relative;
-    height: 450px;
+    height: auto; /* 1931=955*2 */
     overflow:hidden;
     margin:0 auto;
 }
@@ -34,6 +34,9 @@ body {
 @keyframes blink{
     0% {opacity:.3;}
     100% {opacity:1;}
+}
+.start #ui span, .start #ui div, .start #quiz {
+    display: none;
 }
 
 h1 {
@@ -84,13 +87,10 @@ h1 {
     position:absolute; box-sizing:border-box; border:3px solid #080; background-color:#0f0;
     border-radius:50%; width:15px; height:15px;
 }
-#quiz {
-    height:150px;
-    position:relative;
-}
 #ui {
     background-color:white; opacity:.9;
-    position:absolute; bottom:0; padding:2px; box-sizing:border-box; width:100%;
+    //position:absolute;
+    bottom:0; padding:2px; box-sizing:border-box; width:100%;
 }
 #ui.ending {
     height:100px;
@@ -170,16 +170,16 @@ h1 {
     font-size:10px;
     color: gray;
 }
-#ui.miss #answerbox {
+#main.miss #answerbox {
     background: #fcc;
 }
-#ui.miss #correct {
+#main.miss #correct {
     color: red;
 }
-#ui.clear #answerbox, #ui.clear #timer {
+#main.clear #answerbox, #main.clear #timer {
     background: #cfc;
 }
-#ui.clear #correct {
+#main.clear #correct {
     color: green;
 }
 .read.close span {
@@ -195,38 +195,41 @@ h1 {
 </style>
 
 <body>
-<div id="main">
-  <span id="qid"></span>
-    <button id="dumpresult">Result</button>
-    <button id="giveup" style="float:right;">GiveUp</button>
-  <h1>14 Meridians</h1>
-  <div id="ui" style="height:420px;">
-    <fieldset style="height:180px; overflow-y:scroll; margin-bottom:5px;">
-    <legend><span id="mid">_</span><span id="correct">_</span></legend>
-    <div id="photo"></div>
-    <span id="desc"></span>
-</fieldset>
-    <div id="answerbox" style="font-size:30px; padding: 0 5px; border:solid gray 1px; height:40px; width: 130px; display:inline-block;">
-    <span id="answer"></span><span id="cursor" class="blinking">|
-</span></div><span>(以下の文字をクリックして入力)</span>
-    <div id="read" style="height:135px;"><span class="read"></span></div>
-    <span id="timer"></span><br/>
-    <button id="start">開始</button>
-  </div>
-
-  <div id="result">
-    <fieldset><legend>ルール</legend>
-    説明文の経穴の名前を漢字で答えてください。<br/>
-    20秒以内に何度でも解答可。
-    </fieldset>
-    <div style="display:flex;">
-      <fieldset style="white-space:nowrap; ">
-        <legend>出題範囲</legend>
-        (<button id="rangeall">全選択</button>)
-        <label><input type=checkbox name="range" value="1" checked />CV</label>
-        <label><input type=checkbox name="range" value="2" checked />GV</label><br/>
-        <label><input type=checkbox name="range" value="3" checked />LU</label>
-        <label><input type=checkbox name="range" value="4" checked />LI</label>
+  <div id="main" class="start" style="width:100%; display:flex; flex-direction:column; height:100%; min-height:400px;">
+    <div id="head" style="width:100%;">
+      <span id="qid"></span>
+      <button id="dumpresult">Result</button>
+      <button id="giveup" style="float:right;">GiveUp</button>
+      <h1>14 Meridians</h1>
+    </div>
+    <div style="flex-grow:1;">
+      <fieldset id="quiz" style="overflow-y:scroll; margin-bottom:5px; border:1px solid red; max-width:400px; height:500px;">
+        <legend><span id="mid">_</span><span id="correct">_</span></legend>
+        <div id="photo"></div>
+        <span id="desc"></span>
+      </fieldset>
+      <div id="ui" style="border:1px solid blue; width: 400px; height:auto;  bottom:0; right:0; display:block; position: fixed;">
+        <div id="answerbox" style="font-size:30px; padding: 0 5px; border:solid gray 1px; height:40px; width: 130px; display:inline-block;">
+          <span id="answer"></span><span id="cursor" class="blinking">|
+        </span></div><span>(以下の文字をクリックして入力)</span>
+        <div id="read" style="height:135px;"><span class="read"></span></div>
+        <span id="timer"></span><br/>
+        <button id="start">開始</button>
+      </div>
+    </div>
+    <div id="result" style="opacity:1; max-width:400px; height:350px;">
+      <fieldset><legend>ルール</legend>
+        説明文の経穴の名前を漢字で答えてください。<br/>
+        20秒以内に何度でも解答可。
+      </fieldset>
+      <div style="display:flex;">
+        <fieldset style="white-space:nowrap; ">
+          <legend>出題範囲</legend>
+          (<button id="rangeall">全選択</button>)
+          <label><input type=checkbox name="range" value="1" checked />CV</label>
+          <label><input type=checkbox name="range" value="2" checked />GV</label><br/>
+          <label><input type=checkbox name="range" value="3" checked />LU</label>
+          <label><input type=checkbox name="range" value="4" checked />LI</label>
         <label><input type=checkbox name="range" value="5" checked />ST</label>
         <label><input type=checkbox name="range" value="6" checked />SP</label><br/>
         <label><input type=checkbox name="range" value="7" checked />HT</label>
@@ -385,8 +388,9 @@ const Quiz = function() {
         $id("giveup").style.display = "none";
         $id("start").style.display = "";
         $id("start").onclick = (e) => {
-            if (!qid && !turn && !config()) return;
+            if (!qid && !turn && !config()) return $id("timer").innerText = "出題範囲を選択してください";
             console.log("qid=",qid);
+            $id("main").classList = [];
             qid++;
             make_quiz(qid);
         };
@@ -441,8 +445,8 @@ const Quiz = function() {
                 $img.style.width = (100 * irate) + "%";
                 let loc = img0.loc[parseInt(id.split("-").pop(),10) - 1];
                 let rate = $img.width / $img.naturalWidth;
-                $q("fieldset")[0].scrollTop = loc[1] * rate - 75;
-                $q("fieldset")[0].scrollLeft = loc[0] * rate - 200;
+                $q("fieldset")[0].scrollTop = loc[1] * rate - $id("quiz").clientHeight / 2;
+                $q("fieldset")[0].scrollLeft = loc[0] * rate - $id("quiz").clientWidth / 2;
                 $id("pos").style.top = (loc[1] * rate - 7) + "px";
                 $id("pos").style.left = (loc[0] * rate - 7) + "px";
                 rest = 20;
@@ -473,7 +477,7 @@ const Quiz = function() {
         };
 
         // classes
-        $id("ui").classList = [];
+        $id("main").classList = [];
         $id("start").style.display = "none";
         $id("dumpresult").style.display = "none";
         $id("correct").style.display = "none";
@@ -500,7 +504,7 @@ const Quiz = function() {
             // clear event
             clearInterval(timer);
             sounds("clear");
-            $id("ui").classList = ["clear"];
+            $id("main").classList = ["clear"];
             $id("timer").style.width = "auto";
             show_correct();
             wait_next();
@@ -510,7 +514,7 @@ const Quiz = function() {
         const timeup = () => {
             clearInterval(timer);
             $id("timer").style.display = "none";
-            $id("ui").classList = ["miss"];
+            $id("main").classList = ["miss"];
             if (check_answer()) return;
             sounds("chin");
             q.miss = turn + 1;
@@ -576,7 +580,7 @@ const Quiz = function() {
         }
 
         $id("ui").innerText = "Thanks for playing!";
-        $id("ui").classList = ["ending"];
+        $id("main").classList = ["ending"];
         $id("ui").style.height = "60px";
         sounds("fin");
         if (turn != 0) return;
@@ -601,7 +605,6 @@ const Quiz = function() {
                 $id("ui").style.fontSize = (x + dx) + "px";
             }, 20);
         };
-        //$id("ui").onclick();
     };
     
     this.make_quiz = make_quiz;
@@ -626,9 +629,39 @@ loadfile("../meridian.json", (table) => {
         v.miss = 0;
         return v;
     });
+    const dic = [["あし","足"],["あたま","頭"],["こし","腰"],["ひざ","膝"],["はら","腹"]];
+    quiz.table.map(v => {
+        v.name.map(n => {
+            let k, r;
+            [k,r] = n.split("_");
+            r = r.split("|").shift();
+            let d = dic.find(v => k.indexOf(v[1]) != -1 && r.indexOf(v[0]) != -1);
+            if (d) {
+                r = r.split(d[0] + "の").join("").split(d[0]).join("");
+                k = k.split(d[1]).join("");
+            }
+
+            let r0 = r.match(/[^ゃゅょ][ゃゅょ]?[んっ]?/g);
+            if (r0.length == k.length) return r0;
+
+            let r01 = r0.reduce((sum,r) => {
+                if (sum.length
+                    && sum[sum.length - 1].indexOf(",") == -1
+                    && "いうきくちつ".split("").indexOf(r) != -1)
+                    sum[sum.length - 1] += r + ",";
+                else
+                    sum.push(r);
+                return sum;
+            }, []);
+            if (r01.length == k.length) return r01;
+            return console.log(r01, k, "**********************");
+        });
+
+    });
+    
     quiz.wait_next();
     $id("start").focus();
-    $id("timer").innerText = $q("body")[0].clientWidth + "x" + $q("body")[0].clientHeight;
+    $id("timer").innerText = window.innerWidth + "x" + window.innerHeight;
 });
 
 const base64mp3 =  {
