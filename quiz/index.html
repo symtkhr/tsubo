@@ -348,8 +348,19 @@ const loadconfig = () => {
     }
     $name("fig")[0].checked = misc.indexOf("f") != -1;
     $name("hint")[0].checked = misc.indexOf("h") != -1;
+    return true;
 };
-loadconfig();
+
+const loadimage = () => {
+    let config = location.hash.split("loadimg_");
+    let src = config[1];
+    if (!src) return;
+    $id("main").innerHTML = `<img id="limg" src="${src}"/>`;
+    $id("main").style.width = "100%";
+    $id("limg").onclick = (e) => console.log(e.offsetX,  e.offsetY);
+};
+
+loadconfig() || loadimage();
   
 const Quiz = function() {
     let turn = 0;

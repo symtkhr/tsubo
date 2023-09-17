@@ -41,8 +41,10 @@
 </head>
 <body>
   <div style="position:relative;">
-    <div id="pos" style="position:absolute; display:none; box-sizing:border-box; border:3px solid #080; background-color:#0f0; border-radius:50%;"></div>
-    <img src="68123.jpg" id="tsubo" style="width:100%; max-width:550px;"/>
+    <div style="width:100%; max-width:550px; overflow:scroll; position:relative;">
+      <div id="pos" style="position:absolute; display:none; box-sizing:border-box; border:3px solid #080; background-color:#0f0; border-radius:50%;"></div>
+      <img src="68123.jpg" id="tsubo" width="100%"/>
+    </div>
     <div id="desc"></div>
     <div id="searchbox"><select id="pulldown" style="width:130px;"></select>検索:<input id="search" style="width:100px;"/>
     <div id="result"></div>
@@ -59,6 +61,36 @@ const loadfile = (path,cb) => {
     req.open("GET", path);
     req.addEventListener("load", (xml) => { cb(xml.srcElement.response); });
     req.send();
+};
+const imgtable = {
+"gv":{"src":"https://www.lieske.com/images/set0/governing2-clear.gif",
+   "loc":[[394,811],[394,773],[394,678],[394,635],[394,610],[394,571],[394,545],[394,524],[394,472],[394,452],[394,428],[394,374],[394,321],[394,293],[394,227],[394,209],[394,175],[394,143],[394,114],[394,79],[394,52],[772,65],[772,83],[772,99],[772,209],[772,225],[772,237],[590,184]]},
+"cv":{"src":"https://www.lieske.com/images/set0/conception2-clear.gif",
+   "loc":[[726,793],[360,837],[360,820],[360,796],[360,772],[360,759],[360,740],[360,711],[360,684],[356,662],[356,633],[356,608],[356,581],[356,556],[356,528],[356,486],[356,448],[356,416],[356,388],[356,357],[356,329],[356,303],[356,276],[356,246]]},
+"lu":{"src":"https://lieske.com/images/set0/lung-clear.gif",
+   "loc":[[607,348],[607,329],[665,428],[667,450],[676,602],[706,697],[738,777],[723,787],[724,811],[746,834],[778,896]]},
+"li":{"src":"https://i0.wp.com/mendacupuncture.com/wp-content/uploads/2020/11/large-intestine-ani-1-251x300.gif",
+   "loc":[[36,267],[53,255],[58,252],[68,248],[80,242],[92,235],[104,227],[124,215],[130,210],[139,206],[149,200],[160,199],[148,179],[144,156],[134,112],[227,106],[75,94],[78,83],[55,53],[52,46]]},
+"st":{"src":"https://lieske.com/images/set0/stomach-clear.gif",
+   "loc":[[546,162],[546,173],[545,184],[546,216],[496,227],[483,204],[484,175],[506,71],[245,202],[239,222],[233,237],[202,231],[194,251],[192,267],[183,286],[181,305],[180,321],[180,343],[209,390],[209,407],[206,417],[207,431],[207,446],[207,456],[207,471],[207,484],[206,497],[207,508],[206,520],[208,540],[160,591],[158,676],[163,710],[167,752],[162,814],[160,848],[163,871],[165,897],[165,917],[151,897],[174,994],[170,1022],[165,1043],[159,1056],[153,1067]]},
+"sp":{"src":"https://lieske.com/images/set0/spleen-clear.gif",
+   "loc":[[520,1034],[511,1027],[510,1016],[504,1007],[499,979],[479,934],[452,895],[440,850],[441,819],[408,738],[375,636],[366,551],[366,534],[376,489],[378,458],[394,414],[443,333],[452,309],[455,286],[451,265],[457,367]]},
+"ht":{"src":"https://lieske.com/images/set0/heart-clear.gif",
+   "loc":[[322,475],[313,610],[296,669],[192,836],[180,849],[170,860],[160,875],[131,938],[137,982]]},
+"si":{"src":"https://lieske.com/images/set0/smintestine-clear.gif",
+   "loc":[[303,1030],[287,985],[284,959],[276,914],[276,901],[276,872],[236,798],[189,698],[189,460],[195,405],[158,429],[158,353],[131,374],[109,358],[100,338],[662,283],[664,255],[731,206],[656,182]]},
+"bl":{"src":"https://lieske.com/images/set0/bladder-clear.gif",
+   "loc":[[687,137],[685,121],[685,79],[696,81],[692,62],[692,47],[280,38],[256,63],[258,129],[253,162],[259,244],[258,263],[257,280],[260,299],[261,316],[260,329],[261,347],[260,390],[258,413],[258,431],[258,445],[258,464],[258,478],[256,497],[257,515],[253,534],[256,550],[255,566],[255,582],[252,599],[270,550],[269,565],[268,579],[269,597],[268,614],[232,634],[229,721],[211,802],[207,820],[230,823],[239,261],[239,282],[239,297],[236,316],[236,330],[236,355],[233,392],[237,413],[238,431],[238,444],[235,460],[233,482],[238,564],[238,598],[228,856],[228,897],[228,938],[205,954],[211,1017],[209,1053],[210,1075],[192,1061],[177,1070],[165,1080],[152,1078],[138,1084],[121,1092]]},
+"ki":{"src":"https://lieske.com/images/set0/kidney-clear.gif",
+   "loc":[[94,965],[225,1027],[257,1005],[266,1012],[256,1028],[245,1024],[252,974],[236,962],[244,937],[224,792],[208,526],[209,512],[211,497],[216,482],[216,466],[219,454],[222,416],[223,405],[226,389],[225,374],[226,363],[211,313],[211,292],[211,268],[212,251],[208,231],[215,218]]},
+"pc":{"src":"https://lieske.com/images/set0/pericardium-clear.gif",
+   "loc":[[311,423],[247,439],[221,590],[174,723],[160,757],[149,779],[135,801],[98,877],[77,977]]},
+"te":{"src":"https://i.pinimg.com/474x/98/1a/87/981a87b8630dc2ad16dc66d02d8e2f2d.jpg",
+   "loc":[[345,947],[331,883],[323,866],[314,813],[307,766],[303,746],[290,745],[296,723],[285,671],[245,526],[245,503],[238,442],[236,348],[235,295],[135,247],[153,184],[158,149],[144,126],[143,98],[164,84],[184,112],[197,102],[239,96]]},
+"gb":{"src":"https://lieske.com/images/set0/gallbladder-clear.gif",
+   "loc":[[631,151],[584,186],[586,162],[596,102],[596,113],[592,125],[589,135],[570,120],[552,119],[544,139],[539,156],[543,176],[610,83],[647,103],[626,70],[588,62],[551,70],[526,90],[522,165],[534,194],[344,200],[374,317],[392,316],[430,375],[334,428],[353,440],[415,489],[419,503],[391,520],[339,547],[361,668],[356,694],[357,748],[350,806],[331,915],[355,916],[343,951],[355,964],[343,974],[356,1034],[399,1052],[413,1060],[429,1065],[445,1069]]},
+"lr":{"src":"https://lieske.com/images/set0/liver-clear.gif",
+   "loc":[[75,1020],[88,1018],[105,1013],[138,985],[151,923],[147,906],[160,801],[163,774],[152,709],[146,615],[140,598],[157,584],[128,468],[157,404]]}
 };
 const tsubos = [
     {"name":"頭維","x":56,"y":70,"read":"ずい"},
@@ -81,11 +113,7 @@ const tsubos = [
     {"name":"下関","x":213,"y":215,"read":"げかん"},
     {"name":"承漿","x":142,"y":270,"read":"しょうしょう"},
     {"name":"地倉","x":180,"y":245,"read":"ちそう"}
-].map(v => {
-    v.x /= 267;
-    v.y /= 267;
-    return v;
-});
+];
 
 let meridian = [];
 loadfile("meridian.json", (table) => {
@@ -145,17 +173,37 @@ loadfile("meridian.json", (table) => {
             + "<span>効能</span> " + desc + "<br/>"
             + '</div>';
         let img = tsubos.find(p => p.id == id);
-        if (!img) return;
-        let w = $id("tsubo").width;
-        p = img;
-        $id("pos").style.display = `block`;
-        $id("pos").style.left = `${p.x*w - w/40}px`;
-        $id("pos").style.top = `${p.y*w - w/40}px`;
-        $id("pos").style.width = `${w/20}px`;
-        $id("pos").style.height = `${w/20}px`;
+        if (img) {
+            $id("tsubo").src = "68123.jpg";
+            p = img;
+        } else {
+            let img0 = imgtable[id.split("-").shift()];
+            $id("tsubo").src = img0.src;
+            let loc = img0.loc[parseInt(id.split("-").pop(),10) - 1];
+            p = {x: loc[0], y:loc[1]};
+        }
+        $id("tsubo").onload = () => {
+            let w0 = $id("tsubo").naturalWidth;
+            let irate = w0 / 550;
+            if (irate < 1) irate = 1;
+            if (2 < irate) irate = 2;
+            $id("tsubo").style.width = (100 * irate) + "%";
+            let w = $id("tsubo").width;
+            let size = img ? w/20 : irate*10;
+
+            let $div = $id("tsubo").parentNode;
+            $div.scrollLeft = p.x * w/w0 - $div.clientWidth  / 2;
+            $div.scrollTop  = p.y * w/w0 - $div.clientHeight / 3;
+
+            $id("pos").style.display = `block`;
+            $id("pos").style.left = `${p.x * w/w0 - size/2}px`;
+            $id("pos").style.top = `${p.y * w/w0 - size/2}px`;
+            $id("pos").style.width = `${size}px`;
+            $id("pos").style.height = `${size}px`;
+        };
+        return;
     };
     onhashchange();
-
 });
 
 $id("desc").innerText = "(画面内の赤丸をクリックor右上プルダウンを選択)";
@@ -163,11 +211,20 @@ $id("desc").style.maxWidth = "550px";
 $id("tsubo").onclick = (e) => {
     $id("desc").innerText = "(画面内の赤丸をクリックor右上プルダウンを選択)";
     $id("pos").style.display = `none`;
-    let w = $id("tsubo").width;
-    let c = {x:e.offsetX/w, y:e.offsetY/w};
-    let res = tsubos.filter(p => (p.x - c.x)**2 + (p.y - c.y)**2 < 100/267/267);
+    let rate = $id("tsubo").naturalWidth / $id("tsubo").width;
+    let c = {x:e.offsetX * rate, y:e.offsetY * rate};
+    let src = $id("tsubo").src;
+    let key = Object.keys(imgtable).find(key => imgtable[key].src == src);
+    if (key) {
+        let res = imgtable[key].loc.findIndex(p => (p[0] - c.x)**2 + (p[1] - c.y)**2 < 200);
+        location.hash = res < 0 ? "" : (key + "-" + (res+1).toString());
+        return;
+    }
+    if (src.indexOf("68123.jpg") < 0) return;
+    let res = tsubos.filter(p => (p.x - c.x)**2 + (p.y - c.y)**2 < 100);
     location.hash = res.length ? res[0].id : "";
 };
+  $id("tsubo").parentNode.style.maxHeight = window.innerHeight + "px";
 </script>
 </body>
 </html>
