@@ -154,6 +154,9 @@ h1 {
     padding:2px;
     margin-right: 2px;
 }
+#main.quiz {
+    user-select:none;
+}
 #answer,#correct, #read {
     font-size: 35px;
     line-height:40px;
@@ -220,7 +223,7 @@ h1 {
     <div id="result" style="opacity:1; max-width:400px; height:350px;">
       <fieldset><legend>ルール</legend>
         説明文の経穴の名前を漢字で答えてください。<br/>
-        20秒以内に何度でも解答可。
+        制限時間以内に何度でも解答可。
       </fieldset>
       <div style="display:flex;">
         <fieldset style="white-space:nowrap; ">
@@ -249,6 +252,8 @@ h1 {
         <input id="qlen" value="10" style="width:3.5ex;" maxlength=3 />問<br/>
         <label><input type=checkbox name="fig" checked />絵のみ</label><br/>
         <label><input type=checkbox name="hint" />ノーヒント</label><br/>
+        択数: <input id="clen" value="22" style="width:3.5ex;" maxlength=3 />字<br/>
+        制限時間: <input id="tlen" value="20" style="width:3.5ex;" maxlength=3 />秒<br/>
       </fieldset>
       
 
@@ -348,6 +353,10 @@ const loadconfig = () => {
     }
     $name("fig")[0].checked = misc.indexOf("f") != -1;
     $name("hint")[0].checked = misc.indexOf("h") != -1;
+    let tlen = misc.match(/t[0-9]+/);
+    if (tlen) $id("tlen").value = tlen[0].slice(1,3);
+    let clen = misc.match(/s[0-9]+/);
+    if (clen) $id("clen").value = clen[0].slice(1,3);
     return true;
 };
 
@@ -370,6 +379,8 @@ const Quiz = function() {
     let klist = [];
     let draw_fig = true;
     let hint = true;
+    let clen = 22;
+    let tlen = 20;
     
     const config = () => {
         let table = this.table;
@@ -384,8 +395,15 @@ const Quiz = function() {
         if (table.length == 0) return false;
         draw_fig = $name("fig")[0].checked;
         hint = !$name("hint")[0].checked;
+        tlen = parseInt($id("tlen").value || 20);
+        clen = parseInt($id("clen").value || 22);
+        if (clen < 8) clen = 8;
+        if (38 < clen) clen = 38;
+        if (tlen < 5) tlen = 5;
+        if (40 < tlen) tlen = 40;
         this.table = table;
-        location.hash = range.join("") + "_" + [(draw_fig && "f"), (!hint && "h"), (sort != "sort" && "r" + qlen)].filter(v => v).join("");
+        location.hash = range.join("") + "_" + [(draw_fig && "f"), (!hint && "h"), (sort != "sort" && "r" + qlen)].filter(v => v).join("")
+            + "s" + clen + "t" + tlen;
         return true;
     };
 
@@ -418,7 +436,7 @@ const Quiz = function() {
     };
     
     let make_quiz = (i) => {
-        let rest = 20;
+        let rest = tlen;
         let q = this.table.filter(v => turn <= v.miss)[i - 1];
         if (!q) return dump_result(true);
 
@@ -427,7 +445,7 @@ const Quiz = function() {
         let names = q.name.map(n => n.split("_").shift());
         console.log(name);
         let options = klist.filter(c => names.join("").indexOf(c) < 0)
-            .shuffle().slice(0, 22)
+            .shuffle().slice(0, clen)
             .concat(Array.from(names.join("")).filter((v,i,s) => s.indexOf(v)==i));
 
         let desc = q.desc.split("：").pop().replace(/\[\[.+?\]\]/g, (m) => `${m.slice(2,-2)}`);
@@ -460,13 +478,14 @@ const Quiz = function() {
                 $q("fieldset")[0].scrollLeft = loc[0] * rate - $id("quiz").clientWidth / 2;
                 $id("pos").style.top = (loc[1] * rate - 7) + "px";
                 $id("pos").style.left = (loc[0] * rate - 7) + "px";
-                rest = 20;
+                rest = tlen;
             };
         }
-        $id("read").innerHTML = options.slice(-22).sort()
+        $id("read").innerHTML = options.slice(-clen).sort()
             .map(c => `<span class="read ` + (names.join("").indexOf(c) < 0 ? "dummy":"correct")
                  +`"><span>${c}</span></span>`).join("")
             + `<span class="bs"><span>BackSpace</span></span>`;
+        $id("read").style.height = (45 * Math.ceil((2 + clen) / 8)) + "px";
         $id("answer").innerText = "";
         $id("correct").innerHTML = q.name.map(n => 
                                               "<span class=name>" + n.split("_").join("<span class=ruby>(")
@@ -488,7 +507,7 @@ const Quiz = function() {
         };
 
         // classes
-        $id("main").classList = [];
+        $id("main").classList = ["quiz"];
         $id("start").style.display = "none";
         $id("dumpresult").style.display = "none";
         $id("correct").style.display = "none";
@@ -542,8 +561,10 @@ const Quiz = function() {
             // open hint
             if (hint) {
                 let len = $c("dummy").length;
-                let i = parseInt(Math.random() * len);
-                $c("dummy")[i].classList.remove("dummy");
+                if (len) {
+                    let i = parseInt(Math.random() * len);
+                    $c("dummy")[i].classList.remove("dummy");
+                }
             }
             
             // timeout
