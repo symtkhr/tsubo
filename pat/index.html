@@ -223,7 +223,7 @@ h1 {
         <span id="timer"></span><br/>
       </div>
     </div>
-    <div id="result" style="opacity:1; max-width:400px; height:350px;">
+    <div id="result" style="opacity:1; max-width:400px; height:320px;">
       <div style="display:flex;">
         <fieldset style=" ">
           <legend>出題範囲</legend>
@@ -243,7 +243,8 @@ h1 {
           制限時間: <input id="tlen" value="20" style="width:3.5ex;" maxlength=3 />秒<br/>
           <label><input type=checkbox name="tf" />マルバツ</label><br/>
         </fieldset>
-    </div>
+      </div>
+      栞:<input style="width:90%;" id="bm"/>
   </div>
 </div>
 
@@ -324,7 +325,7 @@ const Quiz = function() {
     let clen = 22;
     let tlen = 20;
     let bookmark = (localStorage.getItem("patsave") || "").split(",").filter(v=>v);
-    
+    $id("bm").value = bookmark.join();
     const config = () => {
         let table = this.table;
         let range = $name("range").filter($v=>$v.checked).map($v=> $v.value);
@@ -469,6 +470,7 @@ const Quiz = function() {
             wait_next();
         };
 
+        $id("timer").style.display ="none";
         return         wait_next();;
         let timer = setInterval(() => {
             rest--;
