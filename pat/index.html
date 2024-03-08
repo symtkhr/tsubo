@@ -219,11 +219,12 @@ h1 {
       </fieldset>
       <div id="ui">
         <button id="start">開始</button>
+        <button id="bmrewrite" style="display:none;">栞書換</button>
         <div id="answerbox"></div>
         <span id="timer"></span><br/>
       </div>
     </div>
-    <div id="result" style="opacity:1; max-width:400px; height:350px;">
+    <div id="result" style="opacity:1; max-width:400px; height:320px;">
       <div style="display:flex;">
         <fieldset style=" ">
           <legend>出題範囲</legend>
@@ -239,11 +240,12 @@ h1 {
           <legend>出題形式</legend>
           <label><input type=radio name="order" value="sort" />番号順</label><br/>
           <label><input type=radio name="order" value="random" checked />ランダム</label>
-          <input id="qlen" value="100" style="width:3.5ex;" maxlength=3 />問<br/>
-          制限時間: <input id="tlen" value="20" style="width:3.5ex;" maxlength=3 />秒<br/>
+          <input id="qlen" value="999" style="width:3.5ex;" maxlength=3 />問<br/>
           <label><input type=checkbox name="tf" />マルバツ</label><br/>
+          <label><input type=checkbox name="bmfilter" />栞のみ</label><br/>
         </fieldset>
-    </div>
+      </div>
+      栞:<input style="width:90%;" id="bm"/>
   </div>
 </div>
 
@@ -284,6 +286,10 @@ $id("rangeall").onclick = () => {
   
 const loadconfig = () => {
     let config = location.hash.split("_");
+    if (config[0]=="#bm") {
+        let bm = (config[1]||"").split(",").sort((a,b)=>a-b).join(",");
+        localStorage.setItem("patsave", bm);
+    }
     let rangeconfig = (config[0].match(/[0-9]/g) || []);
     if (rangeconfig.length == 0 || rangeconfig.indexOf(-1) != -1) return;
     $name("range").map($v => $v.checked = false);
@@ -297,11 +303,18 @@ const loadconfig = () => {
         $name("order")[0].checked = true;
     }
     let tlen = misc.match(/t[0-9]+/);
-    if (tlen) $id("tlen").value = tlen[0].slice(1,3);
+    //if (tlen) $id("tlen").value = tlen[0].slice(1,3);
     if (misc.match(/x/)) $name("tf")[0].checked = true;
     return true;
 };
 
+const bookmarkset = () => {
+    $id("start").style.display="none";
+    $id("bmrewrite").style.display="";
+    return;
+    //$id("start").id = "rewrite";
+};
+  
 const loadimage = () => {
     let config = location.hash.split("loadimg_");
     let src = config[1];
@@ -310,9 +323,9 @@ const loadimage = () => {
     $id("main").style.width = "100%";
     $id("limg").onclick = (e) => console.log(e.offsetX,  e.offsetY);
 };
-
-loadconfig() || loadimage();
   
+loadconfig();
+
 const Quiz = function() {
     let turn = 0;
     let qid = 0;
@@ -324,7 +337,7 @@ const Quiz = function() {
     let clen = 22;
     let tlen = 20;
     let bookmark = (localStorage.getItem("patsave") || "").split(",").filter(v=>v);
-    
+    $id("bm").value = bookmark.join();
     const config = () => {
         let table = this.table;
         let range = $name("range").filter($v=>$v.checked).map($v=> $v.value);
@@ -346,6 +359,9 @@ const Quiz = function() {
             xtable.map(c => { table = table.concat(c); });
             table.map(v=>console.log(v.q.sp.join()));
         }
+        let bmfilter = $name("bmfilter")[0].checked;
+        if (bmfilter) table = table.filter(v => bookmark.indexOf(v.id) != -1);
+
         if (!sort) table = table.shuffle().slice(0, qlen);
         if (table.length == 0) return false;
         this.table = table;
@@ -469,6 +485,7 @@ const Quiz = function() {
             wait_next();
         };
 
+        $id("timer").style.display ="none";
         return         wait_next();;
         let timer = setInterval(() => {
             rest--;
@@ -610,7 +627,7 @@ loadfile("patent.csv", (table) => {
             let cell = row.split(",");
             v.id = cell[0];
             v.cat = cell[1];
-            v.q = qformat(cell[3].split("<>"), cell[2].split("/"));
+            v.q = qformat(cell[3].split("<>"), cell[2].split("/").filter(v=>v));
             v.remark = cell[4];
             return v;
         }).filter(v => v.q).sort((a,b) => parseInt(a.cat) - parseInt(b.cat));
