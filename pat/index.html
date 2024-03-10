@@ -41,7 +41,7 @@ body {
 
 #quiz legend { cursor: pointer; }
 
-h1 {
+#head {
   background-color:#dfc;
   margin:0;
   font-size:25px;
@@ -53,6 +53,7 @@ h1 {
   background-color: #5c5;
   width: 60px;
   height: 30px;
+  font-size: 16px;
   line-height:30px;
   margin: 2px;
   border-radius: 10px;
@@ -194,9 +195,11 @@ h1 {
 .read.close span {
     display:none;
 }
-#start {
+#start, #next, #prev {
     font-size: 20px;
-    width:30%;
+}
+#start {
+    width:30%
     bottom:0;
     position:absolute;
     right:0;
@@ -209,43 +212,45 @@ h1 {
       <span id="qid"></span>
       <button id="dumpresult">Result</button>
       <button id="giveup" style="float:right;">GiveUp</button>
-      <h1>_</h1>
+      <div id="head"><button id="prev">prev</button> <button id="next">next</button></div>
+      
     </div>
     <div style="flex-grow:1;">
-      <fieldset id="quiz" style="overflow-y:scroll; margin-bottom:5px; border:1px solid red; height:500px;">
+      <fieldset id="quiz" style="overflow-y:scroll; margin-bottom:5px; border:1px solid green; height:500px;">
         <legend><span id="bookmark">&#x1F516;</span><span id="mid">_</span></legend>
         <div id="photo"></div>
         <span id="desc"></span>
       </fieldset>
       <div id="ui">
-        <button id="start">開始</button>
-        <div id="answerbox"></div>
+        <span id="ref">(出典)</span>
         <span id="timer"></span><br/>
       </div>
     </div>
     <div id="result" style="opacity:1; max-width:400px; height:320px;">
       <div style="display:flex;">
         <fieldset style=" ">
-          <legend>出題範囲</legend>
-          (<button id="rangeall">全選択</button>)<br/>
+          <legend>出題範囲 (<button id="rangeall">全選択</button>)</legend>
           <label><input type=checkbox name="range" value="1" checked />特許・実用新案</label><br/>
           <label><input type=checkbox name="range" value="2" checked />意匠</label><br/>
           <label><input type=checkbox name="range" value="3" checked />商標</label><br/>
           <label><input type=checkbox name="range" value="4" checked />条約</label><br/>
           <label><input type=checkbox name="range" value="5" checked />著作権</label><br/>
-          <label><input type=checkbox name="range" value="6" checked />民法・独禁法・種苗・税関・弁理士</label><br/>
+          <label><input type=checkbox name="range" value="6" checked />不競法・民法・独禁法・種苗・税関・弁理士</label><br/>
         </fieldset>
         <fieldset style="white-space:nowrap;">
           <legend>出題形式</legend>
           <label><input type=radio name="order" value="sort" />番号順</label><br/>
           <label><input type=radio name="order" value="random" checked />ランダム</label>
-          <input id="qlen" value="100" style="width:3.5ex;" maxlength=3 />問<br/>
-          制限時間: <input id="tlen" value="20" style="width:3.5ex;" maxlength=3 />秒<br/>
+          <input id="qlen" value="999" style="width:3.5ex;" maxlength=3 />問<br/>
           <label><input type=checkbox name="tf" />マルバツ</label><br/>
+          <label><input type=checkbox name="bmfilter" />栞のみ出題</label>
         </fieldset>
       </div>
-      栞:<input style="width:90%;" id="bm"/>
-  </div>
+      <fieldset><legend>栞 (<input type=checkbox name="bmrewrite" />書換)</legend>
+        <input style="width:100%;" id="bm"/><br/>
+      </fieldset>
+      <button id="start">開始</button>
+    </div>
 </div>
 
 </body>
@@ -298,7 +303,7 @@ const loadconfig = () => {
         $name("order")[0].checked = true;
     }
     let tlen = misc.match(/t[0-9]+/);
-    if (tlen) $id("tlen").value = tlen[0].slice(1,3);
+    //if (tlen) $id("tlen").value = tlen[0].slice(1,3);
     if (misc.match(/x/)) $name("tf")[0].checked = true;
     return true;
 };
@@ -311,9 +316,9 @@ const loadimage = () => {
     $id("main").style.width = "100%";
     $id("limg").onclick = (e) => console.log(e.offsetX,  e.offsetY);
 };
-
-loadconfig() || loadimage();
   
+loadconfig();
+
 const Quiz = function() {
     let turn = 0;
     let qid = 0;
@@ -324,13 +329,13 @@ const Quiz = function() {
     let hint = true;
     let clen = 22;
     let tlen = 20;
-    let bookmark = (localStorage.getItem("patsave") || "").split(",").filter(v=>v);
+    let bookmark = (localStorage.getItem("patsave") || "").split(",").filter(v=>v).sort((a,b)=>a-b);
     $id("bm").value = bookmark.join();
     const config = () => {
         let table = this.table;
         let range = $name("range").filter($v=>$v.checked).map($v=> $v.value);
         //console.log(range);
-        table = table.filter(v=> range.indexOf(v.cat[1])!=-1);
+        table = table.filter(v=> range.indexOf(v.cat.slice(0,1))!=-1);
         let sort = $name("order").find($v => $v.checked).value == "sort";
         let qlen = parseInt($id("qlen").value) || 999;
         let tf = $name("tf")[0].checked;
@@ -347,6 +352,15 @@ const Quiz = function() {
             xtable.map(c => { table = table.concat(c); });
             table.map(v=>console.log(v.q.sp.join()));
         }
+        if ($name("bmrewrite")[0].checked) {
+            bookmark = $id("bm").value.split(",").filter(v=>v).sort((a,b)=>a-b);
+            $id("bm").value = bookmark.join();
+            localStorage.setItem("patsave", bookmark.join());
+        }
+
+        let bmfilter = $name("bmfilter")[0].checked;
+        if (bmfilter) table = table.filter(v => bookmark.indexOf(v.id) != -1);
+
         if (!sort) table = table.shuffle().slice(0, qlen);
         if (table.length == 0) return false;
         this.table = table;
@@ -362,14 +376,21 @@ const Quiz = function() {
     
     const wait_next = () => {
         $id("giveup").style.display = "none";
-        $id("start").style.display = "";
-        $id("start").onclick = (e) => {
+        $id("next").style.display = "";
+        $id(qid ? "next" : "start").onclick = (e) => {
             if (!qid && !turn && !config()) return $id("timer").innerText = "出題範囲を選択してください";
-            console.log("qid=",qid);
             $id("main").classList = [];
+            if (this.table.length <= qid) return;
             qid++;
             make_quiz(qid);
         };
+        $id("prev").onclick = (e) => {
+            if (qid <= 1) return;
+            $id("main").classList = [];
+            qid--;
+            make_quiz(qid);
+        };
+        return;
         if (qid) {
             $id("dumpresult").onclick = () => { dump_result(false); };
             $id("dumpresult").style.display = "inline";
@@ -423,7 +444,17 @@ const Quiz = function() {
             }
             localStorage.setItem("patsave", bookmark.join(","));
         };
-
+        {
+            let ref = (q.id < 200) ? ("問題集: 本文" + q.id)
+                : (q.id < 300) ? ("問題集: 学科テスト" + (q.id - 200))
+                : (q.id < 400) ? ("問題集: 実技テスト" + (q.id - 300))
+                : (q.id < 500) ? ("教科書: " + (q.id - 400) + "章")
+                : (q.id < 700) ? ("オリジナル問題: " + q.id)
+                : ("知財アプリ引用: " + q.id)
+            $id("ref").innerText = "(出典)";
+            $id("ref").style.cursor = "pointer";
+            $id("ref").onclick = () => { $id("ref").innerText = ref };
+        }
         // classes
         $c("exp").map($o => $o.style.display="none");
         $id("main").classList = ["quiz"];
@@ -612,7 +643,7 @@ loadfile("patent.csv", (table) => {
             let cell = row.split(",");
             v.id = cell[0];
             v.cat = cell[1];
-            v.q = qformat(cell[3].split("<>"), cell[2].split("/"));
+            v.q = qformat(cell[3].split("<>"), cell[2].split("/").filter(v=>v));
             v.remark = cell[4];
             return v;
         }).filter(v => v.q).sort((a,b) => parseInt(a.cat) - parseInt(b.cat));
