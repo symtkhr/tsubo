@@ -120,6 +120,9 @@ body {
 #timer span {
     font-size: 80%;
 }
+.unit {
+    border: #fd6 1px solid;
+}
 .read {
     display:inline-block;
     width: 40px;
@@ -414,15 +417,16 @@ const Quiz = function() {
         $id("mid").innerText = q.cat;
         $id("bookmark").style.display = (bookmark.indexOf(q.id) < 0) ?  "none" : "";
 
-        if (q.q.sp.length == 1) q.q.sp[0] = q.q.sp[0].shuffle();
+        let anaume = 1 < q.q.sp.length;
+        if (!anaume) q.q.sp[0] = q.q.sp[0].shuffle();
         $id("desc").innerHTML = q.q.d.split("\n").join("<br>") + "<br>"
             + (q.q.sp || []).map(sp => sp.map(v => {
                 let opt = v.split("<exp>");
                 let ans = opt[1] || "";
                 let c = ans.slice(0,1) == "o" ? "" : "wrong";
                 return `<span class="opt ${c}">${opt[0]}<span class="exp"> [${ans}]</span></span>`;
-            }).join(q.q.sp.length == 1 ? "<br>" : "or")).join("<br>");
-        console.log(q);
+            }).join(anaume ? "or" : "<br/>"))
+            .map($opt => anaume ? ("<div class=unit>" + $opt + "</div>"):($opt+"<br/>")).join("");
         draw_timer(rest);
 
         // click events
@@ -626,9 +630,10 @@ let qformat = (q,a) => {
         ret.sp[0] = ret.sp[0].map((q,i) => q + "<exp>" + (a[i] || "-"));
     else 
         ret.sp = ret.sp.map((spi,i)=>{
-            if (!a[i]) return spi;
-            let anx = a[i].slice(0,1).charCodeAt(0)-0x61;
-            spi[anx] += "<exp>o:" + a[i];
+            let an = a[i];
+            if (!an) return spi;
+            let anx = an.slice(0,1).charCodeAt(0)-0x61;
+            spi[anx] += "<exp>o" + (1 < an.length ? an.slice(1) : "");
             return spi;
         });
 
