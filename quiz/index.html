@@ -306,9 +306,9 @@ $id("rangeall").onclick = () => {
 };
 
 const img = {
-"gv":{"src":"https://www.lieske.com/images/set0/governing2-clear.gif",
+"gv":{"src":"https://lieske.com/images/set0/governing2-clear.gif",
    "loc":[[394,811],[394,773],[394,678],[394,635],[394,610],[394,571],[394,545],[394,524],[394,472],[394,452],[394,428],[394,374],[394,321],[394,293],[394,227],[394,209],[394,175],[394,143],[394,114],[394,79],[394,52],[772,65],[772,83],[772,99],[772,209],[772,225],[772,237],[590,184]]},
-"cv":{"src":"https://www.lieske.com/images/set0/conception2-clear.gif",
+"cv":{"src":"https://lieske.com/images/set0/conception2-clear.gif",
    "loc":[[726,793],[360,837],[360,820],[360,796],[360,772],[360,759],[360,740],[360,711],[360,684],[356,662],[356,633],[356,608],[356,581],[356,556],[356,528],[356,486],[356,448],[356,416],[356,388],[356,357],[356,329],[356,303],[356,276],[356,246]]},
 "lu":{"src":"https://lieske.com/images/set0/lung-clear.gif",
    "loc":[[607,348],[607,329],[665,428],[667,450],[676,602],[706,697],[738,777],[723,787],[724,811],[746,834],[778,896]]},
@@ -335,7 +335,15 @@ const img = {
 "lr":{"src":"https://lieske.com/images/set0/liver-clear.gif",
    "loc":[[75,1020],[88,1018],[105,1013],[138,985],[151,923],[147,906],[160,801],[163,774],[152,709],[146,615],[140,598],[157,584],[128,468],[157,404]]}
 };
-  
+
+const hole5 = [
+    ["太衝","神門","太白","太淵","太渓","大陵","丘墟","腕骨","衝陽","合谷","京骨","陽池","–","–","–","–","–","–","–"],
+    ["中都","陰郄","地機","孔最","水泉","郄門","外丘","養老","梁丘","温溜","金門","会宗","–","–","–","交信","跗陽","築賓","陽交"],
+    ["蠡溝","通里","公孫","列欠","大鍾","内関","光明","支正","豊隆","偏歴","飛揚","外関","長強","鳩尾","大包","–","–","–","–"],
+    ["期門","巨闕","章門","中府","京門","膻中","日月","関元","中脘","天枢","中極","石門"],
+    ["肝兪","心兪","脾兪","肺兪","腎兪","厥陰兪","胆兪","小腸兪","胃兪","大腸兪","膀胱兪","三焦兪"],
+];
+
 const loadconfig = () => {
     let config = location.hash.split("_");
     let range = $name("range").map($v=> $v.parentNode.innerText.toLowerCase());
@@ -435,6 +443,11 @@ const Quiz = function() {
         $id("timer").style.display = 0 < rest ? "" : "none";
     };
     
+    let holes5type = (name) => {
+        let holeid = hole5.findIndex(g=>g.indexOf(name)!=-1);
+        if (holeid == -1) return "";
+        return "<span>五要穴</span>" + "原郄絡募兪".split("")[holeid] + "穴<br/>";
+    };
     let make_quiz = (i) => {
         let rest = tlen;
         let q = this.table.filter(v => turn <= v.miss)[i - 1];
@@ -458,7 +471,8 @@ const Quiz = function() {
         $id("desc").innerHTML = ""
             + "<span>部位</span> " + pos + "<br/>"
             + "<span>取穴法</span> " + method + "<br/>"
-            + "<span>効能</span> " + desc + "<br/>";
+            + "<span>効能</span> " + desc + "<br/>"
+            + holes5type(name);
         
         if (draw_fig) {
             $id("desc").style.display = "none";
